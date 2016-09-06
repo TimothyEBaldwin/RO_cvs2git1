@@ -412,7 +412,7 @@ sub _parse_in_rcs {
   
   ### Parse in the individual version headers
 
-  while ( $self->{rawfile} =~ /\G(\d(\.|\d)+)(.+?)\n\n/gcs ) {
+  while ( $self->{rawfile} =~ /\G(\d(?:\.|\d)+)(.+?)\n\n/gcs ) {
     $rcs->{$1}->{header} = $2;    
     $self->_debug("vheader $1 is ".length($1)." chars in size") if $self->{debug};
   }
