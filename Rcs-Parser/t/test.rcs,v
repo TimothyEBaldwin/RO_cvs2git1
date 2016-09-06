@@ -1,0 +1,4466 @@
+head	1.109;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.109
+date	2008.10.02.00.07.06;	author ppollard;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2008.09.22.18.28.52;	author ppollard;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2008.09.03.00.01.32;	author ppollard;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2008.08.18.21.43.50;	author ppollard;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2008.08.05.23.36.00;	author ppollard;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2008.07.28.23.46.21;	author ppollard;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2008.07.28.22.44.47;	author ppollard;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2008.07.28.22.39.59;	author ppollard;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2008.07.28.22.39.25;	author ppollard;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2008.07.17.23.30.57;	author ppollard;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2008.06.18.18.35.14;	author ppollard;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2008.06.18.18.29.11;	author ppollard;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2008.06.04.19.08.31;	author ppollard;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2008.03.08.18.23.14;	author ppollard;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2008.03.08.18.22.05;	author ppollard;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2008.02.12.22.26.06;	author ppollard;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2008.02.12.22.09.30;	author ppollard;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2008.02.12.19.13.11;	author ppollard;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2008.04.29.22.21.05;	author ppollard;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2008.04.29.22.16.28;	author ppollard;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2008.04.23.23.50.50;	author ppollard;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2008.04.23.23.43.55;	author ppollard;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2008.04.23.23.34.40;	author ppollard;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2008.04.23.23.32.16;	author ppollard;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2008.04.15.00.04.33;	author ppollard;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2008.04.14.18.00.17;	author ppollard;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2008.04.11.01.19.53;	author ppollard;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2008.04.10.22.27.26;	author ppollard;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2008.04.10.22.05.13;	author ppollard;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2008.04.10.20.08.06;	author ppollard;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2008.04.10.19.52.40;	author ppollard;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2008.04.10.19.38.37;	author ppollard;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2008.04.10.19.32.05;	author ppollard;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2008.04.07.23.35.21;	author ppollard;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2008.03.11.07.10.29;	author ppollard;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2008.03.10.23.29.36;	author ppollard;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2008.03.08.07.34.20;	author ppollard;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2008.03.08.04.49.14;	author ppollard;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2008.03.08.02.44.46;	author ppollard;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2008.03.08.01.58.50;	author ppollard;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2008.02.29.07.55.18;	author ppollard;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2008.02.29.07.22.35;	author ppollard;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2008.02.23.01.39.55;	author ppollard;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2008.02.15.20.00.53;	author ppollard;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2008.02.15.19.43.56;	author ppollard;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2008.02.11.23.37.48;	author ppollard;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2008.02.11.20.39.12;	author ppollard;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2008.01.24.23.33.30;	author ppollard;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2008.01.05.00.31.33;	author ppollard;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2008.01.03.03.11.25;	author ppollard;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2008.01.03.01.43.49;	author ppollard;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2007.12.22.00.25.12;	author ppollard;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2007.12.22.00.11.41;	author ppollard;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2007.12.20.01.58.48;	author ppollard;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2007.12.20.01.57.35;	author ppollard;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2007.12.20.01.54.48;	author ppollard;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2007.12.20.01.29.19;	author ppollard;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2007.12.18.00.28.41;	author ppollard;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2007.12.08.08.55.00;	author ppollard;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2007.12.06.21.26.19;	author ppollard;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2007.12.06.21.18.34;	author ppollard;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2007.12.06.20.45.36;	author ppollard;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2007.12.06.20.11.04;	author ppollard;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2007.12.06.20.01.43;	author ppollard;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2007.12.06.20.01.27;	author ppollard;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2007.12.06.19.59.59;	author ppollard;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2007.12.06.19.58.40;	author ppollard;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2007.12.06.19.51.23;	author ppollard;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2007.12.06.19.42.06;	author ppollard;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2007.12.06.19.29.06;	author ppollard;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2007.12.06.19.22.49;	author ppollard;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2007.12.03.23.11.34;	author ppollard;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2007.12.03.23.06.27;	author ppollard;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2007.12.03.21.39.00;	author ppollard;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2007.12.03.21.36.39;	author ppollard;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2007.12.03.21.29.55;	author ppollard;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2007.11.29.23.26.32;	author ppollard;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2007.11.29.21.31.06;	author ppollard;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2007.11.25.19.57.31;	author ppollard;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2007.11.25.19.45.18;	author ppollard;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2007.11.21.23.07.02;	author ppollard;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2007.11.21.20.33.25;	author ppollard;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2007.11.21.20.23.47;	author ppollard;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2007.11.21.02.45.55;	author ppollard;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2007.11.21.02.37.54;	author ppollard;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2007.11.21.02.26.55;	author ppollard;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2007.11.20.23.40.32;	author ppollard;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2007.11.19.00.10.04;	author ppollard;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2007.11.18.23.52.33;	author ppollard;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2007.11.16.01.12.27;	author ppollard;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2007.11.16.01.03.05;	author ppollard;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2007.11.15.23.10.26;	author ppollard;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2007.11.15.23.08.25;	author ppollard;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2007.11.15.22.40.16;	author ppollard;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2007.11.15.22.38.35;	author ppollard;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2007.11.15.19.55.33;	author ppollard;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2007.11.15.19.51.07;	author ppollard;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2007.11.15.19.07.14;	author ppollard;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2007.11.14.02.06.56;	author ppollard;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2007.11.14.01.22.54;	author ppollard;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2007.11.14.01.19.28;	author ppollard;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2007.11.14.00.29.39;	author ppollard;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2007.11.14.00.20.52;	author ppollard;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2007.11.13.02.17.33;	author ppollard;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2007.11.13.02.03.32;	author ppollard;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2007.11.13.01.25.25;	author ppollard;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2007.11.12.19.34.51;	author ppollard;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2007.11.12.19.14.29;	author ppollard;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2007.11.12.19.06.22;	author ppollard;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.109
+log
+@It's ugly, but now it tries to install ostune.
+@
+text
+@#!/usr/bin/perl
+
+$|=1;
+
+=head1 os-tune.pl
+
+  ./os-tune.pl [-y] [--local] [--type=db|fms|page|sync]
+
+This script checks with reference copies of configurations and lets you 
+know what needs to be tuned on the OS. It then offers to fix problems.
+
+The optional 'y' parameter (short for "yes") forces all warnings to be 
+accepted and allows all changes to be performed without confirmation.
+
+=cut
+
+use Socket;
+use strict;
+
+my $debug = 0;
+my $domain = 'fusionone.com';
+my $nameserver = '208.184.227.111';
+
+my $yes   = 0;
+my $local = 0;
+my $type  = 'unknown';
+
+for my $argv (@@ARGV) {
+  $local = 1 if $argv eq '--local';
+  $yes = 1   if $argv eq '-y';
+  $type = $1 if $argv =~ /--type=(.+)/;
+}
+
+### Prebuild
+
+# Command line commands used by this app
+my @@commands = qw/authconfig cat chkconfig chmod chown crontab date egrep grep
+                  hostname hwclock ln md5sum mkdir mv rm rmdir sed sysctl
+                  touch wc yum/;
+
+# Files to remove if seen
+
+my @@badfiles = qw|/etc/snmpd.conf /etc/snmp.conf|; # Wrong location. Common typo.
+
+push @@badfiles, '/tmp/css.dnr'; # Old CSS control file
+
+for my $f ( qw/f1-install.pl os-tune.pl yum-install.pl nohup.out1
+.bash_profile.detune .bashrc.detune java6.tgz ojdbc14.jar reset_user.pl
+fixpage rwpage snmpd.conf fusion dump.cap f11 f2 fms.642
+zero-file-deletes.pl zero-file-deletes.sh zero-file-status-reset.pl
+zero-file-status-info.pl ppollard@@ops orajdbcclasses12_01.jar
+bonnie++-1.03a.tgz fms.tcpdump.gz fms.tar install.log install.log.syslog
+J2EEProbeSetup_linux_6_6_100_24.bin J2EEProbeSetup_linux_7_0_26_677.bin
+inittab anaconda-ks.cfg jakarta-tomcat-4.1.29.tar.gz vpd.properties
+server.xml web.xml java1.6.0_04.tar.gz java-1.4.2_16.tar.gz f1grep.pl/ ) {
+  push @@badfiles, '/root/'.$f;
+}
+
+for my $f ( qw|localtime.rpmnew mail/submit.cf.rpmnew
+samba/smb.conf.rpmnew samba/lmhosts.rpmnew
+hal/device.d/50-fstab-sync.hal.rpmnew
+selinux/targeted/contexts/files/file_contexts.rpmnew
+selinux/targeted/policy/policy.18.rpmnew nsswitch.conf.rpmnew
+ldap.conf.rpmnew sensors.conf.rpmnew krb5.conf.rpmnew
+odbcinst.ini.rpmnew rndc.key.rpmnew my.cnf.rpmnew
+security/pam_env.conf.rpmnew security/limits.conf.rpmnew
+security/group.conf.rpmnew security/console.perms.rpmnew
+security/time.conf.rpmnew security/chroot.conf.rpmnew
+security/opasswd.rpmnew security/pam_winbind.conf.rpmnew
+security/access.conf.rpmnew ld.so.conf.rpmnew libuser.conf.rpmnew
+fonts/local.conf.rpmnew ksysguarddrc.rpmnew rc.d/init.d/cups.rpmnew
+sysconfig/saslauthd.rpmnew sysconfig/lm_sensors.rpmnew
+squid/squid.conf.rpmnew pam.d/other.rpmnew pam.d/kcheckpass.rpmnew
+pam.d/kdm.rpmnew pam.d/kscreensaver.rpmnew pam.d/kdm-np.rpmnew
+odbc.ini.rpmnew X11/fs/config.rpmnew yum.conf.rpmnew
+sysconfig/named.rpmnew logrotate.d/named.rpmnew rndc.conf.rpmnew| ) {
+  push @@badfiles, '/etc/'.$f;
+}
+
+# Services that should be booted or not
+# Make sure that ALL run-on-boot services are also in the @@required below.
+
+my @@boot = qw/named nscd ntpd sendmail snmpd sysstat xinetd/;
+my @@noboot = qw/cups httpd iptables irda squid/;
+
+my @@nondb_noboot = qw/mysqld/;
+
+### Packages to remove or not
+
+# Required yum packages
+my @@required = qw/bind expect net-snmp ntp perl-DBD-MySQL screen sendmail
+                  sysstat wireshark xinetd/;
+
+# Additional pacakges required for sync servers
+my @@required_sync = qw/compat-gcc-32 compat-gcc-32-c++ curl-devel
+                       e2fsprogs-devel gdb mailx openssl libgcc.i386/;
+
+for my $compat ( qw/curl krb5-libs libstdc++ libidn openssl-devel zlib zlib-devel/ ) {
+  push @@required_sync, $compat;
+  push @@required_sync, $compat . '.i386';
+}
+
+# Additional packages required for page server
+
+my @@required_page = qw/seamonkey-nss.i386 seamonkey-nss.x86_64
+ compat-libstdc++-33.i386 compat-libstdc++-33.x86_64
+ xorg-x11-deprecated-libs.i386 xorg-x11-deprecated-libs.x86_64 php/;
+
+# Additional pacakges required for db servers
+my @@required_db = qw/binutils compat-db compat-glibc compat-glibc.i386
+                     compat-libstdc++-33 compat-libstdc++-33 control-center
+                     gcc gcc-c++ glibc glibc-common glibc-devel glibc-devel.i386
+                     ksh libaio libgcc libgnome libgnomeui libstdc++
+                     libstdc++-devel libX11-devel make sysstat 
+                     xorg-x11-proto-devel/;
+
+# 4.6? gnome-libs, pdksh, xorg-x11-deprecated-libs
+# replaced by ksh, libgnome{,ui}, xorg-x11-proto-devel/libX11-devel ?
+
+# Remove these packages if they are installed
+
+my @@remove = qw/alchemist arts bluez-bluefw bluez-libs bluez-libs-devel
+Canna Canna-libs Canna-devel cups-devel cyrus-imapd cyrus-imapd-utils
+dovecot emacs emacs-common emacs-leim emacspeak evolution exim exim-doc
+exim-mon firefox FreeWnn-libs FreeWnn-devel gaim gimp gimp-print
+gnome-games gnomemeeting gpdf HelixPlayer hpoj hpoj-devel httpd-devel
+httpd-manual imagemagick inn inn-devel iiimf-csconv iiimf-docs
+iiimf-emacs iiimf-libs iiimf-server inews joe kde-i18n-Bengali
+kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian kde-i18n-Catalan
+kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish
+kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French kde-i18n-German
+kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian
+kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+kde-i18n-Norwegian-Nynorsk kde-i18n-Polish kde-i18n-Portuguese
+kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian kde-i18n-Slovak
+kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish kde-i18n-Tamil
+kde-i18n-Turkish kde-i18n-Ukrainian libmusicbrainz-devel libmusicbrainz
+linuxwacom lockdev mailman mgetty-sendfax mgetty-viewfax mgetty-voice
+miniChinput minicom mozilla mozilla-nspr mrtg mutt openoffice.org pidgin
+pilot-link planner postgresql postgresql-libs ppp quagga quagga-devel
+quagga-contrib rhythmbox rp-pppoe ruby ruby-devel ruby-docs ruby-libs
+ruby-mode ruby-tcltk sane-backends sane-frontends sound-juicer
+spamassassin squirrelmail taipeifonts tetex tetex-afm tetex-doc
+tetex-dvips tetex-fonts tetex-xdvi ttfprint thunderbird tora tsclient
+squid system-config-httpd valgrind vnc-server vsftpd webalizer xemacs
+xmms xpdf xsane
+
+ElectricFence ImageMagick-c++ Omni ORBit ORBit2 Pyrex SDL-devel VFlib2
+Xaw3d a2ps amanda apel-xemacs aspell-ca aspell-cs aspell-cy aspell-da
+aspell-de aspell-el aspell-es aspell-fr aspell-it aspell-nl aspell-no
+aspell-pl aspell-pt aspell-sv audiofile aumix bogl busybox cadaver
+cdda2wav cdparanoia* cdrecord dos2unix dosfstools dvd+rw-tools
+fonts-bengali fonts-hebrew fonts-ja fonts-xorg-cyrillic gnome-speech
+isdn4k-utils octave rsh-server star talk ttfonts-bn ttfonts-gu
+ttfonts-hi ttfonts-jz ttfonts-ko ttfonts-pa ttfonts-ta ttfonts-zh_CN
+ttfonts-zh_TW unix2dos xemacs* zisofs-tools/;
+
+# Redhat can remove wireless-tools
+
+my @@nondb_remove = qw/cups esound gstreamer nautilus speex/;
+my @@nonpage_remove = qw/httpd httpd-suexec php/;
+
+### Bootstrap
+
+my $remote_url = 'http://ops.fusionone.com/confs/linux-systems/';
+my $local_url  = '/fusionone/local/confs/linux-systems/';
+
+my $ruler = "\n". join("\n", ( '='x80 ), ( '='x80 )) . "\n\n";
+
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+print "F1 OS Tuner $ver running.\n\n";
+
+print "Checking system resources.\n";
+my @@error;
+
+# which
+
+unless ( -e '/usr/bin/which' ) {
+  push @@error, "'which' is not installed. Further checks not possible. Please install.";
+  error(@@error); # Exit now if no "which"
+}
+
+# check command line stuff
+
+for my $command (@@commands) {
+  if ( my $ret = which($command) ) {
+    debug("   $command -> $ret");
+  } else {
+    debug("   $command -> missing?");
+    push @@error, "$command is required to be installed for this script to run.";
+  }
+}
+
+error(@@error) if @@error;
+
+# Module checks
+
+unless ( $local ) {
+  eval { require LWP::Simple; };
+  if ( $@@ ) {
+    system("yum -y install perl-libwww-perl");
+    eval { require LWP::Simple; };
+    if ( $@@ ) {
+      push @@error, "Perl module LWP::Simple is required and missing (I tried: yum install perl-libwww-perl)";
+    } else {
+      LWP::Simple->import;
+    }
+  } else {
+    LWP::Simple->import;
+  }
+}
+
+error(@@error) if @@error;
+
+### Hostname
+
+my $raw = `hostname`;
+chomp $raw;
+my @@raw = split /\./, $raw;
+my $host = $raw[0];
+
+if ( $type eq 'unknown' ) {
+  $type = $host =~ /sync/i ? 'sync'
+        : $host =~ /fms/i  ? 'fms'
+        : $host =~ /page/i ? 'page'
+        : $host =~ /db/i   ? 'db'
+        : 'unknown';
+}
+
+push @@required, @@required_db   if $type eq 'db';
+push @@required, @@required_page if $type eq 'page';
+push @@required, @@required_sync if $type eq 'sync';
+
+push @@remove, @@nondb_remove unless $type eq 'db';
+push @@remove, @@nonpage_remove unless $type eq 'page';
+
+push @@noboot, @@nondb_noboot unless $type eq 'db';
+
+### Check package list
+
+print "Checking installed packages.\n";
+
+my %installed;
+
+my $list = `yum list installed`;
+
+for my $line ( split "\n", $list ) {
+  $installed{$1}++ if $line =~ /^([\w\-\+]+\.(i386|x86_64|noarch))\s/;
+  $installed{$1}++ if $line =~ /^([\w\-\+]+)\./;
+}
+
+my %to_install; 
+my %to_remove;
+
+for my $package ( @@required ) {
+  $to_install{$package}++ unless $installed{$package};
+}
+for my $package ( @@remove ) {
+  $to_remove{$package}++ if $installed{$package};
+}
+
+my @@to_install = sort keys %to_install;
+my @@to_remove  = sort keys %to_remove;
+
+### Checksums
+
+print "Retrieveing checksums.\n";
+
+my $rawsums = download_to_scalar('sums.txt') or error("Downlaoding checksums failed.");
+my %sums;
+
+for my $line ( split '\n', $rawsums ) {
+  next unless $line =~ /^([0-9a-f]+)\s+(\S+)\s*$/;
+  $sums{$2} = $1;
+}
+
+# Do installs and removes
+
+if (scalar(@@to_install)) {
+  print "\nThe following packages need to be installed:\n\t",
+        join(", ", @@to_install), "\n";
+  print "\nCTRL-C to avoid installing packages. ENTER to continue.\n" unless $yes;
+  <STDIN> unless $yes;
+  my $install = join(' ',@@to_install);
+
+  print $ruler;
+  system("yum -y install $install");
+  print $ruler;
+}
+
+if (scalar(@@to_remove)) {
+  print "\nThe following packages need to be removed:\n\t", join(", ", @@to_remove), "\n";
+  print "\nCTRL-C to avoid removing packages. ENTER to continue.\n" unless $yes;
+  <STDIN> unless $yes;
+  my $remove = join(' ',@@to_remove);
+  print $ruler;
+  system("yum -y remove $remove");
+  print $ruler;
+}
+
+if ( scalar(@@to_remove) || scalar(@@to_install) ) {
+  #system("yum clean cache packages metadata");
+  system("yum clean all");
+  print $ruler;
+}
+
+### Load up the DB
+
+### Tests
+
+my %test; # Tests stored here
+
+# Tests go in priority order of lowest first, then via alphabetical on name.
+
+# Priority 1 - "bootstrap" Directories or problem corrections that can 
+#              fouls up other tests.
+
+$test{Brian}{check} = \&brian_check;
+$test{Brian}{fix}   = \&brian_fix;
+$test{Brian}{priority} = 1;
+
+$test{dirs}{check} = \&dir_check;
+$test{dirs}{fix}   = \&dir_fix;
+$test{dirs}{priority} = 1;
+
+# Priority 2 - Almost bootstrap, but bootstrap has to happen first
+
+$test{files}{check} = \&file_check;
+$test{files}{fix}   = \&file_fix;
+$test{files}{priority} = 1;
+
+# Priority 3 - System Settings
+
+$test{boilerplate}{check} = \&boiler_check;
+$test{boilerplate}{fix}   = \&boiler_fix;
+$test{boilerplate}{priority} = 3;
+
+$test{inittab}{check} = \&inittab_check;
+$test{inittab}{fix}   = \&inittab_fix;
+$test{inittab}{priority} = 3;
+
+unless ( $local ) {
+  $test{LDAP}{check} = \&ldap_check;
+  $test{LDAP}{fix}   = \&ldap_fix;
+  $test{LDAP}{priority} = 3;
+}
+
+$test{'Kern limits'}{check} = \&limits_check;
+$test{'Kern limits'}{fix}   = \&limits_fix;
+$test{'Kern limits'}{priority} = 3;
+
+$test{'Kern params'}{check} = \&params_check;
+$test{'Kern params'}{fix}   = \&params_fix;
+$test{'Kern params'}{priority} = 3;
+
+$test{selinux}{check} = \&selinux_check;
+$test{selinux}{fix}   = \&selinux_fix;
+$test{selinux}{priority} = 3;
+
+unless ( $local ) {
+  $test{sudo}{check} = \&sudo_check;
+  $test{sudo}{fix}   = \&sudo_fix;
+  $test{sudo}{priority} = 3;
+}
+
+$test{'time zone'}{check} = \&time_check;
+$test{'time zone'}{fix}   = \&time_fix;
+$test{'time zone'}{priority} = 3;
+
+# Priority 5 - Services
+
+unless ( $local ) {
+  $test{bind}{check} = \&bind_check;
+  $test{bind}{fix}   = \&bind_fix;
+  $test{bind}{priority} = 5;
+}
+
+$test{log}{check}    = \&log_check;
+$test{log}{fix}      = \&log_fix;
+$test{log}{priority} = 5;
+
+unless ( $local ) {
+  $test{NTP}{check} = \&ntp_check;
+  $test{NTP}{fix}   = \&ntp_fix;
+  $test{NTP}{priority} = 5;
+}
+
+$test{SNMP}{check} = \&snmp_check;
+$test{SNMP}{fix}   = \&snmp_fix;
+$test{SNMP}{priority} = 5;
+
+$test{xinetd}{check} = \&xinetd_check;
+$test{xinetd}{fix}   = \&xinetd_fix;
+$test{xinetd}{priority} = 5;
+
+# Priority 7 - User profile / General scripts
+
+unless ( $local ) {
+  $test{'clock fix'}{check} = \&clockfix_check;
+  $test{'clock fix'}{fix}   = \&clockfix_fix;
+  $test{'clock fix'}{priority} = 7;
+}
+
+$test{Profile}{check} = \&profile_check;
+$test{Profile}{fix}   = \&profile_fix;
+$test{Profile}{priority} = 7;
+
+$test{'SNMP Scripts'}{check} = \&snmpscripts_check;
+$test{'SNMP Scripts'}{fix}   = \&snmpscripts_fix;
+$test{'SNMP Scripts'}{priority} = 7;
+
+if ( $type eq 'fms' ) {
+  $test{'f1tmp'}{check} = \&f1tmp_check;
+  $test{'f1tmp'}{fix}   = \&f1tmp_fix;
+  $test{'f1tmp'}{priority} = 7;
+}
+
+if ( $type eq 'sync' ) {
+  $test{'css control'}{check}    = \&css_control_check;
+  $test{'css control'}{fix}      = \&css_control_fix;
+  $test{'css control'}{priority} = 7;
+
+  $test{'css copy'}{check} = \&css_copy_check;
+  $test{'css copy'}{fix}   = \&css_copy_fix;
+  $test{'css copy'}{priority} = 7;
+
+  $test{'css restart'}{check} = \&css_check;
+  $test{'css restart'}{fix}   = \&css_fix;
+  $test{'css restart'}{priority} = 7;
+}
+
+# Priority 10 - Boot configuration - tasks for after all tests
+
+$test{crontab}{check} = \&crontab_check;
+$test{crontab}{fix}   = \&crontab_fix;
+$test{crontab}{priority} = 10;
+
+for my $boot ( @@boot ) {
+  $test{'boot '.$boot}{check} = \&boot_check;
+  $test{'boot '.$boot}{check_params} = [ $boot ];
+  $test{'boot '.$boot}{fix} = \&boot_fix;
+  $test{'boot '.$boot}{fix_params} = [ $boot ];
+  $test{'boot '.$boot}{priority} = 10;
+}
+
+for my $noboot ( @@noboot ) {
+  $test{'noboot '.$noboot}{check} = \&noboot_check;
+  $test{'noboot '.$noboot}{check_params} = [ $noboot ];
+  $test{'noboot '.$noboot}{fix} = \&noboot_fix;
+  $test{'noboot '.$noboot}{fix_params} = [ $noboot ];
+  $test{'noboot '.$noboot}{priority} = 10;
+}
+
+# Run them
+
+print "\nStatus:\n" . ( '=' x 75 ) . "\n";
+
+@@error = ();
+for my $test ( sort { $test{$a}{priority} <=> $test{$b}{priority} || lc($a) cmp lc($b) } keys %test ) {
+  my @@ret = $test{$test}{check}->( defined $test{$test}{check_params} ? @@{$test{$test}{check_params}} : undef );
+  printf '%-15s : %-6s : %s', $test, ($ret[0]?'Ok':'Error'), $ret[1] . "\n";
+  $test{$test}{ret} = \@@ret;
+  push @@error, $test unless $ret[0];
+}
+
+print ( '=' x 75 );
+
+unless (scalar(@@error)) {
+  print "\n\nNo errors found.\n\n";
+  &timestamp();
+  exit;
+}
+
+print "\n\n" . scalar(@@error) . " error(s) need to be corrected.\n\n";
+
+print "\tCTRL-C to avoid making these corrections.\n\tENTER to continue.\n"
+      unless $yes;
+<STDIN> unless $yes;
+
+### Do Fixes!
+
+my $reboot = 0; # Do I need to reboot?
+my @@warns; # Warnings for the end screen
+
+for my $test (@@error) {
+  $test{$test}{fix}->( defined $test{$test}{fix_params} ? @@{$test{$test}{fix_params}} : undef );
+}
+
+&timestamp(); # Mark that we ran!
+
+### Check services
+
+print "\nReading service info.\n";
+
+opendir SERVDIR, '/etc/init.d' or die "Can't open /etc/init.d/ for reading";
+my %services = map { $_,1; } grep { -f '/etc/init.d/' . $_ } readdir SERVDIR;
+closedir SERVDIR;
+
+### Sync the services
+
+print "\nSyncing services:";
+
+for my $serv (@@noboot) {
+  next unless $services{$serv};
+  `service $serv stop 2>\&1`;
+  print " $serv";
+}
+
+for my $serv (@@boot) {
+  next unless $services{$serv};
+  `service $serv restart 2>\&1`;
+  print " $serv";
+}
+
+system('sysctl -q -p'); # Return kernel
+print ' sysctl';
+
+print "\n\nDone.\n";
+
+print "\nSome changes made require a REBOOT to take effect.\n" if $reboot;
+
+for my $warn (@@warns) {
+  print "\nWARNING: $warn\n";
+}
+
+### Subroutines
+
+# Service subroutines
+
+sub bind_check {
+  my $local = md5sum('/etc/named.conf');
+  return ( 1, "bind properly configured." ) if $local eq $sums{'named.conf'};
+  return ( 0, "bind needs to be configured." );
+}
+
+sub bind_fix {
+  print "Configuring bind.\n";
+  my $ret = download('named.conf','/etc/named.conf');
+  for my $file (qw/localdomain.zone localhost.zone named.broadcast named.ca named.ip6.local named.local named.zero/) {
+    my $ret = download($file,"/var/named/$file");
+  }
+
+  my $resolvefile = "domain $domain\nnameserver 127.0.0.1\n#nameserver $nameserver\nsearch $domain\n";
+
+  open OUTFILE, '>/etc/resolv.conf' or die "Can't write /etc/resolv.conf";
+  print OUTFILE $resolvefile;
+  close OUTFILE;
+
+  `service named restart`;
+}
+
+sub boiler_check {
+  my $motd = md5sum('/etc/motd');
+  my $iss  = md5sum('/etc/issue');
+  my $isn  = md5sum('/etc/issue.net');
+
+  return ( 1, "Boilerplate text configured." )
+    if md5sum('/etc/motd') eq $sums{motd} and
+       md5sum('/etc/issue') eq $sums{issue} and
+       md5sum('/etc/issue.net') eq $sums{issue};
+  return ( 0, "Boilerplate text needs to be updated." );
+}
+
+sub boiler_fix {
+  print "Configuring boilerplate text.\n";
+
+  unless ( md5sum('/etc/motd') eq $sums{motd} ) {
+    print " * /etc/motd\n";
+    my $ret = download('motd','/etc/motd');
+  }
+  unless ( md5sum('/etc/issue') eq $sums{issue} ) {
+    print " * /etc/issue\n";
+    my $ret = download('issue','/etc/issue');
+  }
+  unless ( md5sum('/etc/issue.net') eq $sums{issue} ) {
+    print " * /etc/issue.net\n";
+    my $ret = download('issue','/etc/issue.net');
+  }
+}
+
+sub boot_check {
+  my $serv = shift @@_;
+  my $check = is_bootservice($serv);
+  return ( 0, "$serv is not set to run at boot" ) unless $check;
+  return ( 1, "$serv configured at boot" );
+}
+
+sub boot_fix {
+  my $serv = shift @@_;
+  print "Setting $serv to run at boot.\n";
+  `chkconfig $serv on`;
+}
+
+sub brian_check {
+  my $error = 0;
+
+  $error++ if -d '/etc/init.d/off';
+  $error++ if -d '/root/restart';
+  $error++ if -f '/root/restart/autorestart.sh';
+  $error++ if -f '/etc/init.d/autorestart';
+
+  $error++ if -f '/etc/init.d/httpd' or -f '/etc/init.d/off/httpd';
+
+  if ( -f '/var/spool/cron/root' ) {
+    $test{Brian}{info}{croncount} = `grep ntpdate /var/spool/cron/root | wc -l`;
+    $error++ if $test{Brian}{info}{croncount} > 0;
+  } else {
+    $test{Brian}{info}{croncount} = -1;
+  }
+
+  return ( 0, "$error common Brianism(s) need cleanup." ) if $error > 0;
+  return ( 1, "Brian's stuff isn't here." );
+}
+
+sub brian_fix {
+  print "Brianisms:\n";
+
+  if ( -d '/etc/init.d/off' ) {
+    print " * fixing init.d directory\n";
+    system('mv /etc/init.d/off/* /etc/init.d/');
+    system('rmdir /etc/init.d/off/');
+  }
+  if ( -d '/root/restart' ) {
+    print " * Removing local restart dir\n";
+    system('rm -rf /root/restart/');
+  }
+  if ( -f '/etc/init.d/autorestart' ) {
+    print " * Removing bad autorestart service\n";
+    system('service autorestart stop > /dev/null 2>&1');
+    system('rm /etc/init.d/autorestart');
+  }
+  if ( -f '/etc/init.d/httpd' ) {
+    print " * Removing orphaned init.d file: httpd\n";
+    system('rm /etc/init.d/httpd');
+  }
+  if ( $test{Brian}{info}{croncount} > 0 ) {
+    print " * Removing broken ntpdate from root's cron\n";
+    system('crontab -l | grep -v ntpdate > /tmp/cronfix');
+    system('crontab /tmp/cronfix');
+    system('rm /tmp/cronfix');
+  }
+}
+
+sub clockfix_check {
+  my $cron   = md5sum('/etc/cron.d/clockfix');
+  my $script = md5sum('/fusionone/bin/clockfix.sh');
+  return ( 1, "Workaround in place." ) if $cron eq $sums{'clockfix'} and $script eq $sums{'clockfix.sh'};;
+  return ( 0, "Clock workaround needs to be installed." );
+}
+
+sub clockfix_fix {
+  print "Configuring the clockfix.\n";
+  my $ret = download('clockfix','/etc/cron.d/clockfix');
+
+  $ret = download('clockfix.sh','/fusionone/bin/clockfix.sh');
+  system('chmod 0770 /fusionone/bin/clockfix.sh');
+  system('chown f1luser.data /fusionone/bin/clockfix.sh');
+
+  `service crond restart`;
+}
+
+sub crontab_check {
+  return ( 0, "Root has a crontab entry." ) if -f '/var/spool/cron/root';
+  return ( 1, "Root crontab is empty." );
+}
+
+sub crontab_fix {
+  print "Checking root's crontab.\n";
+  my $c = `wc -l /var/spool/cron/root`;
+  if ( $c == 0 ) {
+    system('crontab -r');
+  } else {
+    push @@warns, "There appear to be cron jobs in root's crontab. System jobs should be installed in the /etc/cron.* directories. Please check root's crontab.";
+  }
+}
+
+sub css_check {
+  my $css    = md5sum('/etc/cron.d/css');
+  my $script = md5sum('/fusionone/bin/css_restart.sh');
+  return ( 1, "CSS restart script in place." ) if $css eq $sums{'css'} and $script eq $sums{'css_restart.sh'} and not -f '/fusionone/ops_scripts/css_restart.sh';
+  return ( 0, "Restart script needs to be installed." );
+}
+
+sub css_fix {
+  print "Configuring CSS restart script.\n";
+
+  my $ret = download('css_restart.sh','/fusionone/bin/css_restart.sh');
+  my $ret = download('css','/etc/cron.d/css');
+
+  system('chmod 0770 /fusionone/bin/css_restart.sh');
+  system('chown f1luser.data /fusionone/bin/css_restart.sh');
+  system('ln -s /fusionone/ss/init.d/css /etc/init.d/css') unless -l '/etc/init.d/css';
+  system('touch /var/run/f1/css.dnr');
+
+  if ( -f '/fusionone/ops_scripts/css_restart.sh' ) {
+    system('rm -f /fusionone/ops_scripts/css_restart.sh');
+    system('rmdir /fusionone/ops_scripts/');
+
+    if ( -f '/var/spool/cron/root' ) {
+      system('crontab -l | grep -v css_restart.sh > /tmp/cronfix');
+      system('crontab /tmp/cronfix');
+      system('rm /tmp/cronfix');
+    }
+  }
+
+  `service crond restart`;
+}
+
+sub css_control_check {
+  my $check = md5sum('/fusionone/bin/restart');
+  return ( 1, "CSS restart control script in place." ) if $check eq $sums{'restart'};
+  return ( 0, "Restart control script needs to be installed." );
+}
+
+sub css_control_fix {
+  print "Configuring CSS restart control script.\n";
+  my $ret = download('restart','/fusionone/bin/restart');
+  system('chmod 0755 /fusionone/bin/restart');
+}
+
+sub css_copy_check {
+  my $check = md5sum('/etc/cron.d/css_copy');
+  return ( 1, "CSS app copy script in place." ) if $check eq $sums{'css_copy'};
+  return ( 0, "Restart script needs to be installed." );
+}
+
+sub css_copy_fix {
+  print "Configuring CSS app copy script.\n";
+  my $ret = download('css_copy','/etc/cron.d/css_copy');
+
+  `service crond restart`;
+}
+
+sub dir_check {
+  my @@need   = qw|/fusionone/bin /etc/f1 /var/run/f1|;
+  my @@remove = qw|/fusionone/ops_scripts /eric /root/0|;
+
+  push @@need, '/fusionone/tmp' if $type eq 'fms';
+
+  $test{dir}{need}   = [];
+  $test{dir}{remove} = [];
+
+  my $error = 0;
+
+  for my $need (@@need) { push @@{$test{dir}{need}}, $need unless -d $need }
+  for my $remove (@@remove) { push @@{$test{dir}{remove}}, $remove if -d $remove }
+
+  my $error = scalar(@@{$test{dir}{need}}) + scalar(@@{$test{dir}{remove}});
+
+  return ( 0, "$error directory alterations needed." ) if $error > 0;
+  return ( 1, "F1 directory structure in place." );
+}
+
+sub dir_fix {
+  print "Creating base directories.\n" if scalar(@@{$test{dir}{need}}) > 0;
+  for my $need ( @@{$test{dir}{need}} ) {
+    print " * $need\n";
+    system('mkdir --mode=0770 -p ' . $need);
+    system('chown f1luser.data',$need) if $need =~ /^\/fusionone\//;
+  }
+  print "Removing old directories.\n" if scalar(@@{$test{dir}{remove}}) > 0;
+  for my $remove ( @@{$test{dir}{remove}} ) {
+    next if $remove eq '/fusionone/ops_scripts' and -f '/fusionone/ops_scripts/css_restart.sh'; # Skip removing this if the CSS test will pick it up.
+    print " * $remove\n";
+    system("rm -rf $remove"); # if length $remove and -d $remove;
+  }
+}
+
+sub file_check {
+  for my $file (@@badfiles) {
+    return ( 0, "Found files to remove." ) if -f $file;
+  }
+  return ( 1, "No common bad file problems." );
+}
+
+sub file_fix {
+  print "Removing files\n";
+  for my $file (@@badfiles) {
+    next unless -f $file;
+    system('rm',$file);
+    print " * $file\n";
+  }
+}
+
+sub f1tmp_check {
+  my $local = md5sum('/etc/cron.d/f1tmp');
+  return ( 1, "Temp check properly configured." ) if $local eq $sums{'f1tmp'};
+  return ( 0, "Temp check needs to be installed." );
+}
+
+sub f1tmp_fix {
+  print "Configuring F1 temp check.\n";
+  my $ret = download('f1tmp','/etc/cron.d/f1tmp');
+  print " * /etc/cron.d/f1tmp\n";
+  `service crond restart`;
+}
+
+sub inittab_check {
+  my $ret = `egrep '^id:[0-6]:initdefault:\$' /etc/inittab | md5sum`;
+  return ( 1, "Booting without X" ) if $ret =~ /^9248484ede8de77f4666ef57a3a634aa/;
+  return ( 0, "Boot mode is mis-set." );
+}
+
+sub inittab_fix {
+  print "Configuring inittab.\n";
+  `cat /etc/inittab | sed -e 's/id:[0-6]:initdefault:/id:3:initdefault:/' > /tmp/inittab`;
+  `mv -f /tmp/inittab /etc/inittab`;
+  my @@check = &inittab_check();
+  warn "\nINITTAB FIX MAY HAVE FAILED!\n" unless $check[0] == 1;
+  $reboot++;
+}
+
+sub ldap_check {
+  my %checks = (
+    'nsswitch.conf' => '/etc/nsswitch.conf',
+    'system-auth'   => '/etc/pam.d/system-auth',
+    'authconfig'    => '/etc/sysconfig/authconfig'
+  );
+
+  for my $file ( keys %checks ) {
+    my $local = md5sum($checks{$file});
+    return ( 0, "LDAP needs to be configured." ) unless $sums{$file} eq $local;
+  }
+  return ( 1, "LDAP properly configured." );
+}
+
+sub ldap_fix {
+  print "Configuring LDAP logins.\n";
+
+  my %checks = (
+    'nsswitch.conf' => '/etc/nsswitch.conf',
+    'system-auth'   => '/etc/pam.d/system-auth',
+    'authconfig'    => '/etc/sysconfig/authconfig'
+  );
+
+  for my $file ( keys %checks ) {
+    my $ret = download($file,$checks{$file});
+  }
+
+  system('authconfig --kickstart --enableldap --enableldapauth --ldapserver=ldap.fusionone.com --ldapbasedn="dc=fusionone,dc=com"')
+}
+
+sub limits_check {
+  my $local = md5sum('/etc/security/limits.conf');
+  return ( 1, "Security limits properly configured." ) if $local eq $sums{'limits.conf'};
+  return ( 0, "Security limits need tuning." );
+}
+
+sub limits_fix {
+  print "Configuring kernel security limits.\n";
+  my $ret = download("limits.conf",'/etc/security/limits.conf');
+}
+
+sub log_check {
+  return ( 0, "Logrotate not configured." ) unless -f '/etc/logrotate.d/catalina.out';
+  my $local = md5sum('/etc/logrotate.d/catalina.out');
+  return ( 1, "Log rotation configured." ) if $local eq $sums{'catalina.out'};
+  return ( 0, "Logrotate not configured properly." );
+}
+
+sub log_fix {
+  print "Configuring log rotation.\n";
+  my $ret = download('catalina.out','/etc/logrotate.d/catalina.out');
+  print " * /etc/logrotate.d/catalina.out\n";
+}
+
+sub noboot_check {
+  my $serv = shift @@_;
+  my $check = is_bootservice($serv);
+  return ( 1, "$serv is not set to run at boot" ) unless $check;
+  return ( 0, "$serv configured at boot" );
+}
+
+sub noboot_fix {
+  my $serv = shift @@_;
+  print "Setting $serv to not run at boot.\n";
+  `chkconfig $serv off`;
+}
+
+sub ntp_check {
+  my $local = md5sum('/etc/ntp.conf');
+  return ( 1, "NTP properly configured." ) if $local eq $sums{'ntp.conf'};
+  return ( 0, "NTP needs to be configured." );
+}
+
+sub ntp_fix {
+  print "Configuring NTP.\n";
+  my $ret = download("ntp.conf",'/etc/ntp.conf');
+  `service ntpd stop`;
+  `ntpdate ntp.fusionone.com`;
+  `service ntpd restart`;
+  `hwclock --systohc`;
+}
+
+sub params_check {
+  `cat /etc/sysctl.conf | sed -e 's/$host/HOSTNAME/g' > /tmp/sysctl.conf`;
+  my $local = md5sum('/tmp/sysctl.conf');
+
+  if ( $type eq 'sync' ) {
+    return ( 1, "Kernel tweaks properly configured." ) if $local eq $sums{'sysctl.conf.sync'};
+  } else {
+    return ( 1, "Kernel tweaks properly configured." ) if $local eq $sums{'sysctl.conf'};
+  }
+
+  return ( 0, "Kernel tweaks need tuning." );
+}
+
+sub params_fix {
+  print "Configuring kernel tuning parameters.\n";
+  my $file = $type eq 'sync' ? "sysctl.conf.sync" : "sysctl.conf";
+  my $ret = download($file,'/tmp/sysctl.conf');
+  `cat /tmp/sysctl.conf | sed -e 's/HOSTNAME/$host/g' > /etc/sysctl.conf`;
+  $reboot++;
+}
+
+sub profile_check {
+  my $pro = md5sum('/root/.bash_profile');
+  my $rc  = md5sum('/root/.bashrc');
+
+  my $pro_sum = $local ? $sums{'bash_profile--local'} : $sums{'bash_profile'};
+
+  return ( 1, "Bash profile properly configured." ) 
+    if $pro eq $pro_sum and $rc eq $sums{'bashrc'};
+  return ( 0, "Bash profile improperly configured." );
+}
+
+sub profile_fix {
+  print "Configuring bash profile for root.\n";
+  my $pro = $local ? 'bash_profile--local' : 'bash_profile';
+
+  unless ( md5sum('/root/.bash_profile') eq $sums{$pro} ) {
+    print " * /root/.bash_profile\n";
+    system('mv /root/.bash_profile /tmp/old.bash_profile') unless -f '/tmp/old.bash_profile';
+    my $ret = download($pro,'/root/.bash_profile');
+  }
+
+  unless ( md5sum('/root/.bashrc') eq $sums{'bashrc'} ) {
+    print " * /root/.bashrc\n";
+    system('mv /root/.bashrc /tmp/old.bashrc') unless -f '/tmp/old.bashrc';
+    my $ret = download("bashrc",'/root/.bashrc');
+  }
+
+  system('source /root/.bash_profile');
+}
+
+sub snmp_check {
+  return ( 1, "SNMP properly configured." ) if -f '/etc/snmp/snmpd.conf';
+  return ( 0, "SNMP needs to be configured." );
+}
+
+sub snmp_fix {
+  print "Configuring SNMP.\n";
+  my $conf = $type eq 'sync' ? 'snmpd.conf.sync' : 'snmpd.conf';
+  my $ret = download($conf,'/etc/snmp/snmpd.conf');
+  `unset TZ`;
+}
+
+sub snmpscripts_check {
+  my @@scripts = qw/apacheVer.sh cpuLabel.sh procCPUUse.sh redhatVer.sh
+                   cpuCount.sh cpuSpeed.sh javaVersion.sh procMemUse.sh
+                   tomcatVer.sh/;
+
+  for my $script (@@scripts) {
+    return ( 0, "SNMP scripts need to be installed." )
+      unless md5sum("/fusionone/bin/$script") eq  $sums{"snmp/$script"};
+  }
+
+  return ( 1, "SNMP scripts installed." );
+}
+
+sub snmpscripts_fix {
+  print "Installing SNMP Scripts.\n";
+
+  my @@scripts = qw/apacheVer.sh cpuLabel.sh procCPUUse.sh redhatVer.sh
+                   cpuCount.sh cpuSpeed.sh javaVersion.sh procMemUse.sh
+                   tomcatVer.sh/;
+
+  for my $script (@@scripts) {
+    next if md5sum("/fusionone/bin/$script") eq $sums{"snmp/$script"};
+    my $ret = download("snmp/$script","/fusionone/bin/$script");
+    print " * /fusionone/bin/$script\n";
+  }
+}
+
+sub selinux_check {
+  my $local = md5sum('/etc/selinux/config');
+  return ( 1, "selinux properly configured." ) if $local eq $sums{selinux};
+  return ( 0, "selinux needs to be configured." );
+}
+
+sub selinux_fix {
+  print "Configuring selinux.\n";
+  my $ret = download('selinux','/etc/selinux/config');
+  system('echo 0 > /selinux/enforce');
+  $reboot++;
+}
+
+sub sudo_check {
+  my $local = md5sum('/etc/sudoers');
+  return ( 1, "sudo properly configured." ) if $local eq $sums{sudoers};
+  return ( 0, "sudo needs to be configured." );
+}
+
+sub sudo_fix {
+  print "Configuring sudo.\n";
+  my $ret = download('sudoers','/etc/sudoers');
+  system('chmod 0440 /etc/sudoers');
+}
+
+sub time_check {
+  my $check = `date +%Z`;
+  chomp $check;
+  return ( 0, "Current TZ is $check" ) unless $check eq 'UTC';;
+  return ( 1, "Current TZ is $check" );
+}
+
+sub time_fix {
+  print "Updating time zone to UTC\n";
+  my $ret = download('clock','/etc/sysconfig/clock');
+  `cp -v /usr/share/zoneinfo/UTC /etc/localtime`;
+}
+
+sub xinetd_check {
+  my $local = md5sum('/etc/xinetd.d/monitor-load');
+  return ( 1, "Xinetd monitors configured." ) if $local eq $sums{'monitor-load'};
+  return ( 0, "Xinetd monitors need to be loaded." );
+}
+
+sub xinetd_fix {
+  print "Configuring xinetd.\n";
+  my $ret = download("monitor-load",'/etc/xinetd.d/monitor-load');
+}
+
+### Non test subroutines
+
+# Debug printing routine
+
+sub debug {
+  return unless $debug;
+  for my $line (@@_) {
+    print "DEBUG: $line\n";
+  }
+}
+
+sub download {
+  my $file = shift @@_;
+  my $dest = shift @@_;
+  if ( $local ) {
+    return system("cp -f $local_url$file $dest");
+  } else {
+    return getstore($remote_url.$file,$dest);
+  }
+}
+
+sub download_to_scalar {
+  my $file = $_[0];
+  if ( $local ) {
+    open INFILE, '<', $local_url . $file;
+    my $raw = join '', <INFILE>;
+    close INFILE;
+    return $raw;
+  } else {
+    return get( $remote_url . $file );
+  }
+}
+
+sub error {
+  print "\nERROR! - Installation halted:\n\n";
+  map { print " Problem: $_\n" } @@_;
+  print "\n";
+  exit;
+}
+
+sub is_bootservice {
+  my $service = shift @@_;
+  my $ret = `chkconfig --list $service 2>\&1`;
+  return $ret =~ /3:on.+5:on/ ? 1:0;
+}
+
+sub md5sum {
+  my $file = shift @@_;
+  my $sum = `md5sum $file 2>\&1`;
+  $sum =~ /([0-9a-f]{32})/ or return undef;
+  return "$1";
+}
+
+sub timestamp {
+  open OUTFILE, '>/var/run/f1/last_ostune' or die "Can't open /var/run/f1/last_ostune for timestamp.";
+  print OUTFILE scalar(localtime) . "\n";
+  close OUTFILE;
+}
+
+sub which {
+  my $cmd = shift @@_;
+  my $ret = `which --skip-alias $cmd 2>\&1`;
+  return 0 if $ret =~ /^which: no/o;
+  chomp $ret;
+  return $ret;
+}
+
+@
+
+
+1.108
+log
+@More files to remove
+@
+text
+@d170 1
+a170 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+a175 11
+# Module checks
+
+unless ( $local ) {
+  eval { require LWP::Simple; };
+  if ( $@@ ) {
+    push @@error, "Perl module LWP::Simple is required and missing (Try: yum install perl-libwww-perl)";
+  } else {
+    LWP::Simple->import;
+  }
+}
+
+d196 19
+@
+
+
+1.107
+log
+@Done.
+@
+text
+@d146 11
+a156 1
+xmms xpdf xsane /;
+d170 1
+a170 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.106
+log
+@Will no longer check contents of SNMP config file.
+@
+text
+@d113 6
+a118 2
+                     gnome-libs libaio libgcc libstdc++ libstdc++-devel make
+                     pdksh sysstat xorg-x11-deprecated-libs/;
+d126 21
+a146 21
+gnome-games gnomemeeting gpdf gstreamer HelixPlayer hpoj hpoj-devel
+httpd-devel httpd-manual imagemagick inn inn-devel iiimf-csconv
+iiimf-docs iiimf-emacs iiimf-libs iiimf-server inews joe
+kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian
+kde-i18n-Catalan kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech
+kde-i18n-Danish kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French
+kde-i18n-German kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi
+kde-i18n-Hungarian kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese
+kde-i18n-Norwegian kde-i18n-Norwegian-Nynorsk kde-i18n-Polish
+kde-i18n-Portuguese kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian
+kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish
+kde-i18n-Tamil kde-i18n-Turkish kde-i18n-Ukrainian libmusicbrainz-devel
+libmusicbrainz linuxwacom lockdev mailman mgetty-sendfax mgetty-viewfax
+mgetty-voice miniChinput minicom mozilla mozilla-nspr mrtg mutt
+openoffice.org pidgin pilot-link planner postgresql postgresql-libs ppp
+quagga quagga-devel quagga-contrib rhythmbox rp-pppoe ruby ruby-devel
+ruby-docs ruby-libs ruby-mode ruby-tcltk sane-backends sane-frontends
+sound-juicer spamassassin squirrelmail taipeifonts tetex tetex-afm
+tetex-doc tetex-dvips tetex-fonts tetex-xdvi ttfprint thunderbird tora
+tsclient speex squid system-config-httpd valgrind vnc-server vsftpd
+webalizer xemacs xmms xpdf xsane /;
+d150 1
+a150 1
+my @@nondb_remove = qw/cups esound nautilus/;
+d160 1
+a160 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.105
+log
+@Fixed an old call to /tmp/css.dnr
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d925 1
+a925 3
+  my $local = md5sum('/etc/snmp/snmpd.conf');
+  my $conf = $type eq 'sync' ? 'snmpd.conf.sync' : 'snmpd.conf';
+  return ( 1, "SNMP properly configured." ) if $local eq $sums{$conf};
+@
+
+
+1.104
+log
+@Now updated.
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d671 1
+a671 1
+  system('touch /tmp/css.dnr');
+@
+
+
+1.103
+log
+@Do it on both np-change and accepted changes
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+a457 2
+&timestamp(); # Mark that we ran!
+
+d467 2
+@
+
+
+1.102
+log
+@Making os-tune dump it's runtime into /var/run/f1
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d448 1
+d458 2
+a495 5
+# Mark time
+open OUTFILE, '>/var/run/f1/last_ostune' or die "Can't open /var/run/f1/last_ostune for timestamp.";
+print OUTFILE scalar(localtime) . "\n";
+close OUTFILE;
+
+d1067 6
+@
+
+
+1.101
+log
+@Making os-tune dump it's runtime into /var/run/f1
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d494 1
+a494 1
+open OUTFILE, '>/var/run/f1/last_ostune' or die "Can't open /var/run/f1/last_ostune for timestamp.';
+@
+
+
+1.100
+log
+@Adding a backup script.
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d493 5
+@
+
+
+1.99
+log
+@Adding more output on fixes.
+@
+text
+@d96 1
+a96 1
+                       e2fsprogs-devel gdb mailx openssl/;
+d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.98
+log
+@Now with SNMP scripts from Bo.
+@
+text
+@d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d769 1
+d839 1
+d958 1
+a958 1
+    print " -> /fusionone/bin/$script\n";
+@
+
+
+1.97
+log
+@Updating ostune.
+@
+text
+@d142 3
+a144 1
+webalizer wireless-tools xemacs xmms xpdf xsane /;
+d156 1
+a156 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d386 4
+d933 27
+@
+
+
+1.96
+log
+@Page servers need default php.
+@
+text
+@d154 1
+a154 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d310 4
+d521 29
+@
+
+
+1.95
+log
+@Page servers need default php.
+@
+text
+@d123 2
+a124 2
+httpd-devel httpd-manual httpd-suexec imagemagick inn inn-devel
+iiimf-csconv iiimf-docs iiimf-emacs iiimf-libs iiimf-server inews joe
+d154 1
+a154 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.94
+log
+@More to delete
+@
+text
+@d107 1
+a107 1
+ xorg-x11-deprecated-libs.i386 xorg-x11-deprecated-libs.x86_64/;
+d123 20
+a142 21
+httpd httpd-devel httpd-manual httpd-suexec httpd-suexec imagemagick inn
+inn-devel iiimf-csconv iiimf-docs iiimf-emacs iiimf-libs iiimf-server
+inews joe kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British
+kde-i18n-Bulgarian kde-i18n-Catalan kde-i18n-Chinese
+kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish kde-i18n-Dutch
+kde-i18n-Finnish kde-i18n-French kde-i18n-German kde-i18n-Greek
+kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian kde-i18n-Icelandic
+kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+kde-i18n-Norwegian-Nynorsk kde-i18n-Polish kde-i18n-Portuguese
+kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian kde-i18n-Slovak
+kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish kde-i18n-Tamil
+kde-i18n-Turkish kde-i18n-Ukrainian libmusicbrainz-devel libmusicbrainz
+linuxwacom lockdev mailman mgetty-sendfax mgetty-viewfax mgetty-voice
+miniChinput minicom mozilla mozilla-nspr mrtg mutt openoffice.org pidgin
+pilot-link planner postgresql postgresql-libs ppp quagga quagga-devel
+quagga-contrib rhythmbox rp-pppoe ruby ruby-devel ruby-docs ruby-libs
+ruby-mode ruby-tcltk sane-backends sane-frontends sound-juicer
+spamassassin squirrelmail taipeifonts tetex tetex-afm tetex-doc
+tetex-dvips tetex-fonts tetex-xdvi ttfprint thunderbird tora tsclient
+speex squid system-config-httpd valgrind vnc-server vsftpd webalizer
+wireless-tools xemacs xmms xpdf xsane /;
+d145 1
+d154 1
+a154 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d211 1
+@
+
+
+1.93
+log
+@Now with requirements for amagent.
+@
+text
+@d55 1
+a55 1
+server.xml web.xml java1.6.0_04.tar.gz java-1.4.2_16.tar.gz/ ) {
+d75 2
+a76 1
+odbc.ini.rpmnew X11/fs/config.rpmnew| ) {
+d154 1
+a154 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d671 1
+a671 1
+  my @@remove = qw|/fusionone/ops_scripts /eric|;
+@
+
+
+1.92
+log
+@More files to delete.
+@
+text
+@d102 7
+a108 1
+# Additional pacakges required for sync servers
+d153 1
+a153 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d206 1
+@
+
+
+1.91
+log
+@Now working with a new location.
+@
+text
+@d52 4
+a55 1
+bonnie++-1.03a.tgz fms.tcpdump.gz fms.tar/ ) {
+d147 1
+a147 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.90
+log
+@Now working with a new location.
+@
+text
+@d45 2
+d144 1
+a144 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.89
+log
+@Possibly dangerous recursive delete added to dir check.
+@
+text
+@d142 1
+a142 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d657 2
+a658 2
+  my @@need   = ( '/fusionone/bin', '/etc/f1' );
+  my @@remove = ( '/fusionone/ops_scripts', '/eric' );
+@
+
+
+1.88
+log
+@Dangerous
+@
+text
+@d142 1
+a142 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d687 1
+a687 1
+    system('rm -rf $remove') if length $remove and -d $remove;
+@
+
+
+1.87
+log
+@Remove /eric directories.
+@
+text
+@d142 1
+a142 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d687 1
+a687 1
+    system('rmdir',$remove);
+@
+
+
+1.86
+log
+@Adding a selinux check. Correcing priority values. Also adding reboot statements.
+@
+text
+@a42 2
+my @@baddirs = qw|/eric|;
+
+d142 1
+a142 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d658 1
+a658 1
+  my @@remove = ( '/fusionone/ops_scripts' );
+@
+
+
+1.85
+log
+@Delete these files.
+@
+text
+@d42 3
+d144 1
+a144 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d316 4
+d323 1
+a323 1
+  $test{sudo}{priority} = 5;
+d328 1
+a328 1
+$test{'time zone'}{priority} = 5;
+d835 1
+d882 13
+@
+
+
+1.84
+log
+@Cleanup.
+@
+text
+@d47 3
+a49 2
+zero-file-deletes.pl zero-file-deletes.sh ppollard@@ops
+orajdbcclasses12_01.jar bonnie++-1.03a.tgz fms.tcpdump.gz fms.tar/ ) {
+d141 1
+a141 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.83
+log
+@More packages to remove, found by Bruce.
+@
+text
+@d46 3
+a48 1
+fixpage rwpage snmpd.conf fusion dump.cap f11/ ) {
+d140 1
+a140 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.82
+log
+@New files to remove.
+@
+text
+@d44 3
+a46 1
+for my $f ( qw/f1-install.pl os-tune.pl yum-install.pl nohup.out1 .bash_profile.detune .bashrc.detune java6.tgz ojdbc14.jar reset_user.pl/ ) {
+d102 25
+a126 24
+my @@remove = qw/arts bluez-bluefw bluez-libs bluez-libs-devel Canna
+Canna-libs Canna-devel cups-devel cyrus-imapd cyrus-imapd-utils dovecot
+emacs emacs-common emacs-leim emacspeak evolution exim exim-doc exim-mon
+firefox FreeWnn-libs FreeWnn-devel gaim gimp gimp-print gnome-games
+gnomemeeting gpdf HelixPlayer hpoj hpoj-devel httpd httpd-devel
+httpd-manual httpd-suexec httpd-suexec imagemagick inn inn-devel
+iiimf-csconv iiimf-docs iiimf-emacs iiimf-libs iiimf-server inews joe
+kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian
+kde-i18n-Catalan kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech
+kde-i18n-Danish kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French
+kde-i18n-German kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi
+kde-i18n-Hungarian kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese
+kde-i18n-Norwegian kde-i18n-Norwegian-Nynorsk kde-i18n-Polish
+kde-i18n-Portuguese kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian
+kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish
+kde-i18n-Tamil kde-i18n-Turkish kde-i18n-Ukrainian libmusicbrainz-devel
+libmusicbrainz linuxwacom lockdev mailman mgetty-sendfax mgetty-viewfax
+mgetty-voice miniChinput minicom mozilla mozilla-nspr mrtg mutt
+openoffice.org pidgin pilot-link planner postgresql postgresql-libs ppp
+quagga quagga-devel quagga-contrib rhythmbox rp-pppoe ruby ruby-devel
+ruby-docs ruby-libs ruby-mode ruby-tcltk sane-backends sane-frontends
+sound-juicer spamassassin squirrelmail taipeifonts tetex tetex-afm
+tetex-doc tetex-dvips tetex-fonts tetex-xdvi ttfprint thunderbird tora
+tsclient squid system-config-httpd valgrind vnc-server vsftpd webalizer
+d138 1
+a138 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.81
+log
+@More to remove
+@
+text
+@d103 4
+a106 3
+firefox gaim gimp gimp-print gnome-games gnomemeeting gpdf HelixPlayer
+httpd httpd-devel httpd-manual httpd-suexec httpd-suexec hpoj hpoj-devel
+FreeWnn-libs FreeWnn-devel imagemagick inn inn-devel joe
+d115 3
+a117 4
+kde-i18n-Tamil kde-i18n-Turkish kde-i18n-Ukrainian iiimf-csconv
+iiimf-docs iiimf-emacs iiimf-libs iiimf-server linuxwacom lockdev
+libmusicbrainz-devel libmusicbrainz mailman mgetty-sendfax
+mgetty-viewfax mgetty-voice minicom mozilla mozilla-nspr mrtg mutt
+d124 1
+a124 1
+wireless-tools xemacs xmms xpdf xsane/;
+d135 1
+a135 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.80
+log
+@Adding a lib bruce found to remove
+@
+text
+@d104 20
+a123 20
+httpd httpd-devel httpd-manual httpd-suexec httpd-suexec imagemagick inn
+inn-devel joe kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British
+kde-i18n-Bulgarian kde-i18n-Catalan kde-i18n-Chinese
+kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish kde-i18n-Dutch
+kde-i18n-Finnish kde-i18n-French kde-i18n-German kde-i18n-Greek
+kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian kde-i18n-Icelandic
+kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+kde-i18n-Norwegian-Nynorsk kde-i18n-Polish kde-i18n-Portuguese
+kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian kde-i18n-Slovak
+kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish kde-i18n-Tamil
+kde-i18n-Turkish kde-i18n-Ukrainian iiimf-csconv iiimf-docs iiimf-emacs
+iiimf-libs iiimf-server linuxwacom lockdev libmusicbrainz-devel
+libmusicbrainz mailman mgetty-sendfax mgetty-viewfax mgetty-voice
+minicom mozilla mozilla-nspr mrtg mutt openoffice.org pidgin pilot-link
+planner postgresql postgresql-libs ppp quagga quagga-devel
+quagga-contrib rhythmbox rp-pppoe ruby ruby-devel ruby-docs ruby-libs
+ruby-mode ruby-tcltk sane-backends sane-frontends sound-juicer
+spamassassin squirrelmail taipeifonts tetex tetex-afm tetex-doc
+tetex-dvips tetex-fonts tetex-xdvi ttfprint thunderbird tora tsclient
+squid system-config-httpd valgrind vnc-server vsftpd webalizer
+d135 1
+a135 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.79
+log
+@Whee! More tp remove
+@
+text
+@d60 5
+a64 4
+fonts/local.conf.rpmnew ksysguarddrc.rpmnew sysconfig/saslauthd.rpmnew
+sysconfig/lm_sensors.rpmnew squid/squid.conf.rpmnew pam.d/other.rpmnew
+pam.d/kcheckpass.rpmnew pam.d/kdm.rpmnew pam.d/kscreensaver.rpmnew
+pam.d/kdm-np.rpmnew odbc.ini.rpmnew X11/fs/config.rpmnew| ) {
+d100 11
+a110 10
+my @@remove = qw/arts bluez-bluefw bluez-libs bluez-libs-devel cups-devel
+cyrus-imapd cyrus-imapd-utils dovecot emacs emacs-common emacs-leim
+emacspeak evolution exim exim-doc exim-mon firefox gaim gimp gimp-print
+gnome-games gnomemeeting gpdf HelixPlayer httpd httpd-devel httpd-manual
+httpd-suexec httpd-suexec imagemagick inn inn-devel joe kde-i18n-Bengali
+kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian kde-i18n-Catalan
+kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish
+kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French kde-i18n-German
+kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian
+kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+d115 9
+a123 8
+iiimf-libs iiimf-server linuxwacom lockdev mailman mgetty-sendfax
+mgetty-viewfax mgetty-voice minicom mozilla mozilla-nspr mrtg mutt
+openoffice.org pidgin pilot-link planner postgresql postgresql-libs ppp
+quagga quagga-devel quagga-contrib rhythmbox rp-pppoe ruby ruby-devel
+ruby-docs ruby-libs ruby-mode ruby-tcltk sane-backends sane-frontends
+sound-juicer spamassassin squirrelmail taipeifonts tetex tetex-afm
+tetex-doc tetex-dvips tetex-fonts tetex-xdvi ttfprint thunderbird tora
+tsclient squid system-config-httpd valgrind vnc-server vsftpd webalizer
+d135 1
+a135 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.78
+log
+@Adding files to remove.
+@
+text
+@d103 1
+a103 1
+httpd-suexec httpd-suexec imagemagick joe kde-i18n-Bengali
+d132 1
+a132 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.77
+log
+@One more to remove.
+@
+text
+@d44 1
+a44 1
+for my $f ( qw/f1-install.pl os-tune.pl yum-install.pl nohup.out1 .bash_profile.detune .bashrc.detune/ ) {
+d48 19
+d132 1
+a132 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.76
+log
+@Removing IIIMF
+@
+text
+@d95 1
+a95 1
+mgetty-viewfax mgetty-voice minicom mozilla mozilla-nspr mutt
+d113 1
+a113 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.75
+log
+@More southlake
+@
+text
+@d93 10
+a102 9
+kde-i18n-Turkish kde-i18n-Ukrainian linuxwacom lockdev mailman
+mgetty-sendfax mgetty-viewfax mgetty-voice minicom mozilla mozilla-nspr
+mutt openoffice.org pidgin pilot-link planner postgresql postgresql-libs
+ppp quagga quagga-devel quagga-contrib rhythmbox rp-pppoe ruby
+ruby-devel ruby-docs ruby-libs ruby-mode ruby-tcltk sane-backends
+sane-frontends sound-juicer spamassassin squirrelmail taipeifonts tetex
+tetex-afm tetex-doc tetex-dvips tetex-fonts tetex-xdvi ttfprint
+thunderbird tora tsclient squid system-config-httpd valgrind vnc-server
+vsftpd webalizer wireless-tools xemacs xmms xpdf xsane/;
+d113 1
+a113 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.74
+log
+@Trimming some service if local is invoked. This is for Verizon. Also offering a manual-input of type.
+@
+text
+@d112 1
+a112 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d322 5
+a326 3
+$test{'clock fix'}{check} = \&clockfix_check;
+$test{'clock fix'}{fix}   = \&clockfix_fix;
+$test{'clock fix'}{priority} = 7;
+@
+
+
+1.73
+log
+@Making yum workable.
+@
+text
+@d7 1
+a7 1
+  ./os-tune.pl [-y|--local]
+d24 1
+a24 1
+my $yes = 0;
+d26 1
+d30 2
+a31 1
+  $yes = 1 if $argv eq '-y';
+d112 1
+a112 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d156 7
+a162 5
+my $type = $host =~ /sync/i ? 'sync'
+         : $host =~ /fms/i  ? 'fms'
+         : $host =~ /page/i ? 'page'
+         : $host =~ /db/i   ? 'db'
+         : 'unknown';
+d270 5
+a274 3
+$test{LDAP}{check} = \&ldap_check;
+$test{LDAP}{fix}   = \&ldap_fix;
+$test{LDAP}{priority} = 3;
+d284 5
+a288 3
+$test{sudo}{check} = \&sudo_check;
+$test{sudo}{fix}   = \&sudo_fix;
+$test{sudo}{priority} = 5;
+d296 5
+a300 3
+$test{bind}{check} = \&bind_check;
+$test{bind}{fix}   = \&bind_fix;
+$test{bind}{priority} = 5;
+d306 5
+a310 3
+$test{NTP}{check} = \&ntp_check;
+$test{NTP}{fix}   = \&ntp_fix;
+$test{NTP}{priority} = 5;
+@
+
+
+1.72
+log
+@I think ostune works local.
+@
+text
+@d118 1
+a118 1
+if ( $local ) {
+@
+
+
+1.71
+log
+@Updating for local usage.
+@
+text
+@d57 2
+a58 2
+my @@required = qw/bind expect net-snmp ntp perl-DBD-MySQL perl-LockFile-Simple
+                  screen sendmail sysstat wireshark xinetd/;
+d105 2
+a106 2
+my $url = 'http://ops.fusionone.com/confs/linux-systems/';
+my $liburl = 'http://ops.fusionone.com/confs/lib/';
+d118 7
+a124 5
+eval { require LWP::Simple; };
+if ( $@@ ) {
+  push @@error, "Perl module LWP::Simple is required and missing (Try: yum install perl-libwww-perl)";
+} else {
+  LWP::Simple->import;
+d197 1
+a197 1
+my $rawsums = get($url.'sums.txt') or error("Downlaoding checksums failed.");
+a204 8
+$rawsums = get($liburl.'sums.txt') or error("Downlaoding checksums failed.");
+my %libs;
+
+for my $line ( split '\n', $rawsums ) {
+  next unless $line =~ /^([0-9a-f]+)\s+(\S+)\s*$/;
+  $libs{$2} = $1;
+}
+
+d441 1
+a441 1
+  my $ret = getstore($url.'named.conf','/etc/named.conf');
+d443 1
+a443 1
+    my $ret = getstore($url.$file,"/var/named/$file");
+d527 1
+a527 1
+  my $ret = getstore($url.'clockfix','/etc/cron.d/clockfix');
+d529 1
+a529 1
+  $ret = getstore($url.'clockfix.sh','/fusionone/bin/clockfix.sh');
+d561 2
+a562 2
+  my $ret = getstore($url.'css_restart.sh','/fusionone/bin/css_restart.sh');
+  my $ret = getstore($url.'css','/etc/cron.d/css');
+d591 1
+a591 1
+  my $ret = getstore($url.'restart','/fusionone/bin/restart');
+d603 1
+a603 1
+  my $ret = getstore($url.'css_copy','/etc/cron.d/css_copy');
+d667 1
+a667 1
+  my $ret = getstore($url.'f1tmp','/etc/cron.d/f1tmp');
+d710 1
+a710 1
+    my $ret = getstore($url.$file,$checks{$file});
+d724 1
+a724 1
+  my $ret = getstore($url."limits.conf",'/etc/security/limits.conf');
+d736 1
+a736 1
+  my $ret = getstore($url.'catalina.out','/etc/logrotate.d/catalina.out');
+d760 1
+a760 1
+  my $ret = getstore($url."ntp.conf",'/etc/ntp.conf');
+d783 1
+a783 1
+  my $ret = getstore($url.$file,'/tmp/sysctl.conf');
+d790 3
+d794 1
+a794 1
+    if $pro eq $sums{'bash_profile'} and $rc eq $sums{'bashrc'};
+d800 1
+d802 1
+a802 1
+  unless ( md5sum('/root/.bash_profile') eq $sums{'bash_profile'} ) {
+d805 1
+a805 1
+    my $ret = getstore($url."bash_profile",'/root/.bash_profile');
+d811 1
+a811 1
+    my $ret = getstore($url."bashrc",'/root/.bashrc');
+d827 1
+a827 1
+  my $ret = getstore($url.$conf,'/etc/snmp/snmpd.conf');
+d839 1
+a839 1
+  my $ret = getstore($url.'sudoers','/etc/sudoers');
+d852 1
+a852 1
+  my $ret = getstore($url.'clock','/etc/sysconfig/clock');
+d864 1
+a864 1
+  my $ret = getstore($url."monitor-load",'/etc/xinetd.d/monitor-load');
+d867 2
+d878 22
+@
+
+
+1.70
+log
+@Skipping the INSTALL directory
+@
+text
+@d7 1
+a7 1
+  ./os-tune.pl [-y]
+d24 7
+a30 1
+my $yes = $ARGV[0] eq '-y' ?1:0;
+d110 1
+a110 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.69
+log
+@Typo check.
+@
+text
+@d51 2
+a52 2
+my @@required = qw/bind expect net-snmp ntp perl-DBD-MySQL screen sendmail
+                  sysstat wireshark xinetd/;
+d104 1
+a104 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.68
+log
+@Adding new details
+@
+text
+@d104 1
+a104 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d537 1
+a537 1
+  return ( 0, "Root has a crontab entry.." ) if -f '/var/spool/cron/root';
+d645 1
+a645 1
+    return ( 0, "Found files to remove.." ) if -f $file;
+d674 1
+a674 1
+  return ( 0, "Boot mode is mis-set.." );
+d781 1
+a781 1
+  print "Configuring kernel security limits.\n";
+@
+
+
+1.67
+log
+@Now with a css restart script
+@
+text
+@d104 1
+a104 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d592 1
+@
+
+
+1.66
+log
+@Making the package selection smarter for DBs
+@
+text
+@d104 1
+a104 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d325 8
+a335 4
+  
+  $test{'css copy'}{check} = \&css_copy_check;
+  $test{'css copy'}{fix}   = \&css_copy_fix;
+  $test{'css copy'}{priority} = 7;
+d582 12
+@
+
+
+1.65
+log
+@Now educated with required DB packages.
+@
+text
+@d72 24
+a95 23
+my @@remove = qw/arts bluez-bluefw bluez-libs bluez-libs-devel cups
+cups-devel cyrus-imapd cyrus-imapd-utils dovecot emacs emacs-common
+emacs-leim emacspeak esound evolution exim exim-doc exim-mon firefox
+gaim gimp gimp-print gnome-games gnomemeeting gpdf HelixPlayer httpd
+httpd-devel httpd-manual httpd-suexec httpd-suexec imagemagick joe
+kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian
+kde-i18n-Catalan kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech
+kde-i18n-Danish kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French
+kde-i18n-German kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi
+kde-i18n-Hungarian kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese
+kde-i18n-Norwegian kde-i18n-Norwegian-Nynorsk kde-i18n-Polish
+kde-i18n-Portuguese kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian
+kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish
+kde-i18n-Tamil kde-i18n-Turkish kde-i18n-Ukrainian linuxwacom lockdev
+mailman mgetty-sendfax mgetty-viewfax mgetty-voice minicom mozilla
+mozilla-nspr mutt nautilus openoffice.org pidgin pilot-link planner
+postgresql postgresql-libs ppp quagga quagga-devel quagga-contrib
+rhythmbox rp-pppoe ruby ruby-devel ruby-docs ruby-libs ruby-mode
+ruby-tcltk sane-backends sane-frontends sound-juicer spamassassin
+squirrelmail taipeifonts tetex tetex-afm tetex-doc tetex-dvips
+tetex-fonts tetex-xdvi ttfprint thunderbird tora tsclient squid
+system-config-httpd valgrind vnc-server vsftpd webalizer wireless-tools
+xemacs xmms xpdf xsane/;
+d104 1
+a104 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d155 2
+@
+
+
+1.64
+log
+@Adding packages to remove.
+@
+text
+@d46 2
+d63 7
+d103 1
+a103 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d151 1
+d154 2
+d325 4
+d575 12
+@
+
+
+1.63
+log
+@Now with catalina.out logrotation.
+@
+text
+@d63 3
+a65 2
+my @@remove = qw/arts cups cups-devel cyrus-imapd cyrus-imapd-utils
+dovecot emacs emacs-common emacs-leim emacspeak esound evolution firefox
+d77 9
+a85 7
+mailman minicom mozilla mozilla-nspr mutt nautilus openoffice.org pidgin
+pilot-link planner postgresql postgresql-libs ppp rhythmbox rp-pppoe
+ruby ruby-devel ruby-docs ruby-libs ruby-mode ruby-tcltk sane-backends
+sane-frontends sound-juicer spamassassin squirrelmail taipeifonts tetex
+tetex-afm tetex-doc tetex-dvips tetex-fonts tetex-xdvi ttfprint
+thunderbird tora tsclient squid system-config-httpd valgrind vnc-server
+webalizer wireless-tools xemacs xmms xpdf xsane/;
+d94 1
+a94 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d214 6
+@
+
+
+1.62
+log
+@Minor wordsmithing
+@
+text
+@d91 1
+a91 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d268 4
+d670 12
+@
+
+
+1.61
+log
+@updating for sdifferent sysctls by server type
+@
+text
+@d26 2
+d41 1
+a41 1
+# Make sure that ALL run-on-boot services are also in the @@required above.
+d43 1
+a43 1
+my @@boot = qw/named ntpd sendmail snmpd sysstat xinetd/;
+d52 1
+d62 1
+d91 1
+a91 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d135 3
+a137 1
+         : $host =~ /page/i ? 'page' : 'unknown';
+@
+
+
+1.60
+log
+@It now pulls checksums for libs as well.
+@
+text
+@d87 1
+a87 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d691 7
+a697 1
+  return ( 1, "Kernel tweaks properly configured." ) if $local eq $sums{'sysctl.conf'};
+d703 2
+a704 1
+  my $ret = getstore($url."sysctl.conf",'/tmp/sysctl.conf');
+a705 1
+  $reboot++;
+@
+
+
+1.59
+log
+@Fixing sudoers
+@
+text
+@d83 1
+d87 1
+a87 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+a165 1
+
+d173 8
+d205 2
+@
+
+
+1.58
+log
+@Fixed the inittab fix. Was broken.
+@
+text
+@d86 1
+a86 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d741 1
+@
+
+
+1.57
+log
+@Fixing LDAP
+@
+text
+@d86 1
+a86 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d602 1
+a602 1
+  `cat /etc/inittab | sed -e 's/id:[0-6]:initdefault:/id:3:initdefault:/' | > /tmp/inittab`;
+@
+
+
+1.56
+log
+@Fixing bad snmp local.
+@
+text
+@d27 3
+a29 2
+my @@commands = qw/cat chkconfig chmod chown crontab date egrep grep hostname
+                  hwclock ln md5sum mkdir mv rm rmdir sed sysctl touch wc yum/;
+d47 2
+a48 1
+my @@required = qw/bind expect net-snmp ntp screen sendmail sysstat wireshark xinetd/;
+d72 2
+a73 2
+mailman minicom mozilla mozilla-nspr mutt mysql nautilus openoffice.org
+pidgin pilot-link planner postgresql postgresql-libs ppp rhythmbox rp-pppoe
+d86 1
+a86 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d635 2
+d714 2
+@
+
+
+1.55
+log
+@Adding Sudo
+@
+text
+@d31 1
+a31 1
+my @@badfiles; 
+d84 1
+a84 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.54
+log
+@Fixing the detune problem.
+@
+text
+@d84 1
+a84 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d236 4
+d726 11
+@
+
+
+1.53
+log
+@now checking for /etc/f1 and also quietly doing sysctl
+@
+text
+@d31 5
+a35 1
+my @@badfiles = qw|/root/f1-install.pl /root/os-tune.pl /root/nohup.out1|;
+d84 1
+a84 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d697 1
+a697 1
+    system('mv /root/.bash_profile /root/.bash_profile.detune') unless -f '/root/.bash_profile.detune';
+d703 1
+a703 1
+    system('mv /root/.bashrc /root/.bashrc.detune') unless -f '/root/.bashrc.detune';
+@
+
+
+1.52
+log
+@Reloading tuning parameters.
+@
+text
+@d80 1
+a80 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d122 5
+a126 1
+push @@required, @@required_sync if $host =~ /sync/i;
+d220 4
+d264 1
+a264 1
+if ( $host =~ /fms/i ) {
+d270 1
+a270 1
+if ( $host =~ /sync/i ) {
+d356 1
+a356 1
+system('sysctl -p'); # Return kernel
+d522 17
+a538 3
+  return ( 0, "Old ops_scripts directory is in place." ) if -d '/fusionone/ops_scripts';
+  return ( 1, "F1 directories in place." ) if -d '/fusionone/bin/';
+  return ( 0, "F1 directories are missing. " );
+d542 11
+a552 9
+  unless ( -d '/fusionone/bin' ) {
+    print "Creating base directories.\n";
+    system('mkdir --mode=0770 -p /fusionone/bin/');
+    system('chown f1luser.data /fusionone/bin/');
+  }
+  # Skip removing this if the actual file is there and will flag the css correction test
+  if ( -d '/fusionone/ops_scripts' and not -f '/fusionone/ops_scripts/css_restart.sh' ) {
+    print "Removing old directories.\n";
+    system('rmdir /fusionone/ops_scripts/');
+d599 28
+d706 1
+a706 1
+  my $conf = $host =~ /sync/i ? 'snmpd.conf.sync' : 'snmpd.conf';
+d713 1
+a713 1
+  my $conf = $host =~ /sync/i ? 'snmpd.conf.sync' : 'snmpd.conf';
+@
+
+
+1.51
+log
+@Better capturing of sync libs.
+@
+text
+@d28 1
+a28 1
+                  hwclock ln md5sum mkdir mv rm rmdir sed touch wc yum/;
+d80 1
+a80 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d348 3
+a583 1
+  $reboot++;
+@
+
+
+1.50
+log
+@Now taking care of the CSS cron job too.
+@
+text
+@d44 2
+a45 3
+my @@required_sync = qw/compat-gcc-32 compat-gcc-32-c++ curl-devel 
+                       e2fsprogs-devel gdb krb5-libs libstdc++ libidn 
+                       mailx openssl-devel zlib-devel/;
+d47 4
+a50 1
+push @@required_sync, 'libstdc++.i386'; # compat-libstdc++ - redhat?
+d80 1
+a80 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.49
+log
+@Now mussing about with cron jobs.
+@
+text
+@d78 1
+a78 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+a245 4
+$test{crontab}{check} = \&crontab_check;
+$test{crontab}{fix}   = \&crontab_fix;
+$test{crontab}{priority} = 7;
+
+d266 5
+a270 1
+# Priority 10 - Boot configuration
+d479 1
+a479 1
+  return ( 1, "CSS restart script in place." ) if $css eq $sums{'css'} and $script eq $sums{'css_restart.sh'};
+a493 2
+  `service crond restart`;
+
+d497 6
+a502 1
+    push @@warns, "It looks like an old version of css_restart.sh was installs. This means there is probably an old cron job in root's crontab you will need to remove.";
+d504 2
+@
+
+
+1.48
+log
+@Keeping that quiet
+@
+text
+@d27 2
+a28 2
+my @@commands = qw/cat chkconfig chmod chown date egrep hostname hwclock ln
+                  md5sum mkdir mv rm rmdir sed touch yum/;
+a75 1
+#my $ruler = "\n". join("\n", ( '='x80 ), ( 'YUM 'x20 ), ( '='x80 )) . "\n\n";
+d78 1
+a78 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d187 1
+a187 1
+my %test;
+d246 4
+d403 7
+d432 1
+d434 6
+a439 1
+    print " * Removing orphaned init.d file: httpd\n";
+d461 15
+@
+
+
+1.47
+log
+@Whee
+@
+text
+@d79 1
+a79 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d418 1
+a418 1
+    system('service autorestart stop');
+@
+
+
+1.46
+log
+@Fixing the loop.
+@
+text
+@d79 1
+a79 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d473 1
+a473 1
+  return ( 0, "Old ops_scrtips directory is in place." ) if -d '/fusionone/ops_scripts';
+d484 3
+a486 2
+  if ( -d '/fusionone/ops_scripts' ) {
+    print "Creating base directories.\n";
+@
+
+
+1.45
+log
+@Fixing the loop.
+@
+text
+@d79 1
+a79 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d501 1
+a501 1
+    system('rm',$file)
+@
+
+
+1.44
+log
+@needs a test for the or statement.
+@
+text
+@d31 1
+a31 1
+my @@badfiles = qw|/root/f1-install.pl /root/os-tune.pl|;
+d79 1
+a79 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d500 2
+a501 1
+    system('rm',$file) if -f $file;
+@
+
+
+1.43
+log
+@Adding files to remove.
+@
+text
+@d79 1
+a79 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d398 1
+a398 1
+  $error++ if -f '/etc/init.d/httpd' or '/etc/init.d/off/httpd';
+@
+
+
+1.42
+log
+@Checking for combo situation.
+@
+text
+@d30 11
+a71 6
+# Services that should be booted or not
+# Make sure that ALL run-on-boot services are also in the @@required above.
+
+my @@boot = qw/named ntpd sendmail snmpd sysstat xinetd/;
+my @@noboot = qw/cups httpd iptables irda squid/;
+
+d79 1
+a79 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d203 6
+d490 15
+@
+
+
+1.41
+log
+@Typo
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d387 1
+a387 1
+  $error++ if -f '/etc/init.d/httpd';
+@
+
+
+1.40
+log
+@Now trimming dead dirs.
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d412 1
+a412 1
+    print " * Removing orphaned inid: httpd\n";
+@
+
+
+1.39
+log
+@Now trimming some bade files.
+@
+text
+@d28 1
+a28 1
+                  md5sum mkdir rm rmdir sed touch yum/;
+d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d462 1
+d464 1
+a464 1
+  return ( 0, "F1 directories missing. " );
+d468 9
+a476 3
+  print "Creating base directories.\n";
+  system('mkdir --mode=0770 -p /fusionone/bin/');
+  system('chown f1luser.data /fusionone/bin/');
+@
+
+
+1.38
+log
+@Checks for symlink.
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d387 2
+d410 4
+d456 1
+@
+
+
+1.37
+log
+@type
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d443 1
+a443 1
+  system('ln -s /fusionone/ss/init.d/css /etc/init.d/css');
+@
+
+
+1.36
+log
+@More command line checks.
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d456 1
+a456 1
+  reutrn ( 0, "F1 directories missing. " );
+@
+
+
+1.35
+log
+@Now with priorities.
+@
+text
+@d28 1
+a28 1
+                  md5sum mkdir sed touch yum/;
+d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.34
+log
+@Adding some directory info.
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d181 1
+a181 1
+# Checks
+d185 4
+a188 3
+$test{bind}{check} = \&bind_check;
+$test{bind}{fix}   = \&bind_fix;
+$test{bind}{priority} = 5;
+a193 4
+$test{'clock fix'}{check} = \&clockfix_check;
+$test{'clock fix'}{fix}   = \&clockfix_fix;
+$test{'clock fix'}{priority} = 5;
+
+d198 2
+d202 1
+a202 1
+$test{inittab}{priority} = 5;
+d206 1
+a206 1
+$test{'Kern limits'}{priority} = 5;
+d210 11
+a220 1
+$test{'Kern params'}{priority} = 5;
+a225 4
+$test{Profile}{check} = \&profile_check;
+$test{Profile}{fix}   = \&profile_fix;
+$test{Profile}{priority} = 5;
+
+a229 4
+$test{'time zone'}{check} = \&time_check;
+$test{'time zone'}{fix}   = \&time_fix;
+$test{'time zone'}{priority} = 5;
+
+d234 9
+a242 1
+# FMS checks
+d247 1
+a247 1
+  $test{'f1tmp'}{priority} = 5;
+a249 2
+# Sync checks
+
+d253 1
+a253 1
+  $test{'css restart'}{priority} = 5;
+d256 1
+a256 1
+# Services to run at boot
+@
+
+
+1.33
+log
+@More to trim
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d187 5
+d195 5
+d203 1
+d207 1
+d211 1
+d215 1
+d219 1
+d223 1
+d227 1
+d231 1
+d238 1
+d246 1
+d256 1
+d264 1
+d272 1
+a272 1
+for my $test ( sort { lc($a) cmp lc($b) } keys %test ) {
+d372 31
+d411 1
+a411 1
+  print "Configuring bind.\n";
+d413 1
+a414 6
+
+  unless ( -d '/fusionone/bin/' ) {
+    system('mkdir --mode=0770 -p /fusionone/bin/') unless -d '/fusionone/bin/';
+    system('chown f1luser.data /fusionone/bin/');
+  }
+
+a430 5
+  unless ( -d '/fusionone/bin/' ) {
+    system('mkdir --mode=0770 -p /fusionone/bin/') unless -d '/fusionone/bin/';
+    system('chown f1luser.data /fusionone/bin/');
+  }
+
+d447 11
+d540 4
+a543 2
+  my $local = md5sum('/root/.bash_profile');
+  return ( 1, "Bash profile properly configured." ) if $local eq $sums{'bash_profile'};
+d549 12
+a560 2
+  `mv /root/.bash_profile /root/.bash_profile.detune`;
+  my $ret = getstore($url."bash_profile",'/root/.bash_profile');
+@
+
+
+1.32
+log
+@Now with a clock fix.
+@
+text
+@d54 2
+a55 2
+pidgin pilot-link planner postgresql postgresql-libs rhythmbox ruby
+ruby-devel ruby-docs ruby-libs ruby-mode ruby-tcltk sane-backends
+d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.31
+log
+@Adding arch versions into the installed hash.
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d188 6
+d200 2
+a201 2
+$test{inittab}{check} = \&inittab_check;
+$test{inittab}{fix}   = \&inittab_fix;
+a205 3
+$test{NTP}{check} = \&ntp_check;
+$test{NTP}{fix}   = \&ntp_fix;
+
+d350 23
+@
+
+
+1.30
+log
+@Found the c++ lib ffor centos.
+@
+text
+@d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d127 2
+a128 2
+  next unless $line =~ /^([\w\-\+]+)\./;
+  $installed{$1}++;
+@
+
+
+1.29
+log
+@More to delete
+@
+text
+@d36 2
+a37 1
+                       # compat-libstdc++ - redhat?
+d74 1
+a74 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.28
+log
+@More to remove.:
+"
+@
+text
+@d39 19
+a57 18
+my @@remove = qw/cups cups-devel cyrus-imapd cyrus-imapd-utils dovecot emacs
+emacs-common emacs-leim emacspeak evolution firefox gaim gimp gimp-print 
+gnome-games gnomemeeting gpdf HelixPlayer httpd httpd-devel httpd-manual 
+httpd-suexec httpd-suexec imagemagick joe kde-i18n-Bengali 
+kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian kde-i18n-Catalan 
+kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish 
+kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French kde-i18n-German 
+kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian 
+kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+kde-i18n-Norwegian-Nynorsk kde-i18n-Polish kde-i18n-Portuguese
+kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian kde-i18n-Slovak
+kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish kde-i18n-Tamil
+kde-i18n-Turkish kde-i18n-Ukrainian linuxwacom lockdev mailman minicom 
+mozilla mozilla-nspr mutt mysql openoffice.org pidgin pilot-link 
+postgresql postgresql-libs ruby ruby-devel ruby-docs ruby-libs ruby-mode 
+ruby-tcltk sane-backends sane-frontends spamassassin squirrelmail 
+taipeifonts tetex tetex-afm tetex-doc tetex-dvips tetex-fonts tetex-xdvi 
+ttfprint thunderbird squid system-config-httpd valgrind vnc-server 
+d73 1
+a73 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.27
+log
+@More packages to remove.
+@
+text
+@d56 2
+a57 2
+thunderbird squid system-config-httpd valgrind vnc-server webalizer 
+wireless-tools xemacs xmms xpdf xsane/;
+d72 1
+a72 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.26
+log
+@Adding packages to remove.
+@
+text
+@d27 2
+a28 2
+my @@commands = qw/cat chkconfig chmod chown date egrep hostname hwclock md5sum
+                  mkdir sed touch yum/;
+d39 9
+a47 9
+my @@remove = qw/cups-devel cyrus-imapd cyrus-imapd-utils dovecot emacs
+evolution firefox gaim gimp gimp-print gnome-games gnomemeeting gpdf
+HelixPlayer httpd httpd-devel httpd-manual httpd-suexec httpd-suexec
+imagemagick joe kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British
+kde-i18n-Bulgarian kde-i18n-Catalan kde-i18n-Chinese
+kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish kde-i18n-Dutch
+kde-i18n-Finnish kde-i18n-French kde-i18n-German kde-i18n-Greek
+kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian kde-i18n-Icelandic
+kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+d57 1
+a57 1
+xemacs xmms xpdf xsane/;
+d72 1
+a72 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d365 1
+@
+
+
+1.25
+log
+@now including used shell utils.
+@
+text
+@d51 7
+a57 6
+kde-i18n-Turkish kde-i18n-Ukrainian linuxwacom mailman mozilla
+mozilla-nspr mutt mysql openoffice.org pidgin pilot-link postgresql
+postgresql-libs ruby ruby-devel ruby-docs ruby-libs ruby-mode ruby-tcltk
+sane-backends sane-frontends spamassassin squirrelmail taipeifonts tetex
+tetex-afm tetex-doc tetex-dvips tetex-fonts tetex-xdvi thunderbird squid
+system-config-httpd valgrind vnc-server webalizer xemacs xmms xpdf xsane/;
+d72 1
+a72 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.24
+log
+@Now with a css script check and install.
+@
+text
+@d27 2
+a28 1
+my @@commands = qw/cat chkconfig date egrep hostname hwclock md5sum sed yum/;
+d71 1
+a71 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.23
+log
+@Changing the user re is in and nologin for f1luser
+@
+text
+@a30 1
+my @@required_sync = qw/compat-gcc-32 compat-gcc-32-c++ gdb libstdc++/; # compat-libstdc++ - redhat?
+d32 4
+a35 1
+push @@required_sync, qw/curl-devel e2fsprogs-devel krb5-libs libidn openssl-devel zlib-devel/;
+d70 1
+a70 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d215 7
+d263 4
+a266 1
+my $reboot = 0;
+d300 4
+d343 30
+@
+
+
+1.22
+log
+@Now with a service check.
+@
+text
+@d33 2
+d68 1
+a68 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.21
+log
+@Adding wireshark and sar to required install.
+@
+text
+@d30 1
+a30 1
+my @@required = qw/bind expect net-snmp ntp screen sysstat wireshark xinetd/;
+d54 3
+a56 1
+my @@boot = qw/named ntpd sendmail snmpd xinetd/;
+d66 1
+a66 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d258 10
+d271 1
+d277 1
+@
+
+
+1.20
+log
+@Adjusting directories.
+@
+text
+@d30 1
+a30 1
+my @@required = qw/bind expect net-snmp ntp screen xinetd/;
+d64 1
+a64 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.19
+log
+@Updating the installed with working v5
+@
+text
+@d59 2
+d64 1
+a64 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d138 1
+a138 1
+my $rawsums = get('http://ops.fusionone.com/confs/sums.txt') or error("Downlaoding checksums failed.");
+d284 1
+a284 1
+  my $ret = getstore("http://ops.fusionone.com/confs/named.conf",'/etc/named.conf');
+d286 1
+a286 1
+    my $ret = getstore("http://ops.fusionone.com/confs/$file","/var/named/$file");
+d319 1
+a319 1
+  my $ret = getstore("http://ops.fusionone.com/confs/f1tmp",'/etc/cron.d/f1tmp');
+d346 1
+a346 1
+  my $ret = getstore("http://ops.fusionone.com/confs/limits.conf",'/etc/security/limits.conf');
+d371 1
+a371 1
+  my $ret = getstore("http://ops.fusionone.com/confs/ntp.conf",'/etc/ntp.conf');
+d387 1
+a387 1
+  my $ret = getstore("http://ops.fusionone.com/confs/sysctl.conf",'/tmp/sysctl.conf');
+d401 1
+a401 1
+  my $ret = getstore("http://ops.fusionone.com/confs/bash_profile",'/root/.bash_profile');
+d414 1
+a414 1
+  my $ret = getstore("http://ops.fusionone.com/confs/$conf",'/etc/snmp/snmpd.conf');
+d427 1
+a427 1
+  my $ret = getstore('http://ops.fusionone.com/confs/clock','/etc/sysconfig/clock');
+d439 1
+a439 1
+  my $ret = getstore("http://ops.fusionone.com/confs/monitor-load",'/etc/xinetd.d/monitor-load');
+@
+
+
+1.18
+log
+@Now with yum output.
+@
+text
+@d3 2
+d62 1
+a62 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.17
+log
+@Now with yum output.
+@
+text
+@d57 2
+a58 1
+my $ruler = "\n". join("\n", ( '='x80 ), ( 'YUM 'x20 ), ( '='x80 )) . "\n\n";
+d60 1
+a60 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.16
+log
+@reordering work
+@
+text
+@d57 3
+a59 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d150 4
+a153 1
+  `yum -y install $install`;
+d161 3
+a163 1
+  `yum -y remove $remove`;
+@
+
+
+1.15
+log
+@Updating so that it prints what's happening with -y
+@
+text
+@d57 1
+a57 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d127 15
+a158 13
+### Checksums
+
+print "Retrieveing checksums.\n";
+
+my $rawsums = get('http://ops.fusionone.com/confs/sums.txt') or error("Downlaoding checksums failed.");
+
+my %sums;
+
+for my $line ( split '\n', $rawsums ) {
+  next unless $line =~ /^([0-9a-f]+)\s+(\S+)\s*$/;
+  $sums{$2} = $1;
+}
+
+@
+
+
+1.14
+log
+@Fixing an snmpd error on sync servers. Saving a copy of the profile if fixed. And also giving a more helpful error message on LWP::Simple'
+@
+text
+@d57 1
+a57 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d129 2
+a130 2
+        join(", ", @@to_install), "\n\nCTRL-C to avoid installing packages. ENTER to continue.\n"
+        unless $yes;
+d137 2
+a138 3
+  print "\nThe following packages need to be removed:\n\t",
+        join(", ", @@to_remove), "\n\nCTRL-C to avoid removing packages. ENTER to continue.\n"
+        unless $yes;
+d400 2
+a401 1
+  my $ret = getstore("http://ops.fusionone.com/conf/$conf",'/etc/snmp/snmpd.conf');
+@
+
+
+1.13
+log
+@Adding some stuff to delete and removing the useless use.
+@
+text
+@d57 1
+a57 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d67 1
+a67 1
+  push @@error, "Perl module LWP::Simple is required and missing (This is often part of the perl-libwww pacgake.)";
+d387 1
+d401 1
+a401 1
+  my $ret = getstore("http://ops.fusionone.com/confs/snmpd.conf",'/etc/snmp/'.$conf);
+@
+
+
+1.12
+log
+@Updating.
+@
+text
+@a14 1
+use LWP::Simple;
+d45 1
+a45 1
+mozilla-nspr mutt mysql openoffice.org pilot-link postgresql
+d49 1
+a49 1
+system-config-httpd valgrind webalizer xemacs xmms xpdf xsane/;
+d57 1
+a57 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.11
+log
+@Adding more info.:
+@
+text
+@d5 1
+a5 1
+  ./os-tune.pl
+d10 3
+d23 2
+d26 1
+a26 1
+my @@commands = qw/cat chkconfig date hostname hwclock md5sum sed yum/;
+d58 1
+a58 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d130 3
+a132 2
+        join(", ", @@to_install), "\n\nCTRL-C to avoid installing packages. ENTER to continue.\n";
+  <STDIN>;
+d139 3
+a141 2
+        join(", ", @@to_remove), "\n\nCTRL-C to avoid removing packages. ENTER to continue.\n";
+  <STDIN>;
+d172 3
+d232 1
+a232 2
+print "\n\n" . scalar(@@error) . " error(s) need to be corrected.\n",
+      "\n\tCTRL-C to avoid making these corrections.\n\tENTER to continue.\n";
+d234 3
+a236 1
+<STDIN>;
+d311 15
+@
+
+
+1.10
+log
+@Typo
+@
+text
+@d28 14
+a41 13
+my @@remove = qw/cyrus-imapd cyrus-imapd-utils dovecot emacs evolution
+firefox gaim gimp gimp-print gnome-games gnomemeeting gpdf HelixPlayer
+httpd httpd-devel httpd-manual httpd-suexec httpd-suexec imagemagick joe
+kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British kde-i18n-Bulgarian
+kde-i18n-Catalan kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Czech
+kde-i18n-Danish kde-i18n-Dutch kde-i18n-Finnish kde-i18n-French
+kde-i18n-German kde-i18n-Greek kde-i18n-Hebrew kde-i18n-Hindi
+kde-i18n-Hungarian kde-i18n-Icelandic kde-i18n-Italian kde-i18n-Japanese
+kde-i18n-Norwegian kde-i18n-Norwegian-Nynorsk kde-i18n-Polish
+kde-i18n-Portuguese kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian
+kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish
+kde-i18n-Tamil kde-i18n-Turkish kde-i18n-Ukrainian linuxwacom mailman
+mozilla mozilla-nspr mutt mysql openoffice.org pilot-link postgresql
+d53 1
+a53 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d125 1
+a125 1
+        join(", ", @@to_install), "\n\nCTRL-C to avoid installing packages.\n";
+d133 1
+a133 1
+        join(", ", @@to_remove), "\n\nCTRL-C to avoid removing packages.\n";
+@
+
+
+1.9
+log
+@Now checking for bash profiles.:
+@
+text
+@d52 1
+a52 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d131 1
+a131 1
+  print "\nThe following packages need to be remove:\n\t",
+@
+
+
+1.8
+log
+@Adding packages to remove.
+@
+text
+@d30 11
+a40 11
+imagemagick joe kde-i18n-Bengali kde-i18n-Brazil kde-i18n-British
+kde-i18n-Bulgarian kde-i18n-Catalan kde-i18n-Chinese
+kde-i18n-Chinese-Big5 kde-i18n-Czech kde-i18n-Danish kde-i18n-Dutch
+kde-i18n-Finnish kde-i18n-French kde-i18n-German kde-i18n-Greek
+kde-i18n-Hebrew kde-i18n-Hindi kde-i18n-Hungarian kde-i18n-Icelandic
+kde-i18n-Italian kde-i18n-Japanese kde-i18n-Norwegian
+kde-i18n-Norwegian-Nynorsk kde-i18n-Polish kde-i18n-Portuguese
+kde-i18n-Punjabi kde-i18n-Romanian kde-i18n-Serbian kde-i18n-Slovak
+kde-i18n-Slovenian kde-i18n-Spanish kde-i18n-Swedish kde-i18n-Tamil
+kde-i18n-Turkish kde-i18n-Ukrainian linuxwacom mailman mozilla
+mozilla-nspr mutt mysql openoffice.org pilot-link postgresql
+d43 2
+a44 5
+tetex-afm tetex-doc tetex-dvips tetex-fonts tetex-xdvi thunderbird
+valgrind webalizer xemacs xmms xpdf xsane/;
+
+#httpd httpd-devel httpd-manual httpd-suexec httpd-suexec 
+#system-config-httpd squid
+d52 1
+a52 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d164 2
+a165 2
+$test{'time zone'}{check} = \&time_check;
+$test{'time zone'}{fix}   = \&time_fix;
+d170 6
+d353 11
+d366 2
+a367 1
+  return ( 1, "SNMP properly configured." ) if $local eq $sums{'snmpd.conf'};
+d373 2
+a374 1
+  my $ret = getstore("http://ops.fusionone.com/confs/snmpd.conf",'/etc/snmp/snmpd.conf');
+@
+
+
+1.7
+log
+@More files to remove.
+@
+text
+@d46 3
+d55 1
+a55 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+@
+
+
+1.6
+log
+@Safer hostname check.
+@
+text
+@d27 19
+d52 1
+a52 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d100 2
+a103 2
+my %packages; map { $packages{$_} = 0; } @@required;
+
+d106 1
+a106 4
+  my $installed = $1;
+  for my $package ( @@required ) {
+    $packages{$package}++ if lc($package) eq lc($installed);
+  }
+d109 2
+a110 1
+my @@install;
+d112 5
+a116 2
+for my $package ( sort {lc($a) cmp lc($b)} keys %packages ) {
+  push @@install, $package unless $packages{$package};
+d119 4
+a122 1
+if (scalar(@@install)) {
+d124 1
+a124 1
+        join(", ", @@install), "\n\nCTRL-C to avoid installing packages.\n";
+d126 1
+a126 1
+  my $install = join(' ',@@install);
+d130 8
+d418 1
+@
+
+
+1.5
+log
+@Now with kernal tweaks.
+@
+text
+@d33 1
+a33 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d70 4
+a73 2
+my $host = `hostname -s`;
+chomp $host;
+@
+
+
+1.4
+log
+@I think it works.
+@
+text
+@d21 1
+a21 1
+my @@commands = qw/chkconfig date hwclock md5sum yum/;
+d24 2
+a25 3
+my @@required = qw/bind compat-gcc-32 compat-gcc-32-c++ expect gdb 
+                 libstdc++ net-snmp ntp screen xinetd/;
+             # compat-libstdc++ - redhat?
+d29 1
+a29 1
+my @@noboot = qw/iptables/;
+d68 7
+d125 6
+d140 7
+d187 2
+d196 1
+a196 1
+  `service $serv stop`;
+d201 1
+a201 1
+  `service $serv restart`;
+d207 2
+d248 24
+d300 14
+d373 1
+a373 1
+  my $sum = `md5sum $file`;
+@
+
+
+1.3
+log
+@tweaking the OS tuning.
+@
+text
+@d16 1
+a16 3
+my @@commands = qw/cat chkconfig chmod mv yum/;
+
+my $debug = 1;
+d20 13
+a32 1
+# Bootstrap
+d34 1
+a34 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d69 30
+d105 2
+d108 2
+a109 1
+  print "$line\n";
+d112 1
+a112 1
+exit;
+d114 1
+a114 1
+# Misc package work
+d116 2
+a117 1
+print "Loading misc packages.\n\n";
+d119 2
+a120 1
+`yum -y install compat-gcc-32 compat-gcc-32-c++ compat-libstdc++ expect gdb libstdc++ screen`;
+d122 2
+a123 1
+# Sync only for gdb?
+d125 2
+a126 1
+# Check time
+d128 1
+a128 1
+print "Fixing time to UTC and syncing via NTP.\n\n";
+d130 6
+a135 2
+my $ret = getstore('http://ops.fusionone.com/confs/clock','/etc/sysconfig/clock');
+`cp -v /usr/share/zoneinfo/UTC /etc/localtime`;
+d137 6
+a142 3
+`yum -y install ntp`;
+`chkconfig ntpd on`;
+my $ret = getstore("http://ops.fusionone.com/confs/ntp.conf",'/etc/ntp.conf');
+d144 1
+a144 3
+`service ntpd stop`;
+`ntpdate ntp.fusionone.com`;
+`service ntpd restart`;
+d146 1
+a146 1
+# Sendmail
+d148 9
+a156 1
+print "Configuring sendmail\n\n";
+d158 4
+a161 2
+`chkconfig sendmail on`;
+`service sendmail restart`;
+d163 2
+a164 1
+# SNMP
+d166 1
+a166 1
+print "Configuring SNMP.\n\n";
+d168 3
+a170 4
+`yum -y install net-snmp`;
+my $ret = getstore("http://ops.fusionone.com/confs/snmpd.conf",'/etc/snmp/snmpd.conf');
+`chkconfig snmpd on`;
+`service snmpd restart`;
+d172 1
+a172 1
+# xinetd
+d174 4
+a177 1
+print "Configuring xinetd.\n\n";
+d179 4
+a182 4
+`yum -y install xinetd`;
+my $ret = getstore("http://ops.fusionone.com/confs/monitor-load",'/etc/xinetd.d/monitor-load');
+`chkconfig xinetd on`;
+`service xinetd restart`;
+d184 1
+a184 1
+# bind
+d186 1
+a186 1
+print "Configuring bind.\n\n";
+d188 1
+a188 2
+`yum -y install bind`;
+my $ret = getstore("http://ops.fusionone.com/confs/named.conf",'/etc/named.conf');
+d190 4
+a193 2
+for my $file (qw/localdomain.zone localhost.zone named.broadcast named.ca named.ip6.local named.local named.zero/) {
+  my $ret = getstore("http://ops.fusionone.com/confs/$file","/var/named/$file");
+d196 6
+a201 2
+`chkconfig named on`;
+`service named restart`;
+d203 1
+a203 1
+print "\n/etc/resolv.conf\n\n";
+d205 3
+a207 1
+my $resolvefile = "domain $domain\nnameserver 127.0.0.1\n#nameserver $nameserver\nsearch $domain\n";
+d209 2
+a210 3
+open OUTFILE, '>/etc/resolv.conf' or die "Can't write /etc/resolv.conf";
+print OUTFILE $resolvefile;
+close OUTFILE;
+d212 75
+a286 1
+### Subroutines
+d304 13
+@
+
+
+1.2
+log
+@os-tune.pl now started?
+@
+text
+@d16 1
+a16 1
+my @@commands = qw/awk cat chkconfig chmod cut egrep grep head ls mkdir mv yum/;
+d24 1
+a24 1
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+d27 13
+a39 1
+print "Looking for command line utils.\n";
+d41 4
+a44 1
+die("'which' is not installed.") unless -e '/usr/bin/which';
+d46 1
+a46 1
+my @@error;
+d59 1
+a59 1
+exit;
+d61 1
+a61 1
+### Resolve conf
+d63 1
+a63 1
+print "\n/etc/resolv.conf\n\n";
+d65 3
+a67 2
+my $resolvefile = "domain $domain\nnameserver 127.0.0.1\n#nameserver $nameserver\nsearch $domain\n";
+print $resolvefile;
+d69 1
+a69 1
+<STDIN>;
+d98 2
+a99 2
+`chkconfig sendmail off`;
+`service sendmail stop`;
+d133 1
+a133 1
+# Check users and groups
+d135 1
+a135 22
+my $info = `cat /etc/group | grep data`;
+
+unless ( $info =~ /data:x/ ) {
+  `groupadd -g 500 data`;
+  print "Creating group: data\n";
+}
+
+$info = `cat /etc/passwd | grep f1luser`;
+
+unless ( $info =~ /f1luser:x/ ) {
+  `useradd f1luser -u 500 -G data -s /bin/bash -d /fusionone/ -c "F1 Local User"`;
+  print "Creating user: f1luser\n";
+}
+
+$info = `cat /etc/passwd | egrep "^re:x"`;
+
+unless ( $info =~ /^re:x/ ) {
+  `useradd re -u 502 -G data -s /bin/bash -d /fusionone/ -p '\$1\$ZLO7tkXy\$x1KfbWQY6vCjTNWHgrA3L0' -c "F1 Installer User"`;
+  print "Creating user: re\n";
+}
+
+# Install system files
+d141 2
+@
+
+
+1.1
+log
+@Splitting ostune off from f1-install.pl
+@
+text
+@d7 3
+d16 1
+a16 4
+# Conf
+
+my $os = 'cent5';
+my $ver = 4;
+d18 2
+a20 35
+my $debug = 1;
+
+# Souce files
+
+my %sources;
+
+$sources{rhel4}{4}{conf}   = 'conf.v4.tar.gz';
+$sources{rhel4}{4}{apache} = 'apache-2.0.59-rhel4.tar.gz';
+$sources{rhel4}{4}{java}   = 'java-1.4.2_16.tar.gz';
+$sources{rhel4}{4}{tomcat} = 'tomcat-4.1.29.tar.gz';
+
+$sources{rhel4}{5}{conf}   = 'conf.v5.tar.gz';
+$sources{rhel4}{5}{apache} = 'apache-2.0.59-rhel4.tar.gz';
+$sources{rhel4}{5}{java}   = 'java-1.5.0_12.tar.gz';
+$sources{rhel4}{5}{tomcat} = 'tomcat-5.5.20.tar.gz';
+
+$sources{cent4}{4}{conf}   = 'conf.v4.tar.gz';
+$sources{cent4}{4}{apache} = 'apache-2.0.59-rhel4.tar.gz';
+$sources{cent4}{4}{java}   = 'java-1.4.2_16.tar.gz';
+$sources{cent4}{4}{tomcat} = 'tomcat-4.1.29.tar.gz';
+
+$sources{cent5}{4}{conf}   = 'conf.v4.tar.gz';
+$sources{cent5}{4}{apache} = 'apache-2.0.61-centos5.tar.gz';
+$sources{cent5}{4}{java}   = 'java-1.4.2_16.tar.gz';
+$sources{cent5}{4}{tomcat} = 'tomcat-4.1.29.tar.gz';
+
+# Populate
+
+my $conf   = $sources{$os}{$ver}{conf}   || die "Missing source files.";
+my $apache = $sources{$os}{$ver}{apache} || die "Missing source files.";
+my $java   = $sources{$os}{$ver}{java}   || die "Missing source files.";
+my $tomcat = $sources{$os}{$ver}{tomcat} || die "Missing source files.";
+
+my @@commands = qw/awk cat chkconfig chmod cut egrep grep head ifconfig ls
+                  groupadd gunzip mkdir mv route rm tar useradd yum/;
+d24 2
+a25 2
+my $ver = (split ' ', '$Revision: 1.1 $')[1];
+print "F1 App installer $ver running.\n\n";
+d29 2
+d44 1
+a44 155
+# Read in the conf file(s)
+
+my %conf;
+
+for my $file ( 'install.conf', @@ARGV ) {
+  if ( -f $file ) {
+    print "Found configuration file: $file\n";
+    open INFILE, '<', $file;
+    while ( my $line = <INFILE> ) {
+      next if $line =~ /^\s*\#/;
+      next unless $line =~ /^\s*(\w+)\s+(\w.*)\s*$/;
+      $conf{$1} = $2;
+      &debug("'$1' -> '$2'");
+    }
+    close INFILE;
+    last;
+  }
+}
+
+my $cust_abbrev = $conf{CUSTOMER_ABBREV};
+
+if ( $ARGV[0] and not $cust_abbrev ) {
+  $cust_abbrev = $ARGV[0];
+  print "Customer info from command line: $ARGV[0] $ARGV[1]\n";
+}
+
+my $customer = $conf{CUSTOMER} || $ARGV[1] || $cust_abbrev;
+my $domain   = $conf{DOMAIN} || 'fusionone.com';
+my $external = $conf{EXTERNAL};
+
+my $ip      = $conf{IP};
+my $machine = $conf{HOST};
+my $mactype = $conf{TYPE};
+
+unless ( $ip ) {
+  my $raw = `ifconfig \`route | grep default | head -1 | awk '{ print \$8 }'\` | grep 'inet addr' | awk '{ print \$2 }' | cut -d ':' -f2`;
+  chomp $raw;
+  $ip = $raw if $raw =~ /^\d+\.\d+\.\d+\.\d+$/;
+}
+
+die "Insufficient configuration data! - Customer Abbreviation" unless $cust_abbrev;
+die "Insufficient configuration data! - Current IP" unless $ip;
+die "Insufficient configuration data! - External name" unless $external;
+
+my %hosts;
+
+print "\nSorting out host info:\n";
+
+# Servers
+
+for my $type ( qw/DB NAS FMS PAGE SYNC/ ) {
+  if ( $conf{$type.'01'} ) {
+    for ( my $i = 1; $conf{$type.sprintf('%0.2d',$i)}; $i++ ) {
+      my $key = $type.sprintf('%0.2d',$i);
+      print " -> $key from conf\n";
+      my $name = $conf{$key};
+      my $ipaddr = lookup($name);
+      die("There configured server for $key ($name) is not in DNS.") unless $ipaddr;
+
+      $hosts{$key}{name} = $name;
+      $hosts{$key}{ip}   = $ipaddr;
+
+      if ( $ipaddr eq $ip and not $machine ) {
+        $machine = $name;
+        $mactype = lc($type);
+      }
+    }
+  } else {
+    for ( my $i = 1; 1; $i++ ) {
+      my $key = $type.sprintf('%0.2d',$i);
+      my $name = $cust_abbrev . '-' . lc($type) . sprintf('%0.2d',$i);
+      last unless my $ipaddr = lookup($name);
+      die("There appear to be no $type servers configured.") if $i == 1 and not $ipaddr;
+      if ( $ipaddr ) {
+        print " -> $key from DNS\n";
+
+        $hosts{$key}{name} = $name;
+        $hosts{$key}{ip}   = $ipaddr;
+
+        if ( $ipaddr eq $ip and not $machine ) {
+          $machine = $name;
+          $mactype = lc($type);
+        }
+      }
+    }
+  }
+}
+
+# Internal interfaces
+
+for my $type ( qw/FMS PAGE SYNC/ ) {
+  my $key = $type.'_INT';
+
+  if ( $conf{$key} ) {
+    print " -> $key from conf\n";
+
+    my $name = $conf{$key};
+    my $ipaddr = lookup($name);
+    die("There configured server for $key ($name) is not in DNS.") unless $ipaddr;
+
+    $hosts{$key}{name} = $name;
+    $hosts{$key}{ip}   = $ipaddr;
+
+  } else {
+    print " -> $key from DNS\n";
+
+    my $name = $cust_abbrev . '-' . lc($type) . '-internal';;
+    my $ipaddr = lookup($name);
+    die("There appear to be no $key in DNS. ($name)") unless $ipaddr;
+
+    $hosts{$key}{name} = $name;
+    $hosts{$key}{ip}   = $ipaddr;
+
+  }
+}
+
+# Virtual DB interfaces
+
+for my $rawkey ( keys %hosts ) {
+  next unless $rawkey =~ /^DB\d+$/;
+  my $key = $rawkey . 'V';
+
+  if ( $conf{$key} ) {
+    print " -> $key from conf\n";
+
+    my $name = $conf{$key};
+    my $ipaddr = lookup($name);
+    die("There configured server for $key ($name) is not in DNS.") unless $ipaddr;
+
+    $hosts{$key}{name} = $name;
+    $hosts{$key}{ip}   = $ipaddr;
+
+  } else {
+    print " -> $key from DNS\n";
+
+    my $name = $cust_abbrev . '-' . lc($rawkey) . '-v';
+    my $ipaddr = lookup($name);
+    die("There appear to be no $key in DNS. ($name)") unless $ipaddr;
+
+    $hosts{$key}{name} = $name;
+    $hosts{$key}{ip}   = $ipaddr;
+
+  }
+}
+
+### Check settings
+
+my $key = $mactype . '_INT';
+$key =~ tr/a-z/A-Z/;
+my $internal = $hosts{$key}{name};
+
+die "Couldn't determine my IP" unless $ip;
+die "Couldn't determine my hostname" unless $machine;
+die "Couldn't determine my F1 server type" unless $mactype;
+die "Couldn't determine my F1 internal alias" unless $internal;
+a52 18
+### Hosts file
+
+print "\n/etc/hosts\n\n";
+
+my $hostfile = "127.0.0.1\tlocalhost localhost.localdomain\n";
+for my $key ( sort { $a cmp $b || $a <=> $b }  keys %hosts ) {
+  $hostfile .= "$hosts{$key}{ip}\t$hosts{$key}{name} $hosts{$key}{name}.$domain\n";
+}
+print $hostfile;
+
+print "\nI am a $mactype server called $machine ($ip)\n";
+
+print "\nCustomer and abbrev: $customer $cust_abbrev\n";
+
+print "\nSubstitution variables:\n\n\tMACHINENAME -> $machine\n\tMACHINEIP -> $ip\n\tINTERNALNAME -> $internal\n";
+
+print "\nIncredible destruction will occur of the NAS is mounted in /fusionone.\nI will overwrite system files and delete everything in /fusionone\nIt's your own damn fault if it breaks things. YMMV\n\nCTRL-C NOW or things happen! RETURN to continue\n";
+
+a141 4
+open OUTFILE, '>/etc/hosts' or die "Can't write /etc/hosts";
+print OUTFILE $hostfile;
+close OUTFILE;
+
+a145 68
+# Install apps
+
+my @@apps = ( $java, $tomcat );
+push @@apps, $apache if ( $mactype eq 'fms' or $mactype eq 'page' );
+
+# Preclean?
+
+print `ls /fusionone | grep -v lost+found | awk '{ print "rm -rfv \\"/fusionone/" \$1 "\\""}' | /bin/sh`;
+print `rm -fv /usr/local/bin/cronolog`;
+
+# Make directories
+
+print `mkdir -pv /fusionone/{bin,logs,papi_cache,webapps} 2>&1`;
+
+print `mkdir -pv /fusionone/{fms_shared,vault/$customer/{1,2,3,4}}` if $mactype eq 'fms';
+
+# Install raw apps
+
+for my $app ( @@apps ) {
+  print "Downloading $app\n";
+  $app =~ /^(\w+)-/ or die "Can't parse app name of $app";
+  my $short = $1;
+  my $ret = getstore("http://ops.fusionone.com/applications/$app",$app);
+  print " -> Installing\n";
+  print `tar xzf $app && mv $short /fusionone && rm $app`;
+}
+
+# Cronolog
+
+print "Downloading cronolog.gz\n";
+my $ret = getstore("http://ops.fusionone.com/applications/cronolog.gz",'cronolog.gz');
+print " -> Installing\n";
+print `gunzip cronolog.gz && mv cronolog /fusionone/bin && chmod 0755 /fusionone/bin/cronolog`;
+
+# F1
+
+print "Downloading f1.gz\n";
+my $ret = getstore("http://ops.fusionone.com/applications/f1.gz",'f1.gz');
+print " -> Installing\n";
+print `gunzip f1.gz && mv f1 /fusionone/bin && chmod 0755 /fusionone/bin/f1`;
+
+# Configure
+
+print "Configuring\n";
+
+print " -> sourcing $conf\n";
+
+my $ret = getstore("http://ops.fusionone.com/applications/$conf",'conf.tar.gz');
+print `tar xzf conf.tar.gz`;
+
+print " -> server.xml\n";
+&move_and_sub('conf/'.lc($mactype).'-server.xml','/fusionone/tomcat/conf/server.xml');
+
+unless ( $mactype eq 'sync' ) {
+  print " -> httpd.conf\n";
+  &move_and_sub('conf/'.lc($mactype).'-httpd.conf','/fusionone/apache/conf/httpd.conf');
+  print " -> workers2.properties\n";
+  &move_and_sub('conf/'.lc($mactype).'-workers2.properties','/fusionone/apache/conf/workers2.properties');
+}
+
+`rm -rf conf conf.tar.gz`;
+
+# Correct ownership
+
+print `chown -R f1luser.data /fusionone/`;
+
+### Subroutines
+
+a161 29
+# Performs nslookup on a name. will append the full domain if missing.
+
+sub lookup {
+  my $name = shift @@_;
+  $name .= '.' . $domain unless $name =~ /$domain$/;
+  &debug("DNS lookup $name");
+  
+  #return undef unless my $ipaddr = gethostbyname($name);
+  #my $ret = inet_ntoa($ipaddr);
+  #&debug("Got $ret");
+  #return $ret;
+
+  my $ret = `host $name`;
+  if ( $ret =~ /has address (\d+\.\d+\.\d+\.\d+)/ ) {
+    my $val = $1;
+    &debug("DNS lookup of $name returned $val");
+    return $val;
+  } else { 
+    &debug("DNS lookup of $name failed");
+    return undef;
+  }
+}
+
+sub move_and_sub {
+  my $infile  = shift @@_;
+  my $outfile = shift @@_;
+  `cat $infile | sed -e 's/MACHINENAME/$machine/g' | sed -e 's/MACHINEIP/$ip/g' | sed -e 's/INTERNALNAME/$internal/g' | sed -e 's/EXTERNALNAME/$external/g' > $outfile`;
+}
+
+@
+

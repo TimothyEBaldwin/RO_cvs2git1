@@ -1,0 +1,43 @@
+Revision history for Perl extension Rcs::Parser.
+
+0.08  2014/03/09
+
+	Adding a POD test
+	Autogenerating meta data
+
+0.07  2014/02/22
+
+	Including the Artistic 2.0 license as LICENSE
+	Updating meta: perl base, provdies, resources and correct license
+
+0.06  2014/02/21
+
+	Corrected sorting error in all_versions() (RT #92644)
+	Corrected all_versions() to cache with $self instead of "our" (RT #92643)
+	 - Thanks to Slaven Rezic for reporting both of the above
+
+	Updated all tests to use Test::Simple
+	Added a unit test for all_versions()
+	Updated META.yaml and Makefile.PL with dependencies
+	Corrected version info throuought documentation and code
+
+0.03  2008/10/23
+
+	Corrected documentation to match module name.
+	Separated parsing of the RCS data from reading the file.
+	Added the ability to parse an RCS file from a scalar variable.
+
+0.02  2004/04/02
+
+	Properly blessing into the class name.
+	Full copyright and license information.	
+
+0.01  2003/09/23
+
+	Conversion to the more correctly named Rcs::Parser for CPAN.
+
+0.00  2002/03/25 - 2003/09/23
+
+	Originally RCS.pm for use as the engine for analyzing code usage
+	 in the "CVS Utilities" package being developed at:
+	 http://www.crescendo.net/software/cvs/
