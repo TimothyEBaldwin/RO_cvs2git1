@@ -1,0 +1,374 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use constant { true => 1, false => 0 };
+use IPC::System::Simple qw(system systemx capture capturex);
+use Cwd qw(abs_path);
+
+my $here;
+
+BEGIN {
+  $here = abs_path($0);
+  $here =~ s:/[^/]*$::;
+  require "$here/Rcs-Parser/lib/Rcs/Parser.pm";
+  $here =~ s:/[^/]*$::;
+}
+
+use Getopt::Long;
+use Sort::Versions;
+use Data::Dumper;
+use Time::Local;
+use Clone 'clone';
+$Data::Dumper::Purity = 1;
+
+my $cvsroot;
+GetOptions("cvsroot=s" => \$cvsroot);
+$cvsroot = abs_path($cvsroot);
+
+my %modules;
+
+
+sub load_rcs {
+  my ($rcsfile, $leaf) = @_;
+
+  print "Loading RCS file  $rcsfile, leaf $leaf.\n";
+
+  $leaf =~ s/!//g;
+
+  my $rcs = new Rcs::Parser;
+  $rcs->load($rcsfile);
+
+  #print Dumper(\$rcs);
+
+
+  my %commits;
+  my $tag2commit = {};
+  my %branches;
+
+  foreach my $i (keys %{$rcs->{rcs}}) {
+    next unless $i =~ m/^((?:[0-9]+\.)*)([0-9]+)\.([0-9]+)$/;
+    my $c = $rcs->{rcs}->{$i};
+    #print Dumper($c);
+    $c->{revision} = $i;
+    my ($year, $month, $day, $hour, $minute, $second) = split(/\./, $c->{date});
+    $year += 1900 if $year < 100;
+    $c->{time} = timegm($second, $minute, $hour, $day, $month - 1, $year);
+    $c->{branch_pos} = $3;
+    $c->{parents} = [];
+    $c->{tags} = ["cvs_$i"];
+    $c->{log} = "Log Message Missing" unless defined ($c->{log});
+    $c->{module} = $rcs;
+    chomp $c->{log};
+    chomp $c->{author};
+    $commits{$i} = $c;
+    #print $i, " - ", $1 . "0." . $2, "\n";
+    unless(defined($branches{$1 . "0." .$2}) && $branches{$1 . "0." .$2}->{branch_pos} > $c->{branch_pos}) {
+      $branches{$1 . "0." .$2} = $c;
+    }
+  }
+
+ #print Dumper(\%commits);
+
+  foreach (keys %commits) {
+    my ($a, $b) = m/^(.*\.)(\d*)$/;
+    $b -= 1;
+    push @{$commits{$_}->{parents}}, $commits{$a.$b} if defined($commits{$a.$b});
+  }
+
+  foreach my $i (values %commits) {
+    push @{$commits{$i->{branches}}->{parents}}, $i if defined($i->{branches});
+  }
+
+  foreach (split(/\s+/, $rcs->{rcs}->{header}->{symbols})) {
+    my ($tag, $rev) = split /:/;
+
+    if ($rev =~ m/^(?:[0-9]+\.)+0\.([0-9]+)$/) {
+   #print "Branch: $tag - $rev OLD\n";
+      if (defined $branches{$rev}) {
+        $tag2commit->{$tag}->{branch} = true;
+        $tag2commit->{$tag}->{commit} = $branches{$rev};
+      }
+    } elsif (defined $commits{$rev}) {
+      my $commit = $commits{$rev};
+    #print "Branch: $tag - $rev $commit\n"; #, Dumper($commit);
+      my $is_prefixed = index($tag, $leaf . "-") == 0;
+      my $is_primary = index($tag, $leaf . "-") == 0 || !defined($commit->{tag});
+      $commit->{cvs_tag} = $tag if $is_primary;
+      $tag = "$leaf-$tag" unless $is_prefixed;
+      $commit->{tag} = $tag if $is_primary;
+      push @{$commit->{tags}}, $tag;
+      $tag2commit->{$tag}->{branch} = false;
+      $tag2commit->{$tag}->{commit} = $commit;
+    }
+    #print Dumper(%branches);
+  }
+
+  $tag2commit->{"master"}->{branch} = true;
+  $tag2commit->{"master"}->{commit} = $commits{$rcs->{rcs}->{header}->{head}};
+
+  #print $tag2commit->{"master"}->{commit}->{module}, '\n';
+
+  my $merge = sub {
+    # Add parents for CVS merges
+    my ($c, $p) = @_;
+    return unless defined($tag2commit->{$c});
+    return unless defined($tag2commit->{$p});
+    push @{$tag2commit->{$c}->{commit}->{parents}}, $tag2commit->{$p}->{commit};
+  };
+
+  # All CVS merges need to listed here.
+
+  &$merge("Kernel-5_35-4_79_2_147_2_23", "Kernel-5_35-4_79_2_164");
+  &$merge("Kernel-5_35-4_79_2_165", "Kernel-5_35-4_79_2_147_2_23");
+  &$merge("Kernel-5_35-4_79_2_44", "Kernel-5_35-4_79_2_25_2_2");
+  &$merge("Kernel-5_48", "Kernel-5_35-4_79_2_327");
+  &$merge("Kernel-5_35-4_79_2_123", "Kernel-5_35-4_79_2_98_2_54");
+
+  &$merge("BuildSys-6_00-1_142_2_2", "BuildSys-6_11");
+  &$merge("BuildSys-6_00-1_142_2_3", "BuildSys-6_19");
+
+  #print Dumper($rcs, \%branches);
+  $rcs->{tag2commit} = $tag2commit;
+
+  return $rcs;
+}
+
+
+sub load_and_init_module {
+  my ($src) = @_;
+  return $modules{$src} if defined($modules{$src});
+
+  my $mod = "$here/GIT/$src";
+  my ($leaf) = $src =~m%^(?:.*/)?([^/]*)$%;
+
+  my $file = "$cvsroot/$src/VersionNum,v";
+  $file = "$cvsroot/$src/ShareFS/aof/ShareFS,ffd,v" unless -f $file;
+  $file = "$cvsroot/$src/!Run,feb,v" unless -f $file;
+
+  die "Can't find log file for module $src" unless -f $file;
+
+  my $module = load_rcs($file, $leaf);
+  $module->{src} = $src;
+  $module->{leaf} = $leaf;
+
+  $modules{$src} = $module;
+  return $module;
+  #print Dumper(\%modules);
+}
+
+sub convert_commit {
+  my ($commit) = @_;
+
+  unless (defined $commit->{module}) {
+    print Dumper(\$commit);
+    die "Undefined commit";
+  }
+  # Exit if already converted.
+  return $commit->{hash} if defined $commit->{hash};
+
+
+  #print Dumper($commit);
+
+
+  # Create parent args.
+  my @parents;
+  foreach my $p (@{$commit->{parents}}) {
+    push @parents, "-p";
+    push @parents, convert_commit($p);
+   }
+
+  my $src =  $commit->{module}->{src};
+  die unless defined $src;
+
+  my $tree;
+  if (defined($commit->{tag})) {
+    eval {
+      $tree = capturex("git", "log", "-1", "--pretty=format:%T", $commit->{tag});
+    };
+    if ($@) {
+      $commit->{module}->{writen} = true;
+      systemx "find", ".", "!", "-path", "./.git*", "!", "-path", ".", "-delete";
+      systemx "mkdir", "-p", "$here/GIT/$src";
+      rmdir "$here/GIT/$src";
+      symlink "$here/GIT", "$here/GIT/$src";
+      systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", "$here/GIT", "-n", "-r", $commit->{cvs_tag}, $src;
+      unlink "$here/GIT/$src";
+      systemx "git", "add", "-A";
+      $tree = capturex("git", "write-tree");
+      systemx "find", ".", "!", "-path", "./.git*", "!", "-path", ".", "-delete";
+    }
+  } elsif (scalar(@{$commit->{parents}})) {
+    $tree = $commit->{parents}[0]->{tree};
+  } else {
+    $tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
+  }
+
+  chomp $tree;
+  $commit->{tree} = $tree;
+  $commit->{author} = "Unknown" unless defined $commit->{author};
+
+  $ENV{GIT_COMMITTER_NAME} = $commit->{author};
+  $ENV{GIT_AUTHOR_NAME} = $commit->{author};
+  $ENV{GIT_COMMITTER_EMAIL} = "X";
+  $ENV{GIT_AUTHOR_EMAIL} = "X";
+  $ENV{GIT_COMMITTER_DATE} = $commit->{time};
+  $ENV{GIT_AUTHOR_DATE} = $commit->{time};
+
+
+  #systemx "echo", "git", "commit-tree", $tree, @parents, "-m", $commit->{log};
+  #print Dumper($commit);
+
+  my $hash = capturex("git", "commit-tree", $tree, @parents, "-m", $commit->{log} // "Empty Log");
+  chomp $hash;
+
+  if(defined $commit->{commitid} && !defined $commit->{tag}) {
+    my $tag = "cvs_" . $commit->{commitid};
+    $commit->{tag} = $tag;
+    push @{$commit->{tags}}, $tag;
+    $modules{$src}->{$tag}->{branch} = false;
+    $modules{$src}->{$tag}->{commit} = $commit;
+  }
+
+  foreach my $tag (@{$commit->{tags}}) {
+    systemx "git", "update-ref", "refs/tags/$tag", $hash;
+  }
+
+  print (($commit->{tag} // "Untagged") . " : $hash\n");
+
+  $commit->{hash} = $hash;
+
+  return $hash;
+}
+
+sub data {
+  # Generate Git-fastimport data command.
+  my ($d) = @_;
+  return "data " . length($d) . "\n" . $d . "\n";
+}
+
+my $current;
+my $next;
+
+sub find_commit {
+  my ($tag) = @_;
+  #print "Find:", Dumper($t);
+  my $commit = $tag->{commit};
+  if($tag->{branch}) {
+    while(defined($commit) && $commit->{time} > $current->{time}) {
+      unless(defined($next) && $next->{time} < $commit->{time}) {
+        $next = $commit;
+      }
+      $commit = $commit->{parents}->[0];
+    }
+  }
+  #die unless defined($commit);
+  #print $current->{time}, "\n";
+  return $commit;
+}
+
+
+
+# Create top level GIT repository
+systemx "git", "init", "$here/GIT" unless -d "$here/GIT/.git";
+chdir "$here/GIT";
+open FI, ">.git/data"; #"|tee data|git fast-import";
+
+load_and_init_module("castle/RiscOS/Sources/Toolbox/ProgInfo");
+load_and_init_module("castle/RiscOS/Sources/Kernel");
+
+#Load Porducts file.
+foreach my $product (qw(BCM2835Pico BCM2835Dev BCM2835 BonusBinDev BuildHost BuildHostDev Disc DiscDev IOMDHAL IOMDHALDev OMAP3 OMAP3Dev OMAP3Live PlingSystem S3CDev Titanium TitaniumDev Tungsten TungstenDev)) {
+  print FI "reset refs/heads/$product\n";
+  my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
+  $rcs->{orig_document} = $rcs->{current_document};
+
+  # Find first (earliest time) commit of the product file.
+  $current = $rcs->{tag2commit}->{"master"}->{commit};
+  while(scalar(@{$current->{parents}})) {
+    $current = $current->{parents}->[0];
+  }
+
+
+  while(defined $current) {
+
+    $next = undef;
+
+    # Load the products file.
+    $rcs->{current_document} = clone($rcs->{orig_document});
+    my $mods = $rcs->get(find_commit($rcs->{tag2commit}->{"master"})->{revision});
+
+    # Start of commit
+    print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data($current->{log}),
+      "deleteall\n",
+    # Include the Products file with every commit
+      "M 100644 inline Products/$product/modules\n", data($mods),
+    # And a covenient symlink in the root
+      "M 120000 inline Modules\n", data("Products/$product/modules");
+
+    my $gitmodules = "";
+
+    # For each line in product file.
+    foreach (split("\n", $mods)) {
+      next if m/^\s*(#.*)?$/;
+
+      # Split into path and tag.
+      my ($src, $tag) = m/^\s*([^\s]+)\s+([^\s]+)\s*$/;
+
+      unless (defined $src) {
+        print "$mods\n\n#$_#\n";
+        die "Bad source!";
+      }
+
+      $src =~ tr:.:/:; # Sometimes RISC OS paths are used.
+
+      next if $src eq "castle/RiscOS/Apps/Makefile"; # FIXME
+      next if $src eq "castle/RiscOS/Utilities/Release/crc32";
+      next if $src eq "castle/RiscOS/Utilities/Release/builder";
+      next if $src eq "castle/RiscOS/Sources/SystemRes/InetSetup";
+      next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
+      next if $src eq "bsd/RiscOS/Apps/!Routines";
+      next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc";
+      next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX";
+
+      # Convert tag to git convention.
+      $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
+      my ($modname) = $src =~ m%^(?:.*/)?([^/]*)$%;
+      die "Bad modname! - #$src#" unless defined $modname;
+
+      # Convert CVS module to git if needed.
+      load_and_init_module($src);
+
+      my $c = find_commit($modules{$src}->{tag2commit}->{$tag});
+      if (defined $c) {
+        print FI "M 160000 ", convert_commit($c), " $src\n";
+        #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
+        $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = .\n\n"
+      }
+    }
+
+
+
+    print FI "M 100644 inline .gitmodules\n", data($gitmodules);
+
+    $current = $next;
+  }
+}
+
+close FI;
+
+# Tidy up submodules
+foreach my $module (values %modules) {
+
+  my $src = $module->{src};
+  print "\n\n\n$src\n";
+
+  foreach my $i (keys %{$module->{tag2commit}}) {
+    if ($module->{tag2commit}->{$i}->{branch}) {
+      print "Adding branch: $i\n";
+      systemx "echo", "git", "branch", "-f", $i, convert_commit($module->{tag2commit}->{$i}->{commit});
+      systemx "git", "branch", "-f", $module->{leaf} . "-$i", convert_commit($module->{tag2commit}->{$i}->{commit});
+
+    }
+  }
+}
