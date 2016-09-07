@@ -457,7 +457,7 @@ sub _parse_in_rcs {
     @commands = split ';', $rcs->{$version}->{header} if defined $rcs->{$version}->{header};
     for my $command ( @commands ) {
       chomp $command;
-      $rcs->{$version}->{$1} = $2 if $command =~ /\s*(.+)\s+(.+)$/;
+      $rcs->{$version}->{$1} = $2 if $command =~ /\s*([^\s]+)\s+([^\s]+)$/;
     }
   }
 
