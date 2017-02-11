@@ -23,7 +23,8 @@ $Data::Dumper::Purity = 1;
 
 my $cvsroot;
 my $gitrepo;
-GetOptions("cvsroot=s" => \$cvsroot, "gitrepo=s" => \$gitrepo) or die;
+my $products = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
+GetOptions("cvsroot=s" => \$cvsroot, "gitrepo=s" => \$gitrepo, "products=s" => \$products) or die;
 $cvsroot = abs_path($cvsroot);
 $gitrepo = abs_path($gitrepo);
 
@@ -279,7 +280,7 @@ load_and_init_module("castle/RiscOS/Sources/Toolbox/ProgInfo");
 load_and_init_module("castle/RiscOS/Sources/Kernel");
 
 #Load Porducts file.
-foreach my $product (qw(BCM2835Pico BCM2835Dev BCM2835 BonusBinDev BuildHost BuildHostDev Disc DiscDev IOMDHAL IOMDHALDev OMAP3 OMAP3Dev OMAP3Live PlingSystem S3CDev Titanium TitaniumDev Tungsten TungstenDev)) {
+foreach my $product (split(/,/,$products)) {
   print FI "reset refs/heads/$product\n";
   my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
   $rcs->{orig_document} = $rcs->{current_document};
