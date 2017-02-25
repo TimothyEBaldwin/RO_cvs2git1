@@ -520,6 +520,7 @@ sub _sort {
 sub _unquote {
   my $self = shift @_;
   my $in   = shift @_;
+  $in = "" unless defined $in;
   $in =~ s/\@\@/\@/g;
   return $in;
 }
