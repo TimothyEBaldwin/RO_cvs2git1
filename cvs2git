@@ -176,11 +176,11 @@ sub convert_commit {
     if ($@) {
       $commit->{module}->{writen} = true;
       systemx "find", ".", "!", "-path", "./.git*", "!", "-path", ".", "-delete";
-      systemx "mkdir", "-p", "$gitrepo/$src";
-      rmdir "$gitrepo/$src";
-      symlink $gitrepo, "$gitrepo/$src";
-      systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", $gitrepo, "-n", "-r", $commit->{cvs_tag}, $src;
-      unlink "$gitrepo/$src";
+      systemx "mkdir", "-p", $src;
+      rmdir $src;
+      symlink ".", $src;
+      systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-r", $commit->{cvs_tag}, $src;
+      unlink $src;
       systemx "git", "add", "-A";
       $tree = capturex("git", "write-tree");
       systemx "find", ".", "!", "-path", "./.git*", "!", "-path", ".", "-delete";
