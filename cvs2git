@@ -332,6 +332,7 @@ foreach my $product (split(/,/,$products)) {
       next if $src eq "bsd/RiscOS/Apps/!Routines";
       next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc";
       next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX";
+      next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
 
       # Convert tag to git convention.
       $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
