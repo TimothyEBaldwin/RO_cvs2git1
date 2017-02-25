@@ -64,13 +64,10 @@ sub load_rcs {
     chomp $c->{log};
     chomp $c->{author};
     $commits{$i} = $c;
-    #print $i, " - ", $1 . "0." . $2, "\n";
     unless(defined($branches{$1 . "0." .$2}) && $branches{$1 . "0." .$2}->{branch_pos} > $c->{branch_pos}) {
       $branches{$1 . "0." .$2} = $c;
     }
   }
-
- #print Dumper(\%commits);
 
   foreach (keys %commits) {
     my ($a, $b) = m/^(.*\.)(\d*)$/;
@@ -86,14 +83,12 @@ sub load_rcs {
     my ($tag, $rev) = split /:/;
 
     if ($rev =~ m/^(?:[0-9]+\.)+0\.([0-9]+)$/) {
-   #print "Branch: $tag - $rev OLD\n";
       if (defined $branches{$rev}) {
         $tag2commit->{$tag}->{branch} = true;
         $tag2commit->{$tag}->{commit} = $branches{$rev};
       }
     } elsif (defined $commits{$rev}) {
       my $commit = $commits{$rev};
-    #print "Branch: $tag - $rev $commit\n"; #, Dumper($commit);
       my $is_prefixed = index($tag, $leaf . "-") == 0;
       my $is_primary = index($tag, $leaf . "-") == 0 || !defined($commit->{tag});
       $commit->{cvs_tag} = $tag if $is_primary;
@@ -103,13 +98,10 @@ sub load_rcs {
       $tag2commit->{$tag}->{branch} = false;
       $tag2commit->{$tag}->{commit} = $commit;
     }
-    #print Dumper(%branches);
   }
 
   $tag2commit->{"master"}->{branch} = true;
   $tag2commit->{"master"}->{commit} = $commits{$rcs->{rcs}->{header}->{head}};
-
-  #print $tag2commit->{"master"}->{commit}->{module}, '\n';
 
   my $merge = sub {
     # Add parents for CVS merges
@@ -130,7 +122,6 @@ sub load_rcs {
   &$merge("BuildSys-6_00-1_142_2_2", "BuildSys-6_11");
   &$merge("BuildSys-6_00-1_142_2_3", "BuildSys-6_19");
 
-  #print Dumper($rcs, \%branches);
   $rcs->{tag2commit} = $tag2commit;
 
   return $rcs;
@@ -141,7 +132,6 @@ sub load_and_init_module {
   my ($src) = @_;
   return $modules{$src} if defined($modules{$src});
 
-  my $mod = "$gitrepo/$src";
   my ($leaf) = $src =~m%^(?:.*/)?([^/]*)$%;
 
   my $file = "$cvsroot/$src/VersionNum,v";
@@ -156,7 +146,6 @@ sub load_and_init_module {
 
   $modules{$src} = $module;
   return $module;
-  #print Dumper(\%modules);
 }
 
 sub convert_commit {
@@ -169,11 +158,7 @@ sub convert_commit {
   # Exit if already converted.
   return $commit->{hash} if defined $commit->{hash};
 
-
-  #print Dumper($commit);
-
-
-  # Create parent args.
+  # Create parent arguments
   my @parents;
   foreach my $p (@{$commit->{parents}}) {
     push @parents, "-p";
@@ -218,9 +203,6 @@ sub convert_commit {
   $ENV{GIT_AUTHOR_DATE} = $commit->{time};
 
 
-  #systemx "echo", "git", "commit-tree", $tree, @parents, "-m", $commit->{log};
-  #print Dumper($commit);
-
   my $hash = capturex("git", "commit-tree", $tree, @parents, "-m", $commit->{log} // "Empty Log");
   chomp $hash;
 
@@ -264,8 +246,6 @@ sub find_commit {
       $commit = $commit->{parents}->[0];
     }
   }
-  #die unless defined($commit);
-  #print $current->{time}, "\n";
   return $commit;
 }
 
@@ -276,10 +256,10 @@ systemx "git", "init", $gitrepo unless -d "$gitrepo/.git";
 chdir $gitrepo;
 open FI, ">.git/data"; #"|tee data|git fast-import";
 
-load_and_init_module("castle/RiscOS/Sources/Toolbox/ProgInfo");
+# Load Products file
+#Load a module now to assist in debugging.
 load_and_init_module("castle/RiscOS/Sources/Kernel");
 
-#Load Porducts file.
 foreach my $product (split(/,/,$products)) {
   print FI "reset refs/heads/$product\n";
   my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
@@ -350,8 +330,6 @@ foreach my $product (split(/,/,$products)) {
       }
     }
 
-
-
     print FI "M 100644 inline .gitmodules\n", data($gitmodules);
 
     $current = $next;
@@ -360,7 +338,7 @@ foreach my $product (split(/,/,$products)) {
 
 close FI;
 
-# Tidy up submodules
+# Add remaining module branches
 foreach my $module (values %modules) {
 
   my $src = $module->{src};
@@ -369,8 +347,9 @@ foreach my $module (values %modules) {
   foreach my $i (keys %{$module->{tag2commit}}) {
     if ($module->{tag2commit}->{$i}->{branch}) {
       print "Adding branch: $i\n";
-      systemx "echo", "git", "branch", "-f", $i, convert_commit($module->{tag2commit}->{$i}->{commit});
-      systemx "git", "branch", "-f", $module->{leaf} . "-$i", convert_commit($module->{tag2commit}->{$i}->{commit});
+      my $c = convert_commit($module->{tag2commit}->{$i}->{commit});
+      print "Branch $i: $c\n";
+      systemx "git", "branch", "-f", $module->{leaf} . "-" . $i, $c;
 
     }
   }
