@@ -316,7 +316,8 @@ foreach my $product (split(/,/,$products)) {
 
       # Convert tag to git convention.
       $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
-      my ($modname) = $src =~ m%^(?:.*/)?([^/]*)$%;
+      my $modname = $src;
+      $modname =~ tr%/%_%;
       die "Bad modname! - #$src#" unless defined $modname;
 
       # Convert CVS module to git if needed.
