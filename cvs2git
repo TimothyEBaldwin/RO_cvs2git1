@@ -67,6 +67,7 @@ sub load_rcs {
     unless(defined($branches{$1 . "0." .$2}) && $branches{$1 . "0." .$2}->{branch_pos} > $c->{branch_pos}) {
       $branches{$1 . "0." .$2} = $c;
     }
+    $c->{log} =~ s/\s*Summary *:*\s*(.*)/\1\n/i;
   }
 
   foreach (keys %commits) {
