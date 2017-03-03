@@ -22,11 +22,12 @@ use Clone 'clone';
 $Data::Dumper::Purity = 1;
 
 my $cvsroot;
-my $gitrepo;
+my $gitdirs;
+my $unified = false;
 my $products = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
-GetOptions("cvsroot=s" => \$cvsroot, "gitrepo=s" => \$gitrepo, "products=s" => \$products) or die;
+GetOptions("unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$products) or die;
 $cvsroot = abs_path($cvsroot);
-$gitrepo = abs_path($gitrepo);
+$gitdirs = abs_path($gitdirs);
 
 my %modules;
 
@@ -131,7 +132,12 @@ sub load_rcs {
 sub load_and_init_module {
   my ($src) = @_;
   return $modules{$src} if defined($modules{$src});
-
+  
+  my $modname = $src;
+  $modname =~ tr%/%_%;
+  $modname =~ s/!//g;
+  die "Bad modname! - #$src#" unless defined $modname;
+      
   my ($leaf) = $src =~m%^(?:.*/)?([^/]*)$%;
 
   my $file = "$cvsroot/$src/VersionNum,v";
@@ -142,10 +148,27 @@ sub load_and_init_module {
 
   my $module = load_rcs($file, $leaf);
   $module->{src} = $src;
+  $module->{modname} = $modname;
   $module->{leaf} = $leaf;
+  $module->{dir_set} = false;
 
   $modules{$src} = $module;
   return $module;
+}
+
+sub set_module_dir {
+  my ($module) = @_;
+  my $gitdir = $gitdirs . "/" . ($unified ? "$unified" : $module->{modname});
+  if ($module->{dir_set}) {
+    chdir $gitdir;
+  } else {
+    systemx "git", "init", $gitdir unless -d "$gitdir/.git";
+    chdir $gitdir;
+    my $hash = capturex("git", "commit-tree", "4b825dc642cb6eb9a060e54bf8d69288fbee4904", "-m", "Dummy Commit");
+    chomp $hash;
+    systemx "git", "checkout", $hash;
+    $module->{dir_set} = true;
+  }
 }
 
 sub convert_commit {
@@ -168,8 +191,11 @@ sub convert_commit {
   my $src =  $commit->{module}->{src};
   die unless defined $src;
 
+  set_module_dir $commit->{module};
+
   my $tree;
   if (defined($commit->{tag})) {
+ 
     eval {
       $tree = capturex("git", "log", "-1", "--pretty=format:%T", $commit->{tag});
     };
@@ -251,15 +277,13 @@ sub find_commit {
 
 
 
-# Create top level GIT repository
-systemx "git", "init", $gitrepo unless -d "$gitrepo/.git";
-chdir $gitrepo;
-open FI, ">.git/data"; #"|tee data|git fast-import";
+# Load a module now to assist in debugging.
+load_and_init_module("castle/RiscOS/Export");
+
+
+open FI, ">", "$gitdirs/fast-import_data"; #"|tee data|git fast-import";
 
 # Load Products file
-#Load a module now to assist in debugging.
-load_and_init_module("castle/RiscOS/Sources/Kernel");
-
 foreach my $product (split(/,/,$products)) {
   print FI "reset refs/heads/$product\n";
   my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
@@ -316,15 +340,14 @@ foreach my $product (split(/,/,$products)) {
 
       # Convert tag to git convention.
       $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
-      my $modname = $src;
-      $modname =~ tr%/%_%;
-      die "Bad modname! - #$src#" unless defined $modname;
 
       # Convert CVS module to git if needed.
-      load_and_init_module($src);
+      my $module = load_and_init_module($src);
 
       my $c = find_commit($modules{$src}->{tag2commit}->{$tag});
       if (defined $c) {
+        my $modname = $module->{modname};
+        my $url = $unified ? "." : "../$modname";
         print FI "M 160000 ", convert_commit($c), " $src\n";
         #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
         $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = .\n\n"
@@ -345,13 +368,15 @@ foreach my $module (values %modules) {
   my $src = $module->{src};
   print "\n\n\n$src\n";
 
+  set_module_dir $module;
   foreach my $i (keys %{$module->{tag2commit}}) {
-    if ($module->{tag2commit}->{$i}->{branch}) {
+     if ($module->{tag2commit}->{$i}->{branch}) {
       print "Adding branch: $i\n";
       my $c = convert_commit($module->{tag2commit}->{$i}->{commit});
       print "Branch $i: $c\n";
-      systemx "git", "branch", "-f", $module->{leaf} . "-" . $i, $c;
-
+      systemx "git", "branch", "-f", $unified ? ($module->{leaf} . "-" . $i) : $i, $c;
     }
   }
+  systemx "git", "reset", "--hard";
+  systemx "git", "gc", "--auto";
 }
