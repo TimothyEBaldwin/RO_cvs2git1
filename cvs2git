@@ -350,7 +350,7 @@ foreach my $product (split(/,/,$products)) {
         my $url = $unified ? "." : "../$modname";
         print FI "M 160000 ", convert_commit($c), " $src\n";
         #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
-        $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = .\n\n"
+        $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = $url\n\n"
       }
     }
 
