@@ -306,7 +306,7 @@ foreach my $product (split(/,/,$products)) {
     my $mods = $rcs->get(find_commit($rcs->{tag2commit}->{"master"})->{revision});
 
     # Start of commit
-    print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data($current->{log}),
+    print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data(($current->{module}->{leaf} // $product) . ": " .$current->{log}),
       "deleteall\n",
     # Include the Products file with every commit
       "M 100644 inline Products/$product/modules\n", data($mods),
