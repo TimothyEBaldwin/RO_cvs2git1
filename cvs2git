@@ -18,6 +18,7 @@ use Getopt::Long;
 use Sort::Versions;
 use Data::Dumper;
 use Time::Local;
+use File::Temp;
 use Clone 'clone';
 $Data::Dumper::Purity = 1;
 
@@ -159,6 +160,8 @@ sub load_and_init_module {
 sub set_module_dir {
   my ($module) = @_;
   my $gitdir = $gitdirs . "/" . ($unified ? "$unified" : $module->{modname});
+  delete $ENV{GIT_DIR};
+  delete $ENV{GIT_WORK_TREE};
   if ($module->{dir_set}) {
     chdir $gitdir;
   } else {
@@ -169,6 +172,7 @@ sub set_module_dir {
     systemx "git", "checkout", $hash;
     $module->{dir_set} = true;
   }
+  $ENV{GIT_DIR} = "$gitdir/.git";
   return $gitdir;
 }
 
@@ -202,15 +206,14 @@ sub convert_commit {
     };
     if ($@) {
       $commit->{module}->{writen} = true;
-      systemx "find", ".", "!", "-path", "./.git*", "!", "-path", ".", "-delete";
-      systemx "mkdir", "-p", $src;
-      rmdir $src;
-      symlink $gitdir, $src;
+      my $tmp = File::Temp->newdir();
+      chdir $tmp->dirname;
       systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-r", $commit->{cvs_tag}, $src;
-      unlink $src;
-      systemx "git", "add", "-A";
+      chdir "/";
+      $ENV{GIT_WORK_TREE} = $tmp->dirname . "/" . $src;
+      systemx "git", "add", "-Af";
       $tree = capturex("git", "write-tree");
-      systemx "find", ".", "!", "-path", "./.git*", "!", "-path", ".", "-delete";
+      delete $ENV{GIT_WORK_TREE};
     }
   } elsif (scalar(@{$commit->{parents}})) {
     $tree = $commit->{parents}[0]->{tree};
@@ -378,6 +381,6 @@ foreach my $module (values %modules) {
       systemx "git", "branch", "-f", $unified ? ($module->{leaf} . "-" . $i) : $i, $c;
     }
   }
-  systemx "git", "reset", "--hard";
+  systemx "git", "reset";
   systemx "git", "gc", "--auto";
 }
