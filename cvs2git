@@ -142,6 +142,7 @@ sub load_and_init_module {
   my ($leaf) = $src =~m%^(?:.*/)?([^/]*)$%;
 
   my $file = "$cvsroot/$src/VersionNum,v";
+  $file = "$cvsroot/$src/Source/VersionNum,v" unless -f $file;
   $file = "$cvsroot/$src/ShareFS/aof/ShareFS,ffd,v" unless -f $file;
   $file = "$cvsroot/$src/!Run,feb,v" unless -f $file;
 
@@ -335,7 +336,6 @@ foreach my $product (split(/,/,$products)) {
       next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
       next if $src eq "bsd/RiscOS/Apps/!Routines";
       next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
-      next if $src eq "castle/RiscOS/Sources/SystemRes/InetSetup";
       next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Missing!
       next if $src eq "castle/RiscOS/Utilities/Release/builder";
       next if $src eq "castle/RiscOS/Utilities/Release/crc32";
