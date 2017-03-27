@@ -115,11 +115,11 @@ sub load_rcs {
 
   # All CVS merges need to listed here.
 
+  &$merge("Kernel-5_35-4_79_2_44", "Kernel-5_35-4_79_2_25_2_2");
+  &$merge("Kernel-5_35-4_79_2_123", "Kernel-5_35-4_79_2_98_2_54");
   &$merge("Kernel-5_35-4_79_2_147_2_23", "Kernel-5_35-4_79_2_164");
   &$merge("Kernel-5_35-4_79_2_165", "Kernel-5_35-4_79_2_147_2_23");
-  &$merge("Kernel-5_35-4_79_2_44", "Kernel-5_35-4_79_2_25_2_2");
   &$merge("Kernel-5_48", "Kernel-5_35-4_79_2_327");
-  &$merge("Kernel-5_35-4_79_2_123", "Kernel-5_35-4_79_2_98_2_54");
 
   &$merge("BuildSys-6_00-1_142_2_2", "BuildSys-6_11");
   &$merge("BuildSys-6_00-1_142_2_3", "BuildSys-6_19");
@@ -332,15 +332,15 @@ foreach my $product (split(/,/,$products)) {
 
       $src =~ tr:.:/:; # Sometimes RISC OS paths are used.
 
-      next if $src eq "castle/RiscOS/Apps/Makefile"; # FIXME
-      next if $src eq "castle/RiscOS/Utilities/Release/crc32";
-      next if $src eq "castle/RiscOS/Utilities/Release/builder";
-      next if $src eq "castle/RiscOS/Sources/SystemRes/InetSetup";
       next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
       next if $src eq "bsd/RiscOS/Apps/!Routines";
-      next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc";
-      next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX";
       next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
+      next if $src eq "castle/RiscOS/Apps/Makefile"; # FIXME
+      next if $src eq "castle/RiscOS/Sources/SystemRes/InetSetup";
+      next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Missing!
+      next if $src eq "castle/RiscOS/Utilities/Release/builder";
+      next if $src eq "castle/RiscOS/Utilities/Release/crc32";
+      next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc"; # Not public
 
       # Convert tag to git convention.
       $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
