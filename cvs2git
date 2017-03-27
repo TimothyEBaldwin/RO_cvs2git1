@@ -335,12 +335,29 @@ foreach my $product (split(/,/,$products)) {
       next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
       next if $src eq "bsd/RiscOS/Apps/!Routines";
       next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
-      next if $src eq "castle/RiscOS/Apps/Makefile"; # FIXME
       next if $src eq "castle/RiscOS/Sources/SystemRes/InetSetup";
       next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Missing!
       next if $src eq "castle/RiscOS/Utilities/Release/builder";
       next if $src eq "castle/RiscOS/Utilities/Release/crc32";
       next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc"; # Not public
+
+      if ($src eq "castle/RiscOS/Apps/Makefile") {
+        # Include this file here.
+        print FI "M 100644 inline castle/RiscOS/Apps/Makefile\n", data(<< 'END');
+# Makefile for the Build System Binary Build Environment
+#
+# $Id: Makefile,v 1.2 2000/12/13 11:40:50 nbingham Exp $
+#
+
+BBETYPE = apps
+bbe-apps: bbe-generic-resources-get-alias
+  BBE_Export_Dir !Builder
+  BBE_Export_Dir !Perl
+  BBE_Export_Dir !WinEdit
+
+END
+        next;
+      }
 
       # Convert tag to git convention.
       $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
