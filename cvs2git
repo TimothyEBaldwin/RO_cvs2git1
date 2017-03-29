@@ -25,9 +25,9 @@ $Data::Dumper::Purity = 1;
 my $cvsroot;
 my $gitdirs;
 my $unified = false;
-my $products = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
+my $product_names = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
 my $single = "castle/RiscOS/Export";
-GetOptions("unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$products, "single=s" => \$single) or die;
+GetOptions("unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$product_names, "single=s" => \$single) or die;
 $cvsroot = abs_path($cvsroot);
 $gitdirs = abs_path($gitdirs);
 
@@ -291,62 +291,46 @@ set_module_dir(load_and_init_module($single));
 
 open FI, ">", "$gitdirs/fast-import_data"; #"|tee data|git fast-import";
 
-# Load Products file
-foreach my $product (split(/,/,$products)) {
-  print FI "reset refs/heads/$product\n";
-  my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
-  $rcs->{orig_document} = $rcs->{current_document};
+sub process_super_commit {
+  my ($rcs, $add_module_commit) = @_;
+  my $product = $rcs->{product};
 
-  # Find first (earliest time) commit of the product file.
-  $current = $rcs->{tag2commit}->{"master"}->{commit};
-  while(scalar(@{$current->{parents}})) {
-    $current = $current->{parents}->[0];
-  }
+  # Load the products file.
+  $rcs->{current_document} = clone($rcs->{orig_document});
+  my $mods = $rcs->get(find_commit($rcs->{tag2commit}->{"master"})->{revision});
 
 
-  while(defined $current) {
+  # Include the Products file with every commit
+  print FI "M 100644 inline Products/$product/modules\n", data($mods);
+  # And a covenient symlink in the root
+  print FI "M 120000 inline Modules\n", data("Products/$product/modules");
 
-    $next = undef;
 
-    # Load the products file.
-    $rcs->{current_document} = clone($rcs->{orig_document});
-    my $mods = $rcs->get(find_commit($rcs->{tag2commit}->{"master"})->{revision});
+  # For each line in product file.
+  foreach (split("\n", $mods)) {
+    next if m/^\s*(#.*)?$/;
 
-    # Start of commit
-    print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data(($current->{module}->{leaf} // $product) . ": " .$current->{log}),
-      "deleteall\n",
-    # Include the Products file with every commit
-      "M 100644 inline Products/$product/modules\n", data($mods),
-    # And a covenient symlink in the root
-      "M 120000 inline Modules\n", data("Products/$product/modules");
+    # Split into path and tag.
+    my ($src, $tag) = m/^\s*([^\s]+)\s+([^\s]+)\s*$/;
 
-    my $gitmodules = "";
+    unless (defined $src) {
+      print "$mods\n\n#$_#\n";
+      die "Bad source!";
+    }
 
-    # For each line in product file.
-    foreach (split("\n", $mods)) {
-      next if m/^\s*(#.*)?$/;
+    $src =~ tr:.:/:; # Sometimes RISC OS paths are used.
 
-      # Split into path and tag.
-      my ($src, $tag) = m/^\s*([^\s]+)\s+([^\s]+)\s*$/;
+    next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
+    next if $src eq "bsd/RiscOS/Apps/!Routines";
+    next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
+    next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Missing!
+    next if $src eq "castle/RiscOS/Utilities/Release/builder";
+    next if $src eq "castle/RiscOS/Utilities/Release/crc32";
+    next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc"; # Not public
 
-      unless (defined $src) {
-        print "$mods\n\n#$_#\n";
-        die "Bad source!";
-      }
-
-      $src =~ tr:.:/:; # Sometimes RISC OS paths are used.
-
-      next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
-      next if $src eq "bsd/RiscOS/Apps/!Routines";
-      next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
-      next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Missing!
-      next if $src eq "castle/RiscOS/Utilities/Release/builder";
-      next if $src eq "castle/RiscOS/Utilities/Release/crc32";
-      next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc"; # Not public
-
-      if ($src eq "castle/RiscOS/Apps/Makefile") {
-        # Include this file here.
-        print FI "M 100644 inline castle/RiscOS/Apps/Makefile\n", data(<< 'END');
+    if ($src eq "castle/RiscOS/Apps/Makefile") {
+      # Include this file here.
+      print FI "M 100644 inline castle/RiscOS/Apps/Makefile\n", data(<< 'END');
 # Makefile for the Build System Binary Build Environment
 #
 # $Id: Makefile,v 1.2 2000/12/13 11:40:50 nbingham Exp $
@@ -359,26 +343,64 @@ bbe-apps: bbe-generic-resources-get-alias
   BBE_Export_Dir !WinEdit
 
 END
-        next;
-      }
-
-      # Convert tag to git convention.
-      $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
-
-      # Convert CVS module to git if needed.
-      my $module = load_and_init_module($src);
-
-      my $c = find_commit($modules{$src}->{tag2commit}->{$tag});
-      if (defined $c) {
-        my $modname = $module->{modname};
-        my $url = $unified ? "." : "../$modname";
-        print FI "M 160000 ", convert_commit($c), " $src\n";
-        #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
-        $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = $url\n\n"
-      }
+      next;
     }
 
+    # Convert tag to git convention.
+    $tag = "master" if $tag eq "HEAD" || $tag eq "TRUNK";
+
+    # Convert CVS module to git if needed.
+    my $module = load_and_init_module($src);
+
+    my $c = find_commit($modules{$src}->{tag2commit}->{$tag});
+    &$add_module_commit($c) if defined $c;
+  }
+
+}
+
+sub write_commit_header {
+  my ($product) = @_;
+  print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data(($current->{module}->{leaf} // $product) . ": " .$current->{log}),
+    "deleteall\n";
+}
+
+my @products;
+
+# Load Products file
+foreach my $product (split(/,/,$product_names)) {
+  print FI "reset refs/heads/$product\n";
+  my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
+  $rcs->{orig_document} = $rcs->{current_document};
+  $rcs->{product} = $product;
+  push @products, $rcs;
+}
+
+foreach my $rcs (@products) {
+  # Find first (earliest time) commit of the product file.
+  $current = $rcs->{tag2commit}->{"master"}->{commit};
+  while(scalar(@{$current->{parents}})) {
+    $current = $current->{parents}->[0];
+  }
+
+
+  while(defined $current) {
+
+    $next = undef;
+
+    write_commit_header($rcs->{product}); # . "_submodules");
+    my $gitmodules = "";
+    my $add_submodule = sub {
+      my ($c) = @_;
+      my $modname = $c->{module}->{modname};
+      my $src = $c->{module}->{src};
+      my $url = $unified ? "." : "../$modname";
+      print FI "M 160000 ", convert_commit($c), " $src\n";
+      #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
+      $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = $url\n\n"
+    };
+    process_super_commit($rcs, $add_submodule);
     print FI "M 100644 inline .gitmodules\n", data($gitmodules);
+
 
     $current = $next;
   }
