@@ -92,14 +92,11 @@ sub load_rcs {
       }
     } elsif (defined $commits{$rev}) {
       my $commit = $commits{$rev};
-      my $is_prefixed = index($tag, $leaf . "-") == 0;
       my $is_primary = index($tag, $leaf . "-") == 0 || !defined($commit->{tag});
-      $commit->{cvs_tag} = $tag if $is_primary;
-      $tag = "$leaf-$tag" unless $is_prefixed;
-      $commit->{tag} = $tag if $is_primary;
-      push @{$commit->{tags}}, $tag;
       $tag2commit->{$tag}->{branch} = false;
       $tag2commit->{$tag}->{commit} = $commit;
+      $commit->{tag} = $tag if $is_primary;
+      push @{$commit->{tags}}, $tag;
     }
   }
 
@@ -161,7 +158,7 @@ sub load_and_init_module {
 
 sub set_module_dir {
   my ($module) = @_;
-  my $gitdir = $gitdirs . "/" . ($unified ? "$unified" : $module->{modname});
+  my $gitdir = $gitdirs . "/" . ($unified ? "unified" : $module->{modname});
   delete $ENV{GIT_DIR};
   delete $ENV{GIT_WORK_TREE};
   if ($module->{dir_set}) {
@@ -198,19 +195,24 @@ sub convert_commit {
   my $src =  $commit->{module}->{src};
   die unless defined $src;
 
-  my $gitdir = set_module_dir $commit->{module};
+  my $tag_ns = "refs/tags/";
+  if ($unified) {
+    $tag_ns = $tag_ns . $commit->{module}->{modname} . "-";
+  } else {
+    set_module_dir $commit->{module};
+  }
 
   my $tree;
   if (defined($commit->{tag})) {
  
     eval {
-      $tree = capturex("git", "log", "-1", "--pretty=format:%T", $commit->{tag});
+      $tree = capturex("git", "rev-parse", $tag_ns . $commit->{tag} . "^{tree}");
     };
     if ($@) {
       $commit->{module}->{writen} = true;
       my $tmp = File::Temp->newdir();
       chdir $tmp->dirname;
-      systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-r", $commit->{cvs_tag}, $src;
+      systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-r", $commit->{tag}, $src;
       chdir "/";
       $ENV{GIT_WORK_TREE} = $tmp->dirname . "/" . $src;
       systemx "git", "add", "-Af";
@@ -247,7 +249,7 @@ sub convert_commit {
   }
 
   foreach my $tag (@{$commit->{tags}}) {
-    systemx "git", "update-ref", "refs/tags/$tag", $hash;
+    systemx "git", "update-ref", $tag_ns.$tag, $hash;
   }
 
   print (($commit->{tag} // "Untagged") . " : $hash\n");
@@ -283,8 +285,8 @@ sub find_commit {
 
 
 
-# Load a module now to assist in debugging.
-load_and_init_module($single);
+# Load a module now to assist in debugging and initialise repository in unified mode..
+set_module_dir(load_and_init_module($single));
 
 
 open FI, ">", "$gitdirs/fast-import_data"; #"|tee data|git fast-import";
@@ -396,9 +398,13 @@ foreach my $module (values %modules) {
       print "Adding branch: $i\n";
       my $c = convert_commit($module->{tag2commit}->{$i}->{commit});
       print "Branch $i: $c\n";
-      systemx "git", "branch", "-f", $unified ? ($module->{leaf} . "-" . $i) : $i, $c;
+      systemx "git", "branch", "-f", $unified ? ($module->{modname} . "-" . $i) : $i, $c;
     }
   }
-  systemx "git", "reset";
-  systemx "git", "gc", "--auto";
+  unless ($unified) {
+    systemx "git", "reset";
+    systemx "git", "gc", "--auto";
+  }
 }
+
+
