@@ -368,7 +368,8 @@ my @products;
 
 # Load Products file
 foreach my $product (split(/,/,$product_names)) {
-  print FI "reset refs/heads/$product\n";
+  print FI "reset refs/heads/${product}-submodules\n";
+  print FI "reset refs/heads/${product}-unified\n";
   my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
   $rcs->{orig_document} = $rcs->{current_document};
   $rcs->{product} = $product;
@@ -387,7 +388,7 @@ foreach my $rcs (@products) {
 
     $next = undef;
 
-    write_commit_header($rcs->{product}); # . "_submodules");
+    write_commit_header($rcs->{product} . "-submodules");
     my $gitmodules = "";
     my $add_submodule = sub {
       my ($c) = @_;
@@ -401,6 +402,16 @@ foreach my $rcs (@products) {
     process_super_commit($rcs, $add_submodule);
     print FI "M 100644 inline .gitmodules\n", data($gitmodules);
 
+    if ($unified) {
+      write_commit_header($rcs->{product} . "-unified");
+      my $add_tree = sub {
+        my ($c) = @_;
+        my $src = $c->{module}->{src};
+        convert_commit($c);
+        print FI "M 040000 ", $c->{tree}, " $src\n";
+      };
+      process_super_commit($rcs, $add_tree);
+    }
 
     $current = $next;
   }
