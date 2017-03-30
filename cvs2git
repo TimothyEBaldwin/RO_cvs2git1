@@ -302,9 +302,6 @@ sub process_super_commit {
 
   # Include the Products file with every commit
   print FI "M 100644 inline Products/$product/modules\n", data($mods);
-  # And a covenient symlink in the root
-  print FI "M 120000 inline Modules\n", data("Products/$product/modules");
-
 
   # For each line in product file.
   foreach (split("\n", $mods)) {
