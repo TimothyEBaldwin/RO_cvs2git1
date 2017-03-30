@@ -394,7 +394,11 @@ foreach my $rcs (@products) {
       my $url = $unified ? "." : "../$modname";
       print FI "M 160000 ", convert_commit($c), " $src\n";
       #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
-      $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = $url\n\n"
+      $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = $url\n\n";
+      my $link = $src;
+      if ($link =~ s/^(bsd|castle|cddl|gpl|mixed)/merged/) {
+        print FI "M 120000 inline $link\n", data("../" x ($src =~ tr:/::) . $src);
+      }
     };
     process_super_commit($rcs, $add_submodule);
     print FI "M 100644 inline .gitmodules\n", data($gitmodules);
@@ -406,6 +410,10 @@ foreach my $rcs (@products) {
         my $src = $c->{module}->{src};
         convert_commit($c);
         print FI "M 040000 ", $c->{tree}, " $src\n";
+        my $link = $src;
+        if ($link =~ s/^(bsd|castle|cddl|gpl|mixed)/merged/) {
+          print FI "M 120000 inline $link\n", data("../" x ($src =~ tr:/::) . $src);
+        }
       };
       process_super_commit($rcs, $add_tree);
     }
