@@ -129,12 +129,46 @@ sub load_rcs {
 
   &$merge("Kernel-5_35-4_79_2_44", "Kernel-5_35-4_79_2_25_2_2");
   &$merge("Kernel-5_35-4_79_2_123", "Kernel-5_35-4_79_2_98_2_54");
+  &$merge("Kernel-5_35-4_79_2_147_2_1", "Kernel-5_35-4_79_2_98_2_52_2_1");
   &$merge("Kernel-5_35-4_79_2_147_2_23", "Kernel-5_35-4_79_2_164");
   &$merge("Kernel-5_35-4_79_2_165", "Kernel-5_35-4_79_2_147_2_23");
   &$merge("Kernel-5_48", "Kernel-5_35-4_79_2_327");
 
   &$merge("BuildSys-6_00-1_142_2_2", "BuildSys-6_11");
   &$merge("BuildSys-6_00-1_142_2_3", "BuildSys-6_19");
+  &$merge("BuildSys-6_00-1_142_2_4", "BuildSys-6_34");
+  &$merge("BuildSys-6_00-1_142_2_5", "BuildSys-6_52");
+  &$merge("BuildSys-6_00-1_142_2_6", "BuildSys-6_64");
+  &$merge("BuildSys-6_00-1_142_2_9", "BuildSys-7_04");
+
+  &$merge("HdrSrc-0_63", "HdrSrc-0_57-4_58_2_9");
+  &$merge("HdrSrc-1_62-4_162_2_3", "HdrSrc-1_65");
+  &$merge("HdrSrc-1_62-4_162_2_4", "HdrSrc-1_67");
+  &$merge("HdrSrc-1_62-4_162_2_7", "HdrSrc-1_68");
+  &$merge("HdrSrc-1_62-4_162_2_14", "HdrSrc-1_74");
+  &$merge("HdrSrc-1_62-4_162_2_15", "HdrSrc-1_75");
+  &$merge("HdrSrc-1_76", "HdrSrc-1_62-4_162_2_15");
+
+  &$merge("FileCore-3_26", "FileCore-3_22-4_6_2_1");
+  &$merge("FileCore-3_28", "FileCore-3_25-4_9_2_2");
+  &$merge("DMA-0_16", "DMA-0_15-4_4_2_6");
+  &$merge("DualSerial-0_25", "DualSerial-kbracey_32bit_merge");
+  &$merge("Parallel-0_64", "Parallel-kbracey_32bit_merge");
+  &$merge("RISC_OSLib-5_06", "RISC_OSLib-4_97-4_12_2_8");
+  &$merge("RISC_OSLib-5_34", "RISC_OSLib-5_33-4_50_2_1");
+  &$merge("PDModules-4_45", "PDModules-4_44-4_1_2_7");
+  &$merge("PDriver-3_34", "PDriver-3_33-4_7_2_1");
+  &$merge("sbrodie_TextGadgets_merged_19Jun98", "sbrodie_Spin_merge_18Jun98");
+  &$merge("Manager-3_42", "Manager-3_41-4_2_2_13");
+  &$merge("SharedSnd-1_06", "SharedSnd-ESP_SharedSnd-1_06_merge");
+  &$merge("FPASC-sbrodie_sedwards_16Mar2000", "FPASC-kbracey_32bit_merge");
+  &$merge("callx-0_03", "callx-0_02-1_1_2_3");
+  &$merge("MemLib-1_01", "MemLib-1_00-1_1_2_3");
+  &$merge("remotedb-0_02", "remotedb-0_01-1_1_2_5");
+  &$merge("LanManFS-2_00", "LanManFS-1_87-1_1_1_1_2_13");
+  &$merge("KeyWatch-0_09", "KeyWatch-0_08-1_1_2_10");
+  &$merge("srcbuild-0_25", "srcbuild-0_24-1_23_2_4");
+  &$merge("FPASC-4_11", "FPASC-4_10-4_3_2_1");
 
   $rcs->{tag2commit} = $tag2commit;
 
