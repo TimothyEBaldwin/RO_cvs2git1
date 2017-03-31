@@ -82,6 +82,18 @@ sub load_rcs {
     push @{$commits{$i->{branches}}->{parents}}, $i if defined($i->{branches});
   }
 
+  # Fix order of initial commits from imports
+  {
+    my $a = $rcs->{rcs}->{"1.1.1.1"};
+    my $b = $rcs->{rcs}->{"1.1"};
+    my $c = $rcs->{rcs}->{"1.2"};
+    if (defined($a) && defined($b) && $a->{date} eq $b->{date}) {
+      $a->{parents} = [];
+      $b->{parents} = [$a];
+      $c->{parents} = [$a] if defined($c);
+    }
+  }
+
   foreach (split(/\s+/, $rcs->{rcs}->{header}->{symbols})) {
     my ($tag, $rev) = split /:/;
 
