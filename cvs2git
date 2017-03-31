@@ -290,18 +290,21 @@ set_module_dir(load_and_init_module($single));
 
 
 open FI, ">", "$gitdirs/fast-import_data"; #"|tee data|git fast-import";
+print FI "reset master\n";
 
 sub process_super_commit {
-  my ($rcs, $add_module_commit) = @_;
+  my ($rcs, $add_module_commit, $prefix) = @_;
   my $product = $rcs->{product};
 
   # Load the products file.
   $rcs->{current_document} = clone($rcs->{orig_document});
-  my $mods = $rcs->get(find_commit($rcs->{tag2commit}->{"master"})->{revision});
+  my $commit = find_commit($rcs->{tag2commit}->{"master"});
+  return unless defined $commit;
+  my $mods = $rcs->get($commit->{revision});
 
 
   # Include the Products file with every commit
-  print FI "M 100644 inline Products/$product/modules\n", data($mods);
+  print FI "M 100644 inline ${prefix}Products/$product/modules\n", data($mods);
 
   # For each line in product file.
   foreach (split("\n", $mods)) {
@@ -327,7 +330,7 @@ sub process_super_commit {
 
     if ($src eq "castle/RiscOS/Apps/Makefile") {
       # Include this file here.
-      print FI "M 100644 inline castle/RiscOS/Apps/Makefile\n", data(<< 'END');
+      print FI "M 100644 inline ${prefix}castle/RiscOS/Apps/Makefile\n", data(<< 'END');
 # Makefile for the Build System Binary Build Environment
 #
 # $Id: Makefile,v 1.2 2000/12/13 11:40:50 nbingham Exp $
@@ -350,7 +353,7 @@ END
     my $module = load_and_init_module($src);
 
     my $c = find_commit($modules{$src}->{tag2commit}->{$tag});
-    &$add_module_commit($c) if defined $c;
+    &$add_module_commit($c, $tag) if defined $c;
   }
 
 }
@@ -400,7 +403,7 @@ foreach my $rcs (@products) {
         print FI "M 120000 inline $link\n", data("../" x ($src =~ tr:/::) . $src);
       }
     };
-    process_super_commit($rcs, $add_submodule);
+    process_super_commit($rcs, $add_submodule, "");
     print FI "M 100644 inline .gitmodules\n", data($gitmodules);
 
     if ($unified) {
@@ -415,13 +418,57 @@ foreach my $rcs (@products) {
           print FI "M 120000 inline $link\n", data("../" x ($src =~ tr:/::) . $src);
         }
       };
-      process_super_commit($rcs, $add_tree);
+      process_super_commit($rcs, $add_tree, "");
     }
 
     $current = $next;
   }
 }
 
+$current = undef;
+
+if ($unified) {
+
+  foreach my $rcs (@products) {
+    # Find first (earliest time) commit of any product file.
+    my $p = $rcs->{tag2commit}->{"master"}->{commit};
+    while(scalar(@{$p->{parents}})) {
+      $p = $p->{parents}->[0];
+    }
+    $current = $p if !defined($current) || $p->{time} < $current->{time};
+  }
+
+  while(defined $current) {
+    $next = undef;
+    write_commit_header("master");
+    foreach my $rcs (@products) {
+      my $prefix = $rcs->{product} . "/";
+      my $add_tree = sub {
+        my ($c, $branch) = @_;
+        my $src = $c->{module}->{src};
+        convert_commit($c);
+        my $link = $prefix . $src;
+        if ($branch eq "master") {
+          $branch = "";
+        } elsif (index($branch,  $c->{module}->{leaf} . "-")  == 0) {
+          $branch = substr($branch, length($c->{module}->{leaf}));
+        } else {
+          $branch = "-$branch";
+        }
+        $src = "Source/$src$branch";
+        print FI "M 040000 ", $c->{tree}, " $src\n";
+        $src = "../" x ($link =~ tr:/::) . $src;
+        print FI "M 120000 inline $link\n", data($src);
+        if ($link =~ s:^([^/]*/)(bsd|castle|cddl|gpl|mixed):$1merged:) {
+          print FI "M 120000 inline $link\n", data($src);
+        }
+      };
+      process_super_commit($rcs, $add_tree, $prefix);
+
+    }
+    $current = $next;
+  }
+}
 close FI;
 
 # Add remaining module branches
