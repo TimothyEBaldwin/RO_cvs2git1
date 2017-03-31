@@ -252,14 +252,6 @@ sub convert_commit {
   my $hash = capturex("git", "commit-tree", $tree, @parents, "-m", $commit->{log} // "Empty Log");
   chomp $hash;
 
-  if(defined $commit->{commitid} && !defined $commit->{tag}) {
-    my $tag = "cvs_" . $commit->{commitid};
-    $commit->{tag} = $tag;
-    push @{$commit->{tags}}, $tag;
-    $modules{$src}->{$tag}->{branch} = false;
-    $modules{$src}->{$tag}->{commit} = $commit;
-  }
-
   foreach my $tag (@{$commit->{tags}}) {
     systemx "git", "update-ref", $tag_ns.$tag, $hash;
   }
