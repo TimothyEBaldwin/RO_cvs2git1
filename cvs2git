@@ -6,6 +6,7 @@ use constant { true => 1, false => 0 };
 use IPC::System::Simple qw(system systemx capture capturex);
 use Cwd qw(abs_path);
 
+@ENV{TZ} = "Europe/London";
 
 BEGIN {
   my $here;
