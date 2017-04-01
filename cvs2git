@@ -69,7 +69,8 @@ sub load_rcs {
     unless(defined($branches{$1 . "0." .$2}) && $branches{$1 . "0." .$2}->{branch_pos} > $c->{branch_pos}) {
       $branches{$1 . "0." .$2} = $c;
     }
-    $c->{log} =~ s/^\s*(?:Summary *:*\s*)?(\S.*\S)\s*Detail *:*/\1\n\nDetail:/is;
+    # Remove "Summary:" prefix from log messages.
+    $c->{log} =~ s/^\s*(?:Summary *:*\s*)?(\S.*\S)\s*(Detail|Admin) *:*/$1\n\n$2:/is;
   }
 
   foreach (keys %commits) {
