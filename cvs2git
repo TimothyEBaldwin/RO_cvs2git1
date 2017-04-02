@@ -534,4 +534,12 @@ foreach my $module (values %modules) {
   }
 }
 
+print "\n\nCreating main repository...\n";
+delete $ENV{GIT_DIR};
+delete $ENV{GIT_WORK_TREE};
+systemx "git", "init", "$gitdirs/unified" unless -d "$gitdirs/unified/.git";
+chdir "$gitdirs/unified";
+systemx "git", "reset";
+system "unxz < ../fast-import_data.xz | git fast-import --force";
+systemx "git", "gc";
 
