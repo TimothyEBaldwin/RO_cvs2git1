@@ -362,12 +362,10 @@ sub process_super_commit {
 
     $src =~ tr:.:/:; # Sometimes RISC OS paths are used.
 
-    next if $src eq "bsd/RiscOS/Apps/!CreateSEC";
-    next if $src eq "bsd/RiscOS/Apps/!Routines";
-    next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate"; # Spelling mistake
+    next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate";     # Spelling mistake
     next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Mistake
-    next if $src eq "castle/RiscOS/Utilities/Release/builder";
-    next if $src eq "castle/RiscOS/Utilities/Release/crc32";
+    next if $src eq "castle/RiscOS/Utilities/Release/builder";  # CVS corrupt
+    next if $src eq "castle/RiscOS/Utilities/Release/crc32";    # Missing VersionNum file
     next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc"; # Not public
 
     if ($src eq "castle/RiscOS/Apps/Makefile") {
