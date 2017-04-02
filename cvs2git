@@ -296,8 +296,8 @@ sub find_commit {
 # Load a module now to assist in debugging and initialise repository in unified mode..
 set_module_dir(load_and_init_module($single));
 
-
-open FI, ">", "$gitdirs/fast-import_data"; #"|tee data|git fast-import";
+chdir $gitdirs;
+open FI, "| xz > fast-import_data.xz"; #"|tee data|git fast-import";
 print FI "reset master\n";
 
 sub process_super_commit {
