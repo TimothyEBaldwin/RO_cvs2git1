@@ -336,7 +336,7 @@ print FI "reset master\n";
 
 sub process_super_commit {
   my ($rcs, $add_module_commit, $prefix) = @_;
-  my $product = $rcs->{product};
+  my $product = $rcs->{leaf};
 
   # Load the products file.
   $rcs->{current_document} = clone($rcs->{orig_document});
@@ -402,7 +402,7 @@ END
 
 sub write_commit_header {
   my ($product) = @_;
-  print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data(($current->{module}->{leaf} // $product) . ": " .$current->{log}),
+  print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data($current->{module}->{leaf} . ": " . $current->{log}),
     "deleteall\n";
 }
 
@@ -414,7 +414,7 @@ foreach my $product (split(/,/,$product_names)) {
   print FI "reset refs/heads/${product}-unified\n";
   my $rcs = load_rcs("$cvsroot/Products/$product/modules,v", "none");
   $rcs->{orig_document} = $rcs->{current_document};
-  $rcs->{product} = $product;
+  $rcs->{leaf} = $product;
   push @products, $rcs;
 }
 
@@ -430,7 +430,7 @@ foreach my $rcs (@products) {
 
     $next = undef;
 
-    write_commit_header($rcs->{product} . "-submodules");
+    write_commit_header($rcs->{leaf} . "-submodules");
     my $gitmodules = "";
     my $add_submodule = sub {
       my ($c) = @_;
@@ -449,7 +449,7 @@ foreach my $rcs (@products) {
     print FI "M 100644 inline .gitmodules\n", data($gitmodules);
 
     if ($unified) {
-      write_commit_header($rcs->{product} . "-unified");
+      write_commit_header($rcs->{leaf} . "-unified");
       my $add_tree = sub {
         my ($c) = @_;
         my $src = $c->{module}->{src};
@@ -484,7 +484,7 @@ if ($unified) {
     $next = undef;
     write_commit_header("master");
     foreach my $rcs (@products) {
-      my $prefix = $rcs->{product} . "/";
+      my $prefix = $rcs->{leaf} . "/";
       my $add_tree = sub {
         my ($c, $branch) = @_;
         my $src = $c->{module}->{src};
