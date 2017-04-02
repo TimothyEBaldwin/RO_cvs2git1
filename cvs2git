@@ -26,7 +26,8 @@ my $cvsroot;
 my $gitdirs;
 my $unified = false;
 my $products = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
-GetOptions("unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$products) or die;
+my $single = "castle/RiscOS/Export";
+GetOptions("unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$products, "single=s" => \$single) or die;
 $cvsroot = abs_path($cvsroot);
 $gitdirs = abs_path($gitdirs);
 
@@ -283,7 +284,7 @@ sub find_commit {
 
 
 # Load a module now to assist in debugging.
-load_and_init_module("castle/RiscOS/Export");
+load_and_init_module($single);
 
 
 open FI, ">", "$gitdirs/fast-import_data"; #"|tee data|git fast-import";
