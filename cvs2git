@@ -156,6 +156,8 @@ sub load_and_init_module {
   my $file = "$cvsroot/$src/VersionNum,v";
   $file = "$cvsroot/$src/Source/VersionNum,v" unless -f $file;
   $file = "$cvsroot/$src/ShareFS/aof/ShareFS,ffd,v" unless -f $file;
+  $file = "$cvsroot/$src/!RunImage,ff8,v" unless -f $file;
+  $file = "$cvsroot/$src/Perl,ff8,v" unless -f $file;
   $file = "$cvsroot/$src/!Run,feb,v" unless -f $file;
 
   die "Can't find log file for module $src" unless -f $file;
