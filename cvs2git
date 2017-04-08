@@ -327,12 +327,17 @@ sub find_commit {
 
 
 
-# Load a module now to assist in debugging and initialise repository in unified mode..
-set_module_dir(load_and_init_module($single));
+# Load a module now to assist in debugging.
+load_and_init_module($single);
 
+delete $ENV{GIT_DIR};
+delete $ENV{GIT_WORK_TREE};
 chdir $gitdirs;
-open FI, "| xz > fast-import_data.xz"; #"|tee data|git fast-import";
+systemx "git", "init", "$gitdirs/unified" unless -d "$gitdirs/unified/.git";
+chdir "$gitdirs/unified";
+open FI, "| git fast-import --force"; #"|tee data|git fast-import";
 print FI "reset master\n";
+$ENV{GIT_DIR} = "$gitdirs/unified/.git";
 
 sub process_super_commit {
   my ($rcs, $add_module_commit, $prefix) = @_;
@@ -538,9 +543,6 @@ foreach my $module (values %modules) {
 print "\n\nCreating main repository...\n";
 delete $ENV{GIT_DIR};
 delete $ENV{GIT_WORK_TREE};
-systemx "git", "init", "$gitdirs/unified" unless -d "$gitdirs/unified/.git";
-chdir "$gitdirs/unified";
 systemx "git", "reset";
-system "unxz < ../fast-import_data.xz | git fast-import --force";
 systemx "git", "gc";
 

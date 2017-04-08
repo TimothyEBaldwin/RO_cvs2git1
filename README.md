@@ -1,6 +1,6 @@
  # RISC OS CVS to GIT converter
 
- The program should on any Unix and requires Perl, Xz, Git and CVS. It converts a local copy of the the [RISC OS Open CVS repository](https://www.riscosopen.org/content/downloads/risc-os-tarballs) to [Git](https://git-scm.com/).
+ The program should on any Unix and requires Perl, Git and CVS. It converts a local copy of the the [RISC OS Open CVS repository](https://www.riscosopen.org/content/downloads/risc-os-tarballs) to [Git](https://git-scm.com/).
 
  It probably won't work on RISC OS unmodified, however patches and pull requests to fix this are welcome.
 
