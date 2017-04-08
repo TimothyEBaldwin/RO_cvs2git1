@@ -339,10 +339,13 @@ sub process_super_commit {
   my $product = $rcs->{leaf};
 
   # Load the products file.
-  $rcs->{current_document} = clone($rcs->{orig_document});
   my $commit = find_commit($rcs->{tag2commit}->{"master"});
   return unless defined $commit;
-  my $mods = $rcs->get($commit->{revision});
+  unless(defined $commit->{fulltext}) {
+    $rcs->{current_document} = clone($rcs->{orig_document});
+    $commit->{fulltext} = $rcs->get($commit->{revision});
+  }
+  my $mods = $commit->{fulltext};
 
 
   # Include the Products file with every commit
