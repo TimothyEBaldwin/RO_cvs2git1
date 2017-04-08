@@ -63,6 +63,7 @@ sub load_rcs {
     $c->{branch_pos} = $3;
     $c->{parents} = [];
     $c->{log} = "Log Message Missing" unless defined ($c->{log});
+    $c->{author} = "Unknown" unless defined ($c->{author});
     $c->{module} = $rcs;
     chomp $c->{log};
     chomp $c->{author};
@@ -277,7 +278,6 @@ sub convert_commit {
 
   chomp $tree;
   $commit->{tree} = $tree;
-  $commit->{author} = "Unknown" unless defined $commit->{author};
 
   $ENV{GIT_COMMITTER_NAME} = $commit->{author};
   $ENV{GIT_AUTHOR_NAME} = $commit->{author};
