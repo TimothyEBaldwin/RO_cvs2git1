@@ -26,9 +26,10 @@ $Data::Dumper::Purity = 1;
 my $cvsroot;
 my $gitdirs;
 my $unified = false;
+my $fast = false;
 my $product_names = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
 my $single = "castle/RiscOS/Export";
-GetOptions("unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$product_names, "single=s" => \$single) or die;
+GetOptions("fast!" => \$fast, "unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$product_names, "single=s" => \$single) or die;
 $cvsroot = abs_path($cvsroot);
 $gitdirs = abs_path($gitdirs);
 
@@ -236,24 +237,18 @@ sub convert_commit {
   # Exit if already converted.
   return $commit->{hash} if defined $commit->{hash};
 
-  # Create parent arguments
-  my @parents;
-  foreach my $p (@{$commit->{parents}}) {
-    push @parents, "-p";
-    push @parents, convert_commit($p);
-   }
-
-  my $src =  $commit->{module}->{src};
-  die unless defined $src;
-
   my $tag_ns = "refs/tags/";
   if ($unified) {
     $tag_ns = $tag_ns . $commit->{module}->{modname} . "-";
   } else {
     set_module_dir $commit->{module};
   }
+  
+  my $src =  $commit->{module}->{src};
+  die unless defined $src;
 
   my $tree;
+  my $hash;
   if (defined($commit->{tag})) {
  
     eval {
@@ -269,8 +264,14 @@ sub convert_commit {
       systemx "git", "add", "-Af";
       $tree = capturex("git", "write-tree");
       delete $ENV{GIT_WORK_TREE};
+    } elsif ($fast) {
+      eval {
+        $hash = capturex("git", "rev-parse", $tag_ns . $commit->{tag} . "^{commit}");
+      };
+      chomp $hash;
     }
   } elsif (scalar(@{$commit->{parents}})) {
+    convert_commit($commit->{parents}[0]);
     $tree = $commit->{parents}[0]->{tree};
   } else {
     $tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
@@ -278,22 +279,30 @@ sub convert_commit {
 
   chomp $tree;
   $commit->{tree} = $tree;
+  
+  unless(defined($hash)) {
+  # Create parent arguments
+    my @parents;
+    foreach my $p (@{$commit->{parents}}) {
+      push @parents, "-p";
+      push @parents, convert_commit($p);
+    }
 
-  $ENV{GIT_COMMITTER_NAME} = $commit->{author};
-  $ENV{GIT_AUTHOR_NAME} = $commit->{author};
-  $ENV{GIT_COMMITTER_EMAIL} = "X";
-  $ENV{GIT_AUTHOR_EMAIL} = "X";
-  $ENV{GIT_COMMITTER_DATE} = $commit->{time};
-  $ENV{GIT_AUTHOR_DATE} = $commit->{time};
+    $ENV{GIT_COMMITTER_NAME} = $commit->{author};
+    $ENV{GIT_AUTHOR_NAME} = $commit->{author};
+    $ENV{GIT_COMMITTER_EMAIL} = "X";
+    $ENV{GIT_AUTHOR_EMAIL} = "X";
+    $ENV{GIT_COMMITTER_DATE} = $commit->{time};
+    $ENV{GIT_AUTHOR_DATE} = $commit->{time};
 
 
-  my $hash = capturex("git", "commit-tree", $tree, @parents, "-m", $commit->{log} // "Empty Log");
-  chomp $hash;
+    $hash = capturex("git", "commit-tree", $tree, @parents, "-m", $commit->{log} // "Empty Log");
+    chomp $hash;
 
-  foreach my $tag (@{$commit->{tags}}) {
-    systemx "git", "update-ref", $tag_ns.$tag, $hash;
+    foreach my $tag (@{$commit->{tags}}) {
+      systemx "git", "update-ref", $tag_ns.$tag, $hash;
+    }
   }
-
   print (($commit->{tag} // "Untagged") . " : $hash\n");
 
   $commit->{hash} = $hash;
