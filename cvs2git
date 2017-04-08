@@ -314,14 +314,27 @@ sub find_commit {
   my ($tag) = @_;
   #print "Find:", Dumper($t);
   my $commit = $tag->{commit};
-  if($tag->{branch}) {
-    while(defined($commit) && $commit->{time} > $current->{time}) {
-      unless(defined($next) && $next->{time} < $commit->{time}) {
-        $next = $commit;
-      }
-      $commit = $commit->{parents}->[0];
+  my $time = $current->{time};
+  return $commit unless $tag->{branch};
+    
+  if (defined($tag->{cached}) && $tag->{cached}->{time} > $time) {
+    $commit = $tag->{cached};
+  }
+  
+  my $prev;
+  
+  while(defined($commit) && $commit->{time} > $time) {
+    $prev = $commit;
+    $commit = $commit->{parents}->[0];
+  }
+  
+  if (defined($prev)) {
+    $tag->{cached} = $prev;
+    unless(defined($next) && $next->{time} < $prev->{time}) {
+      $next = $prev
     }
   }
+  
   return $commit;
 }
 
