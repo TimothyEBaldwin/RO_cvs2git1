@@ -142,6 +142,7 @@ sub load_rcs {
   &$merge("BuildSys-6_00-1_142_2_5", "BuildSys-6_52");
   &$merge("BuildSys-6_00-1_142_2_6", "BuildSys-6_64");
   &$merge("BuildSys-6_00-1_142_2_9", "BuildSys-7_04");
+  &$merge("BuildSys-6_00-1_142_2_10", "BuildSys-7_08");
 
   &$merge("HdrSrc-0_63", "HdrSrc-0_57-4_58_2_9");
   &$merge("HdrSrc-1_62-4_162_2_3", "HdrSrc-1_65");
