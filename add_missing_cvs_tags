@@ -57,6 +57,8 @@ cvs rtag -F -a -r TCPIPLibs-5_02 TCPIPLibs-5_02b mixed/RiscOS/Sources/Lib/TCPIPL
 cvs rtag -F -r 4.5 TCPIPLibs-5_02b mixed/RiscOS/Sources/Lib/TCPIPLibs/VersionNum
 cvs rtag -F -r 4.2 TCPIPLibs-5_02b mixed/RiscOS/Sources/Lib/TCPIPLibs/socklib/Makefile
 
+exit 0
+
 cvs rtag -F -a -D '2012-07-19 20:26:57' BuildSys-5_71b   castle/RiscOS/BuildSys
 cvs rtag -F -a -D '2012-07-21 08:09:17' BuildSys-5_71c   castle/RiscOS/BuildSys
 cvs rtag -F -a -D '2012-11-27 15:46:40' BuildSys-6_04b   castle/RiscOS/BuildSys

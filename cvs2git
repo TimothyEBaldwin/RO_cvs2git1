@@ -257,16 +257,19 @@ sub convert_commit {
 
   my $tree;
   my $hash;
-  if (defined($commit->{tag})) {
- 
+
     eval {
-      $tree = capturex("git", "rev-parse", $tag_ns . $commit->{tag} . "^{tree}");
+      $tree = capturex("git", "rev-parse", $tag_ns . ($commit->{tag} // $commit->{time}) . "^{tree}");
     };
     if ($@) {
       $commit->{module}->{writen} = true;
       my $tmp = File::Temp->newdir();
       chdir $tmp->dirname;
-      systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-r", $commit->{tag}, $src;
+      if (defined($commit->{tag})) {
+        systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-r", $commit->{tag}, $src;
+      } else {
+        systemx "cvs", "-R", "-d", $cvsroot, "export", "-N", "-d", ".", "-n", "-D", "@" . (10 + $commit->{time}), $src;
+      }
       chdir "/";
       $ENV{GIT_WORK_TREE} = $tmp->dirname . "/" . $src;
       systemx "git", "add", "-Af";
@@ -278,12 +281,7 @@ sub convert_commit {
       };
       chomp $hash;
     }
-  } elsif (scalar(@{$commit->{parents}})) {
-    convert_commit($commit->{parents}[0]);
-    $tree = $commit->{parents}[0]->{tree};
-  } else {
-    $tree = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
-  }
+
 
   chomp $tree;
   $commit->{tree} = $tree;
@@ -309,6 +307,10 @@ sub convert_commit {
 
     foreach my $tag (@{$commit->{tags}}) {
       systemx "git", "update-ref", $tag_ns.$tag, $hash;
+    }
+
+    unless (defined($commit->{tag})) {
+      systemx "git", "update-ref", $tag_ns.$commit->{time}, $hash;
     }
   }
   print (($commit->{tag} // "Untagged") . " : $hash\n");
