@@ -1,0 +1,49 @@
+#!/bin/bash
+set -e
+set -x
+
+bwrap+=(env -i bwrap --unshare-all --cap-drop ALL --ro-bind . /cvs2git --tmpfs /tmp --dev /dev --proc /proc)
+
+for i in /bin /lib* /usr/bin /usr/lib* /usr/share /etc/alternatives ; do
+  if [[ -L $i ]]; then
+    bwrap+=(--symlink "$(readlink "$i")" "$i")
+  else
+    bwrap+=(--ro-bind "$i" "$i")
+  fi
+done
+
+mkdir -p download cvsroot GIT
+download="$(mktemp -d)"
+trap 'rm -rf "$download"' EXIT
+
+if [[ -e cvs-stamp ]]; then
+  age=$(( ($(date +"%s") - $(stat -c "%Y" cvs-stamp)) / (3600 * 24)))
+else
+  age=1000
+fi
+
+if [[ $age -gt 1 ]]; then
+  if [[ $age -lt 6 ]]; then
+    file=cvs-repos-week.tar.bz2
+  elif  [[ $age -lt 26 ]]; then
+    file=cvs-repos-month.tar.bz2
+  else
+    file=cvs-repos.tar.bz2
+    rm -rf cvsroot/*
+  fi
+
+
+  touch download-stamp
+
+  "${bwrap[@]}" --share-net --ro-bind /etc/ssl /etc/ssl --bind "$download" /download wget -O /download/cvs.tar.bz2 https://www.riscosopen.org/zipfiles/sources/$file
+
+  "${bwrap[@]}" --ro-bind "$download" /download --bind cvsroot /cvsroot --chdir / tar xvf /download/cvs.tar.bz2
+
+  mv download-stamp cvs-stamp
+fi
+
+test -e cvsroot/CVSROOT || "${bwrap[@]}" --bind cvsroot /cvsroot --setenv CVSROOT /cvsroot cvs init
+
+"${bwrap[@]}" --bind cvsroot /cvsroot --setenv CVSROOT /cvsroot --ro-bind add_missing_cvs_tags /amct eatmydata /amct
+
+"${bwrap[@]}" --ro-bind cvsroot /cvsroot --bind GIT /GIT /cvs2git/cvs2git --git /GIT --cvsroot /cvsroot --unified --products IOMDHALDev IOMDHAL
