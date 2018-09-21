@@ -431,7 +431,7 @@ END
 
 sub write_commit_header {
   my ($product) = @_;
-  print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <test> " . $current->{time} . " +0000\n", data($current->{module}->{leaf} . ": " . $current->{log}),
+  print FI "commit refs/heads/$product\ncommitter " . $current->{author} . " <> " . $current->{time} . " +0000\n", data($current->{module}->{leaf} . ": " . $current->{log}),
     "deleteall\n";
 }
 
