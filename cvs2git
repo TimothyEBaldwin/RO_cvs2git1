@@ -135,6 +135,13 @@ sub load_rcs {
   &$merge("Kernel-5_35-4_79_2_147_2_23", "Kernel-5_35-4_79_2_164");
   &$merge("Kernel-5_35-4_79_2_165", "Kernel-5_35-4_79_2_147_2_23");
   &$merge("Kernel-5_48", "Kernel-5_35-4_79_2_327");
+  &$merge("Kernel-5_86-4_129_2_1", "Kernel-5_86");
+  &$merge("Kernel-5_88-4_129_2_4", "Kernel-5_88");
+  &$merge("Kernel-5_89-4_129_2_6", "Kernel-5_89");
+  &$merge("Kernel-5_97-4_129_2_7", "Kernel-5_97");
+  &$merge("Kernel-6_05-4_129_2_8", "Kernel-6_06");
+  &$merge("Kernel-6_08-4_129_2_9", "Kernel-6_08");
+  &$merge("Kernel-6_09", "Kernel-6_08-4_129_2_10");
 
   &$merge("BuildSys-6_00-1_142_2_2", "BuildSys-6_11");
   &$merge("BuildSys-6_00-1_142_2_3", "BuildSys-6_19");

@@ -222,11 +222,13 @@ cvs rtag -F -a -D '2012-02-02 22:12:33' ScreenFX-0_08b   castle/RiscOS/Sources/V
 cvs rtag -F -a -D '2009-06-11 22:11:33' SpriteUtil-1_12b castle/RiscOS/Sources/Video/Render/SpriteUtil
 cvs rtag -F -a -D '2009-06-13 23:30:42' Super-0_13b      castle/RiscOS/Sources/Video/Render/Super
 cvs rtag -F -a -D '2008-10-17 00:28:47' Picker-0_49b     castle/RiscOS/Sources/Video/UserI/Picker
+cvs rtag -F -a -D '2018-04-12 00:36:14' Picker-0_56b     castle/RiscOS/Sources/Video/UserI/Picker
 cvs rtag -F -a -D '2001-03-01 09:58:11' ScrModes-0_27b   castle/RiscOS/Sources/Video/UserI/ScrModes
 cvs rtag -F -a -D '2015-02-24 00:19:01' ScrModes-0_47b   castle/RiscOS/Sources/Video/UserI/ScrModes
 cvs rtag -F -a -D '2000-06-21 09:50:17' FileCRC-2_23b    castle/RiscOS/Tools/Sources/FileCRC # Could be FileCRC-2_24?
 cvs rtag -F -a -D '1999-11-11 10:03:02' squeeze-5_02b    castle/RiscOS/Tools/Sources/squeeze
 cvs rtag -F -a -D '2016-03-26 21:30:23' BCM2835-0_53b    mixed/RiscOS/Sources/HAL/BCM2835
+cvs rtag -F -a -D '2018-04-12 01:02:30' FPASC-4_36b      mixed/RiscOS/Sources/HWSupport/FPASC
 cvs rtag -F -a -D '2009-07-02 20:16:41' MUSBDriver-0_01a mixed/RiscOS/Sources/HWSupport/USB/Controllers/MUSBDriver
 cvs rtag -F -a -D '2009-07-07 21:37:04' MUSBDriver-0_01b mixed/RiscOS/Sources/HWSupport/USB/Controllers/MUSBDriver
 cvs rtag -F -a -D '2009-09-28 19:00:53' MUSBDriver-0_02b mixed/RiscOS/Sources/HWSupport/USB/Controllers/MUSBDriver
