@@ -13,8 +13,6 @@ for i in /bin /lib* /usr/bin /usr/lib* /usr/share /etc/alternatives ; do
 done
 
 mkdir -p download cvsroot GIT
-download="$(mktemp -d)"
-trap 'rm -rf "$download"' EXIT
 
 if [[ -e cvs-stamp ]]; then
   age=$(( ($(date +"%s") - $(stat -c "%Y" cvs-stamp)) / (3600 * 24)))
@@ -33,12 +31,15 @@ if [[ $age -gt 1 ]]; then
   fi
 
 
-  touch download-stamp
+  if [[ ! -e downloaded ]]; then
+    touch download-stamp
+    "${bwrap[@]}" --share-net --ro-bind /etc/ssl /etc/ssl --bind download /download wget -O /download/cvs.tar.bz2 https://www.riscosopen.org/zipfiles/sources/$file
+    touch downloaded
+  fi
 
-  "${bwrap[@]}" --share-net --ro-bind /etc/ssl /etc/ssl --bind "$download" /download wget -O /download/cvs.tar.bz2 https://www.riscosopen.org/zipfiles/sources/$file
+  "${bwrap[@]}" --ro-bind download /download --bind cvsroot /cvsroot --chdir / tar xvf /download/cvs.tar.bz2
 
-  "${bwrap[@]}" --ro-bind "$download" /download --bind cvsroot /cvsroot --chdir / tar xvf /download/cvs.tar.bz2
-
+  rm downloaded
   mv download-stamp cvs-stamp
 fi
 
