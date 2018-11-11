@@ -28,7 +28,7 @@ my $gitdirs;
 my $unified = false;
 my $fast = false;
 my $product_names = "BCM2835Pico,BCM2835Dev,BCM2835,BonusBinDev,BuildHost,BuildHostDev,Disc,DiscDev,IOMDHAL,IOMDHALDev,OMAP3,OMAP3Dev,OMAP3Live,PlingSystem,S3CDev,Titanium,TitaniumDev,Tungsten,TungstenDev";
-my $single = "castle/RiscOS/Export";
+my $single = "apache/RiscOS/Export";
 GetOptions("fast!" => \$fast, "unified!" => \$unified, "cvsroot=s" => \$cvsroot, "git=s" => \$gitdirs, "products=s" => \$product_names, "single=s" => \$single) or die;
 $cvsroot = abs_path($cvsroot);
 $gitdirs = abs_path($gitdirs);
@@ -403,14 +403,14 @@ sub process_super_commit {
     $src =~ tr:.:/:; # Sometimes RISC OS paths are used.
 
     next if $src eq "bsd/RiscOS/Sources/Utilties/SDCreate";     # Spelling mistake
-    next if $src eq "castle/RiscOS/Sources/Video/UserI/BootFX"; # Mistake
-    next if $src eq "castle/RiscOS/Utilities/Release/builder";  # CVS corrupt
-    next if $src eq "castle/RiscOS/Utilities/Release/crc32";    # Missing VersionNum file
+    next if $src eq "apache/RiscOS/Sources/Video/UserI/BootFX"; # Mistake
+    next if $src eq "apache/RiscOS/Utilities/Release/builder";  # CVS corrupt
+    next if $src eq "apache/RiscOS/Utilities/Release/crc32";    # Missing VersionNum file
     next if $src eq "closed/RiscOS/Sources/SystemRes/LiveDisc"; # Not public
 
-    if ($src eq "castle/RiscOS/Apps/Makefile") {
+    if ($src eq "apache/RiscOS/Apps/Makefile") {
       # Include this file here.
-      print FI "M 100644 inline ${prefix}castle/RiscOS/Apps/Makefile\n", data(<< 'END');
+      print FI "M 100644 inline ${prefix}apache/RiscOS/Apps/Makefile\n", data(<< 'END');
 # Makefile for the Build System Binary Build Environment
 #
 # $Id: Makefile,v 1.2 2000/12/13 11:40:50 nbingham Exp $
@@ -479,7 +479,7 @@ foreach my $rcs (@products) {
       #print "$src $tag - ", $c->{tag}, " ", Dumper(\$c->{tag}, \$c->{tags}), "\n";
       $gitmodules = $gitmodules . "[submodule \"$modname\"]\n\tpath = $src\n\turl = $url\n\n";
       my $link = $src;
-      if ($link =~ s/^(bsd|castle|cddl|gpl|mixed)/merged/) {
+      if ($link =~ s/^(bsd|apache|cddl|gpl|mixed)/merged/) {
         print FI "M 120000 inline $link\n", data("../" x ($src =~ tr:/::) . $src);
       }
     };
@@ -494,7 +494,7 @@ foreach my $rcs (@products) {
         convert_commit($c);
         print FI "M 040000 ", $c->{tree}, " $src\n";
         my $link = $src;
-        if ($link =~ s/^(bsd|castle|cddl|gpl|mixed)/merged/) {
+        if ($link =~ s/^(bsd|apache|cddl|gpl|mixed)/merged/) {
           print FI "M 120000 inline $link\n", data("../" x ($src =~ tr:/::) . $src);
         }
       };
@@ -539,7 +539,7 @@ if ($unified) {
         print FI "M 040000 ", $c->{tree}, " $src\n";
         $src = "../" x ($link =~ tr:/::) . $src;
         print FI "M 120000 inline $link\n", data($src);
-        if ($link =~ s:^([^/]*/)(bsd|castle|cddl|gpl|mixed):$1merged:) {
+        if ($link =~ s:^([^/]*/)(bsd|apache|cddl|gpl|mixed):$1merged:) {
           print FI "M 120000 inline $link\n", data($src);
         }
       };

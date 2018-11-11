@@ -29,8 +29,8 @@
  ## Problems
 
  * Some versions are untagged in CVS and therefore missing, the provided script `add_missing_cvs_tags` will add the required tags to CVS, which a comlicated and error prone task to update.
- * `castle/RiscOS/Utilities/Release/builder` is omitted because the CVS repository is corrupt.
- * `castle/RiscOS/Utilities/Release/crc32` is omitted because there is no `VersionNum` file.
+ * `apache/RiscOS/Utilities/Release/builder` is omitted because the CVS repository is corrupt.
+ * `apache/RiscOS/Utilities/Release/crc32` is omitted because there is no `VersionNum` file.
  * Git commit hashes are not stable between versions of this converter.
  * It is slow, especially `--unified` mode.
  * It omits the pre-srccommit history.

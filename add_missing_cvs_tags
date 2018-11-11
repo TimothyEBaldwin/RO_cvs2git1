@@ -1,43 +1,43 @@
 #!/bin/sh
 export TZ=UTC
 
-cvs rtag -F -a -r Kernel-5_23 Kernel-5_23b castle/RiscOS/Sources/Kernel
-cvs rtag -F -r 4.63 Kernel-5_23b castle/RiscOS/Sources/Kernel/VersionNum
-cvs rtag -F -r 4.63 Kernel-5_23b castle/RiscOS/Sources/Kernel/VersionASM
-cvs rtag -F -r 4.12 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/ARM600
-cvs rtag -F -r 4.4 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/Copro15ops
-cvs rtag -F -r 4.16 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/GetAll
-cvs rtag -F -r 4.10 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/Kernel
-cvs rtag -F -r 4.14 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/NewReset
-cvs rtag -F -r 4.11 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/PMF/osbyte
-cvs rtag -F -r 4.3 Kernel-5_23b castle/RiscOS/Sources/Kernel/s/vdu/vdugrafi
+cvs rtag -F -a -r Kernel-5_23 Kernel-5_23b apache/RiscOS/Sources/Kernel
+cvs rtag -F -r 4.63 Kernel-5_23b apache/RiscOS/Sources/Kernel/VersionNum
+cvs rtag -F -r 4.63 Kernel-5_23b apache/RiscOS/Sources/Kernel/VersionASM
+cvs rtag -F -r 4.12 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/ARM600
+cvs rtag -F -r 4.4 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/Copro15ops
+cvs rtag -F -r 4.16 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/GetAll
+cvs rtag -F -r 4.10 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/Kernel
+cvs rtag -F -r 4.14 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/NewReset
+cvs rtag -F -r 4.11 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/PMF/osbyte
+cvs rtag -F -r 4.3 Kernel-5_23b apache/RiscOS/Sources/Kernel/s/vdu/vdugrafi
 
-cvs rtag -F -a -r Kernel-5_24 Kernel-5_24b castle/RiscOS/Sources/Kernel
-cvs rtag -F -r 4.65 Kernel-5_24b castle/RiscOS/Sources/Kernel/VersionNum
-cvs rtag -F -r 4.65 Kernel-5_24b castle/RiscOS/Sources/Kernel/VersionASM
-cvs rtag -F -r 4.12 Kernel-5_24b castle/RiscOS/Sources/Kernel/hdr/KernelWS
-cvs rtag -F -r 4.7 Kernel-5_24b castle/RiscOS/Sources/Kernel/s/ArthurSWIs
-cvs rtag -F -r 4.11 Kernel-5_24b castle/RiscOS/Sources/Kernel/s/Kernel
-cvs rtag -F -r 4.13 Kernel-5_24b castle/RiscOS/Sources/Kernel/s/Middle
-cvs rtag -F -r 4.6 Kernel-5_24b castle/RiscOS/Sources/Kernel/s/vdu/vduswis
+cvs rtag -F -a -r Kernel-5_24 Kernel-5_24b apache/RiscOS/Sources/Kernel
+cvs rtag -F -r 4.65 Kernel-5_24b apache/RiscOS/Sources/Kernel/VersionNum
+cvs rtag -F -r 4.65 Kernel-5_24b apache/RiscOS/Sources/Kernel/VersionASM
+cvs rtag -F -r 4.12 Kernel-5_24b apache/RiscOS/Sources/Kernel/hdr/KernelWS
+cvs rtag -F -r 4.7 Kernel-5_24b apache/RiscOS/Sources/Kernel/s/ArthurSWIs
+cvs rtag -F -r 4.11 Kernel-5_24b apache/RiscOS/Sources/Kernel/s/Kernel
+cvs rtag -F -r 4.13 Kernel-5_24b apache/RiscOS/Sources/Kernel/s/Middle
+cvs rtag -F -r 4.6 Kernel-5_24b apache/RiscOS/Sources/Kernel/s/vdu/vduswis
 
-cvs rtag -F -a -r Kernel-5_24b Kernel-5_24c castle/RiscOS/Sources/Kernel
-cvs rtag -F -r 4.66 Kernel-5_24c castle/RiscOS/Sources/Kernel/VersionNum
-cvs rtag -F -r 4.66 Kernel-5_24c castle/RiscOS/Sources/Kernel/VersionASM
-cvs rtag -F -r 4.13 Kernel-5_24c castle/RiscOS/Sources/Kernel/TestSrc/Begin
-cvs rtag -F -r 4.12 Kernel-5_24c castle/RiscOS/Sources/Kernel/s/Kernel
+cvs rtag -F -a -r Kernel-5_24b Kernel-5_24c apache/RiscOS/Sources/Kernel
+cvs rtag -F -r 4.66 Kernel-5_24c apache/RiscOS/Sources/Kernel/VersionNum
+cvs rtag -F -r 4.66 Kernel-5_24c apache/RiscOS/Sources/Kernel/VersionASM
+cvs rtag -F -r 4.13 Kernel-5_24c apache/RiscOS/Sources/Kernel/TestSrc/Begin
+cvs rtag -F -r 4.12 Kernel-5_24c apache/RiscOS/Sources/Kernel/s/Kernel
 
-cvs rtag -F -a -r Kernel-5_26 Kernel-5_26b castle/RiscOS/Sources/Kernel
-cvs rtag -F -r 4.69 Kernel-5_26b castle/RiscOS/Sources/Kernel/VersionNum
-cvs rtag -F -r 4.69 Kernel-5_26b castle/RiscOS/Sources/Kernel/VersionASM
-cvs rtag -F -r Kernel-5_27 Kernel-5_26b castle/RiscOS/Sources/Kernel/s/GetAll castle/RiscOS/Sources/Kernel/s/ArthurSWIs
+cvs rtag -F -a -r Kernel-5_26 Kernel-5_26b apache/RiscOS/Sources/Kernel
+cvs rtag -F -r 4.69 Kernel-5_26b apache/RiscOS/Sources/Kernel/VersionNum
+cvs rtag -F -r 4.69 Kernel-5_26b apache/RiscOS/Sources/Kernel/VersionASM
+cvs rtag -F -r Kernel-5_27 Kernel-5_26b apache/RiscOS/Sources/Kernel/s/GetAll castle/RiscOS/Sources/Kernel/s/ArthurSWIs
 
-cvs rtag -F -a -r Kernel-5_32 Kernel-5_32b castle/RiscOS/Sources/Kernel
-cvs rtag -F -r 4.76 Kernel-5_32b castle/RiscOS/Sources/Kernel/VersionNum
-cvs rtag -F -r 4.76 Kernel-5_32b castle/RiscOS/Sources/Kernel/VersionASM
-cvs rtag -F -r Kernel-5_33 Kernel-5_32b castle/RiscOS/Sources/Kernel/s/MsgCode castle/RiscOS/Sources/Kernel/TestSrc/ErrorCount,ffb
+cvs rtag -F -a -r Kernel-5_32 Kernel-5_32b apache/RiscOS/Sources/Kernel
+cvs rtag -F -r 4.76 Kernel-5_32b apache/RiscOS/Sources/Kernel/VersionNum
+cvs rtag -F -r 4.76 Kernel-5_32b apache/RiscOS/Sources/Kernel/VersionASM
+cvs rtag -F -r Kernel-5_33 Kernel-5_32b apache/RiscOS/Sources/Kernel/s/MsgCode castle/RiscOS/Sources/Kernel/TestSrc/ErrorCount,ffb
 
-cvs rtag -F -a -D '1999-06-04 14:53:52' Kernel-4_80b castle/RiscOS/Sources/Kernel
+cvs rtag -F -a -D '1999-06-04 14:53:52' Kernel-4_80b apache/RiscOS/Sources/Kernel
 
 cvs rtag -F -a -r NetBSD-0_47 NetBSD-0_47b mixed/RiscOS/Sources/HWSupport/USB/NetBSD
 cvs rtag -F -r 1.49 NetBSD-0_47b mixed/RiscOS/Sources/HWSupport/USB/NetBSD/VersionNum
@@ -59,176 +59,176 @@ cvs rtag -F -r 4.2 TCPIPLibs-5_02b mixed/RiscOS/Sources/Lib/TCPIPLibs/socklib/Ma
 
 exit 0
 
-cvs rtag -F -a -D '2012-07-19 20:26:57' BuildSys-5_71b   castle/RiscOS/BuildSys
-cvs rtag -F -a -D '2012-07-21 08:09:17' BuildSys-5_71c   castle/RiscOS/BuildSys
-cvs rtag -F -a -D '2012-11-27 15:46:40' BuildSys-6_04b   castle/RiscOS/BuildSys
-cvs rtag -F -a -D '2014-11-25 09:26:24' BuildSys-6_61a   castle/RiscOS/BuildSys
-cvs rtag -F -a -D '2009-05-31 18:27:03' Alarm-2_77b      castle/RiscOS/Sources/Apps/Alarm
-cvs rtag -F -a -D '2009-06-07 17:11:18' Chars-1_21b      castle/RiscOS/Sources/Apps/Chars
-cvs rtag -F -a -D '2009-05-29 02:12:59' Draw-1_14b       castle/RiscOS/Sources/Apps/Draw
-cvs rtag -F -a -D '2009-05-31 18:28:34' Draw-1_14c       castle/RiscOS/Sources/Apps/Draw
-cvs rtag -F -a -D '2009-05-29 04:15:37' Edit-1_64b       castle/RiscOS/Sources/Apps/Edit
-cvs rtag -F -a -D '2009-05-31 18:30:02' Edit-1_64c       castle/RiscOS/Sources/Apps/Edit
-cvs rtag -F -a -D '2003-11-12 18:50:30' Help-2_34b       castle/RiscOS/Sources/Apps/Help
-cvs rtag -F -a -D '2009-06-07 17:11:43' Help2-3_15b      castle/RiscOS/Sources/Apps/Help2
-cvs rtag -F -a -D '2009-05-31 18:32:14' MakeModes-0_28b  castle/RiscOS/Sources/Apps/MakeModes
-cvs rtag -F -a -D '2009-05-29 02:10:24' Paint-2_00b      castle/RiscOS/Sources/Apps/Paint
-cvs rtag -F -a -D '2009-05-31 19:08:49' Paint-2_00c      castle/RiscOS/Sources/Apps/Paint
-cvs rtag -F -a -D '2007-11-13 01:39:56' SrcEdit-1_24b    castle/RiscOS/Sources/Apps/SrcEdit
-cvs rtag -F -a -D '2003-02-04 14:31:58' Filer-2_07b      castle/RiscOS/Sources/Desktop/Filer
-cvs rtag -F -a -D '2009-06-11 20:56:25' Filer-2_17b      castle/RiscOS/Sources/Desktop/Filer
-cvs rtag -F -a -D '2012-07-13 09:28:37' FilerAct-0_55b   castle/RiscOS/Sources/Desktop/FilerAct
-cvs rtag -F -a -D '2011-04-19 20:58:13' ResEd-0_51b      castle/RiscOS/Sources/Desktop/ResEd
-cvs rtag -F -a -D '2010-01-18 19:16:42' Switcher-1_28b   castle/RiscOS/Sources/Desktop/Switcher
-cvs rtag -F -a -D '2011-08-04 20:25:02' Switcher-1_32b   castle/RiscOS/Sources/Desktop/Switcher
-cvs rtag -F -a -D '2000-05-31 15:32:20' TaskWindow-0_58b castle/RiscOS/Sources/Desktop/TaskWindow
-cvs rtag -F -a -D '2009-06-11 20:57:17' TaskWindow-0_71b castle/RiscOS/Sources/Desktop/TaskWindow
-cvs rtag -F -a -D '1998-10-01 14:13:58' Wimp-4_01b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1998-12-09 12:57:46' Wimp-4_13b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-01-11 18:05:43' Wimp-4_14b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-02-08 12:13:18' Wimp-4_14c       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-05-12 16:10:16' Wimp-4_20b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-05-26 15:56:07' Wimp-4_20c       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-06-23 10:53:50' Wimp-4_20d       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-09-08 13:18:24' Wimp-4_28b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '1999-11-04 13:49:28' Wimp-4_33b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2000-04-26 10:12:22' Wimp-4_47b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2001-07-13 11:59:13' Wimp-4_68b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2007-10-07 02:46:16' Wimp-5_00b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2009-06-11 20:58:37' Wimp-5_05b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2009-06-15 23:34:22' Wimp-5_05c       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2012-06-24 17:54:23' Wimp-5_15b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2013-04-27 10:18:30' Wimp-5_23b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2013-05-03 19:54:52' Wimp-5_23c       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2014-07-02 23:08:49' Wimp-5_42b       castle/RiscOS/Sources/Desktop/Wimp
-cvs rtag -F -a -D '2002-09-18 15:04:28' ADFS-3_33b       castle/RiscOS/Sources/FileSys/ADFS/ADFS
-cvs rtag -F -a -D '2003-01-28 15:15:01' ADFS-3_34b       castle/RiscOS/Sources/FileSys/ADFS/ADFS
-cvs rtag -F -a -D '2009-06-11 20:59:40' ADFS-3_35b       castle/RiscOS/Sources/FileSys/ADFS/ADFS
-cvs rtag -F -a -D '2009-06-15 22:58:55' ADFS-3_35c       castle/RiscOS/Sources/FileSys/ADFS/ADFS
-cvs rtag -F -a -D '2012-04-14 11:11:01' CDFS-2_51b       castle/RiscOS/Sources/FileSys/CDFS/CDFS
-cvs rtag -F -a -D '2012-04-22 11:05:24' CDFS-2_53b       castle/RiscOS/Sources/FileSys/CDFS/CDFS
-cvs rtag -F -a -D '2009-06-11 21:00:29' FileCore-3_33b   castle/RiscOS/Sources/FileSys/FileCore
-cvs rtag -F -a -D '2012-10-28 08:53:26' FileCore-3_53b   castle/RiscOS/Sources/FileSys/FileCore
-cvs rtag -F -a -D '2009-06-11 21:01:14' FileSwitch-2_66b castle/RiscOS/Sources/FileSys/FileSwitch
-cvs rtag -F -a -D '2012-12-02 10:45:55' FileSwitch-2_79b castle/RiscOS/Sources/FileSys/FileSwitch
-cvs rtag -F -a -D '2012-12-09 17:46:18' FileSwitch-2_79c castle/RiscOS/Sources/FileSys/FileSwitch
-cvs rtag -F -a -D '2009-06-11 21:02:25' DOSFS-0_86b      castle/RiscOS/Sources/FileSys/ImageFS/DOSFS
-cvs rtag -F -a -D '2009-06-11 21:03:22' NetFS-5_93b      castle/RiscOS/Sources/FileSys/NetFS/NetFS
-cvs rtag -F -a -D '2016-09-03 21:03:20' NetFS-5_97b      castle/RiscOS/Sources/FileSys/NetFS/NetFS
-cvs rtag -F -a -D '2009-06-11 21:03:54' NetPrint-5_57b   castle/RiscOS/Sources/FileSys/NetPrint
-cvs rtag -F -a -D '2009-06-11 21:04:28' RAMFS-2_20b      castle/RiscOS/Sources/FileSys/RAMFS/RAMFS
-cvs rtag -F -a -D '2009-06-11 21:05:06' ResourceFS-0_24b castle/RiscOS/Sources/FileSys/ResourceFS/ResourceFS
-cvs rtag -F -a -D '2012-03-21 02:00:34' SCSIFS-1_24b     castle/RiscOS/Sources/FileSys/SCSIFS/SCSIFS
-cvs rtag -F -a -D '2013-01-12 10:41:59' IOMD-0_20b       castle/RiscOS/Sources/HAL/IOMD
-cvs rtag -F -a -D '2009-06-11 21:05:45' OMAP3-0_10b      castle/RiscOS/Sources/HAL/OMAP3
-cvs rtag -F -a -D '2009-06-15 23:45:30' OMAP3-0_10c      castle/RiscOS/Sources/HAL/OMAP3
-cvs rtag -F -a -D '2002-10-17 09:18:18' Tungsten-0_04b   castle/RiscOS/Sources/HAL/Tungsten
-cvs rtag -F -a -D '2009-06-11 21:06:11' Tungsten-0_27b   castle/RiscOS/Sources/HAL/Tungsten
-cvs rtag -F -a -D '2001-03-26 10:21:52' ARM-0_17b        castle/RiscOS/Sources/HWSupport/ARM
-cvs rtag -F -a -D '2009-06-11 21:06:45' ARM-0_20b        castle/RiscOS/Sources/HWSupport/ARM
-cvs rtag -F -a -D '2009-06-11 21:07:20' Buffers-0_37b    castle/RiscOS/Sources/HWSupport/Buffers
-cvs rtag -F -a -D '2009-06-11 21:08:39' DeviceFS-0_67b   castle/RiscOS/Sources/HWSupport/DeviceFS
-cvs rtag -F -a -D '2003-01-30 16:11:46' DMA-0_16b        castle/RiscOS/Sources/HWSupport/DMA
-cvs rtag -F -a -D '2003-02-04 20:08:00' DMA-0_16c        castle/RiscOS/Sources/HWSupport/DMA
-cvs rtag -F -a -D '2009-06-11 21:07:59' DMA-0_17b        castle/RiscOS/Sources/HWSupport/DMA
-cvs rtag -F -a -D '2015-08-16 18:31:16' DMA-0_22b        castle/RiscOS/Sources/HWSupport/DMA
-cvs rtag -F -a -D '2001-06-21 15:04:08' Mouse-0_10b      castle/RiscOS/Sources/HWSupport/Mouse
-cvs rtag -F -a -D '2000-08-02 09:58:31' NVRAM-0_44b      castle/RiscOS/Sources/HWSupport/NVRAM
-cvs rtag -F -a -D '2000-08-10 16:40:54' NVRAM-0_45b      castle/RiscOS/Sources/HWSupport/NVRAM
-cvs rtag -F -a -D '2000-11-27 11:47:39' NVRAM-0_53b      castle/RiscOS/Sources/HWSupport/NVRAM
-cvs rtag -F -a -D '1998-11-13 17:02:06' Parallel-0_53b   castle/RiscOS/Sources/HWSupport/Parallel
-cvs rtag -F -a -D '1998-12-04 13:16:06' Parallel-0_53c   castle/RiscOS/Sources/HWSupport/Parallel
-cvs rtag -F -a -D '2009-06-11 21:19:20' Parallel-0_73b   castle/RiscOS/Sources/HWSupport/Parallel
-cvs rtag -F -a -D '2009-06-11 21:18:10' PCI-0_08b        castle/RiscOS/Sources/HWSupport/PCI
-cvs rtag -F -a -D '2009-06-11 21:19:49' Podule-1_60b     castle/RiscOS/Sources/HWSupport/Podule
-cvs rtag -F -a -D '2009-06-11 21:20:52' Portable-0_66b   castle/RiscOS/Sources/HWSupport/Portable
-cvs rtag -F -a -D '2009-06-11 21:18:47' PS2Driver-0_38b  castle/RiscOS/Sources/HWSupport/PS2Driver
-cvs rtag -F -a -D '2009-10-25 02:03:04' SCSISwitch-2_06b castle/RiscOS/Sources/HWSupport/SCSI/SCSISwitch
-cvs rtag -F -a -D '2009-06-11 21:21:41' Serial-0_40b     castle/RiscOS/Sources/HWSupport/Serial
-cvs rtag -F -a -D '1999-07-14 08:52:44' SCInter-0_20b    castle/RiscOS/Sources/HWSupport/SmartCard/SCInter
-cvs rtag -F -a -D '2009-06-11 21:22:15' Sound0-1_63b     castle/RiscOS/Sources/HWSupport/Sound/Sound0
-cvs rtag -F -a -D '2009-06-11 21:23:01' Sound0Trid-1_64b castle/RiscOS/Sources/HWSupport/Sound/Sound0Trid
-cvs rtag -F -a -D '2009-06-16 00:09:11' Sound0Trid-1_64c castle/RiscOS/Sources/HWSupport/Sound/Sound0Trid
-cvs rtag -F -a -D '2009-06-11 21:23:26' Sound1-1_34b     castle/RiscOS/Sources/HWSupport/Sound/Sound1
-cvs rtag -F -a -D '2009-06-11 21:23:48' Sound2-1_27b     castle/RiscOS/Sources/HWSupport/Sound/Sound2
-cvs rtag -F -a -D '2009-06-11 21:24:11' SystemDevs-1_30b castle/RiscOS/Sources/HWSupport/SystemDevs
-cvs rtag -F -a -D '2009-06-13 23:17:50' IntKey-0_90b     castle/RiscOS/Sources/Internat/IntKey
-cvs rtag -F -a -D '2012-11-04 23:04:53' IntKey-0_94b     castle/RiscOS/Sources/Internat/IntKey
-cvs rtag -F -a -D '2000-06-07 16:54:29' Messages-0_93b   castle/RiscOS/Sources/Internat/Messages
-cvs rtag -F -a -D '2009-06-07 17:12:27' Messages-1_06b   castle/RiscOS/Sources/Internat/Messages
-cvs rtag -F -a -D '2009-06-11 21:24:51' Messages-1_06c   castle/RiscOS/Sources/Internat/Messages
-cvs rtag -F -a -D '2000-06-01 13:58:49' MsgTrans-0_38b   castle/RiscOS/Sources/Internat/MsgTrans
-cvs rtag -F -a -D '1998-09-16 09:34:04' DebugLib-0_11b   castle/RiscOS/Sources/Lib/DebugLib
-cvs rtag -F -a -D '1998-11-03 11:27:20' DebugLib-0_18b   castle/RiscOS/Sources/Lib/DebugLib
-cvs rtag -F -a -D '2001-02-02 10:25:44' DebugLib-0_58b   castle/RiscOS/Sources/Lib/DebugLib
-cvs rtag -F -a -D '1998-09-10 14:10:20' Common-0_01b     castle/RiscOS/Sources/Lib/Email/Common
-cvs rtag -F -a -D '1998-08-27 12:02:34' Common-0_01      castle/RiscOS/Sources/Lib/Email/Common
-cvs rtag -F -a -D '1998-10-01 09:54:12' Common-0_02b     castle/RiscOS/Sources/Lib/Email/Common
-cvs rtag -F -a -D '1999-01-12 09:07:50' NBLib-0_24b      castle/RiscOS/Sources/Lib/NBLib
-cvs rtag -F -a -D '1999-03-11 18:25:39' NBLib-0_26b      castle/RiscOS/Sources/Lib/NBLib
-cvs rtag -F -a -D '1999-03-22 11:36:20' NBLib-0_26c      castle/RiscOS/Sources/Lib/NBLib
-cvs rtag -F -a -D '1999-01-22 16:00:08' PDebug-0_02b     castle/RiscOS/Sources/Lib/PDebug
-cvs rtag -F -a -D '2000-06-20 10:52:48' RISC_OSLib-5_08b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2000-10-17 16:08:28' RISC_OSLib-5_19b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2003-01-16 12:44:30' RISC_OSLib-5_44b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2003-10-09 17:40:46' RISC_OSLib-5_46b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2003-11-03 18:54:00' RISC_OSLib-5_47b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2005-03-14 12:16:39' RISC_OSLib-5_52b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2008-10-04 21:22:36' RISC_OSLib-5_53b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2009-05-31 17:33:17' RISC_OSLib-5_53c castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2009-06-07 14:26:26' RISC_OSLib-5_53d castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2009-06-14 01:21:55' RISC_OSLib-5_53e castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2011-10-28 14:24:08' RISC_OSLib-5_63b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2012-02-04 21:30:32' RISC_OSLib-5_66b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2014-06-15 19:34:16' RISC_OSLib-5_82b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2014-07-08 08:21:26' RISC_OSLib-5_82c castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2014-07-31 08:25:01' RISC_OSLib-5_82d castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2016-02-07 16:36:08' RISC_OSLib-5_86b castle/RiscOS/Sources/Lib/RISC_OSLib
-cvs rtag -F -a -D '2009-06-13 23:40:33' Unicode-0_56b    castle/RiscOS/Sources/Lib/Unicode
-cvs rtag -F -a -D '2009-06-07 17:14:59' AUNMsgs-0_17b    castle/RiscOS/Sources/Networking/AUN/AUNMsgs
-cvs rtag -F -a -D '2002-10-20 12:00:22' BootNet-0_93b    castle/RiscOS/Sources/Networking/AUN/BootNet
-cvs rtag -F -a -D '2004-01-07 13:39:44' LanManFS-2_27b   castle/RiscOS/Sources/Networking/Omni/Protocols/LanManFS
-cvs rtag -F -a -D '2004-01-07 14:11:26' LanManFS-2_27c   castle/RiscOS/Sources/Networking/Omni/Protocols/LanManFS
-cvs rtag -F -a -D '2003-11-12 19:21:30' Manager-1_68b    castle/RiscOS/Sources/Printing/Manager
-cvs rtag -F -a -D '2001-07-20 09:15:46' PDModules-4_45b  castle/RiscOS/Sources/Printing/Modules/PDModules
-cvs rtag -F -a -D '2000-10-19 14:48:16' PDumperSpt-1_25b castle/RiscOS/Sources/Printing/Modules/PDumperSpt
-cvs rtag -F -a -D '2013-04-06 07:00:57' RemPrnSpt-1_11b  castle/RiscOS/Sources/Printing/Modules/RemPrnSpt
-cvs rtag -F -a -D '2012-03-08 20:49:59' BASIC-1_50b      castle/RiscOS/Sources/Programmer/BASIC
-cvs rtag -F -a -D '2013-04-26 23:32:29' BASIC-1_53b      castle/RiscOS/Sources/Programmer/BASIC
-cvs rtag -F -a -D '2014-06-01 13:43:57' BASIC-1_58b      castle/RiscOS/Sources/Programmer/BASIC
-cvs rtag -F -a -D '2014-06-02 20:15:58' BASIC-1_58c      castle/RiscOS/Sources/Programmer/BASIC
-cvs rtag -F -a -D '2001-03-21 15:44:53' Debugger-1_68b   castle/RiscOS/Sources/Programmer/Debugger
-cvs rtag -F -a -D '2001-05-01 14:15:01' Debugger-1_72b   castle/RiscOS/Sources/Programmer/Debugger
-cvs rtag -F -a -D '2009-06-16 00:01:27' Debugger-1_78b   castle/RiscOS/Sources/Programmer/Debugger
-cvs rtag -F -a -D '2008-03-21 00:04:52' HdrSrc-1_59b     castle/RiscOS/Sources/Programmer/HdrSrc
-cvs rtag -F -a -D '2012-05-27 19:58:34' HdrSrc-2_07b     castle/RiscOS/Sources/Programmer/HdrSrc
-cvs rtag -F -a -D '2009-05-17 02:36:39' Squash-0_27b     castle/RiscOS/Sources/Programmer/Squash
-cvs rtag -F -a -D '2012-07-19 11:35:00' Boot-0_90b       castle/RiscOS/Sources/SystemRes/Boot
-cvs rtag -F -a -D '2012-08-28 20:19:52' System-0_88b     castle/RiscOS/Sources/SystemRes/System
-cvs rtag -F -a -D '1999-02-24 12:02:12' Unicode-0_13b    castle/RiscOS/Sources/SystemRes/Unicode
-cvs rtag -F -a -D '2009-06-11 21:49:04' FileInfo-0_18b   castle/RiscOS/Sources/Toolbox/FileInfo
-cvs rtag -F -a -D '1998-10-21 14:28:27' Gadgets-0_11b    castle/RiscOS/Sources/Toolbox/Gadgets
-cvs rtag -F -a -D '2002-05-24 09:40:30' Libs-0_16b       castle/RiscOS/Sources/Toolbox/Libs
-cvs rtag -F -a -D '2009-06-11 21:50:20' Libs-0_19b       castle/RiscOS/Sources/Toolbox/Libs
-cvs rtag -F -a -D '2009-07-07 22:05:01' TinyStubs-0_13b  castle/RiscOS/Sources/Toolbox/TinyStubs
-cvs rtag -F -a -D '2009-06-11 21:53:24' Patch-0_02b      castle/RiscOS/Sources/Utilities/Patches/Patch
-cvs rtag -F -a -D '2009-06-11 21:54:02' Colours-1_76b    castle/RiscOS/Sources/Video/Render/Colours
-cvs rtag -F -a -D '2009-06-13 22:51:26' Colours-1_76c    castle/RiscOS/Sources/Video/Render/Colours
-cvs rtag -F -a -D '2009-06-11 21:54:31' Draw-1_18b       castle/RiscOS/Sources/Video/Render/Draw
-cvs rtag -F -a -D '2009-06-16 00:26:28' Draw-1_18c       castle/RiscOS/Sources/Video/Render/Draw
-cvs rtag -F -a -D '2009-07-07 22:03:14' DrawFile-1_54b   castle/RiscOS/Sources/Video/Render/DrawFile
-cvs rtag -F -a -D '2009-06-11 22:03:42' Manager-3_62b    castle/RiscOS/Sources/Video/Render/Fonts/Manager
-cvs rtag -F -a -D '1999-10-07 10:47:19' ROMFonts-0_40b   castle/RiscOS/Sources/Video/Render/Fonts/ROMFonts
-cvs rtag -F -a -D '2009-06-11 22:11:04' ROMFonts-0_74b   castle/RiscOS/Sources/Video/Render/Fonts/ROMFonts
-cvs rtag -F -a -D '2012-02-02 22:12:33' ScreenFX-0_08b   castle/RiscOS/Sources/Video/Render/ScreenFX
-cvs rtag -F -a -D '2009-06-11 22:11:33' SpriteUtil-1_12b castle/RiscOS/Sources/Video/Render/SpriteUtil
-cvs rtag -F -a -D '2009-06-13 23:30:42' Super-0_13b      castle/RiscOS/Sources/Video/Render/Super
-cvs rtag -F -a -D '2008-10-17 00:28:47' Picker-0_49b     castle/RiscOS/Sources/Video/UserI/Picker
-cvs rtag -F -a -D '2018-04-12 00:36:14' Picker-0_56b     castle/RiscOS/Sources/Video/UserI/Picker
-cvs rtag -F -a -D '2001-03-01 09:58:11' ScrModes-0_27b   castle/RiscOS/Sources/Video/UserI/ScrModes
-cvs rtag -F -a -D '2015-02-24 00:19:01' ScrModes-0_47b   castle/RiscOS/Sources/Video/UserI/ScrModes
-cvs rtag -F -a -D '2000-06-21 09:50:17' FileCRC-2_23b    castle/RiscOS/Tools/Sources/FileCRC # Could be FileCRC-2_24?
-cvs rtag -F -a -D '1999-11-11 10:03:02' squeeze-5_02b    castle/RiscOS/Tools/Sources/squeeze
+cvs rtag -F -a -D '2012-07-19 20:26:57' BuildSys-5_71b   apache/RiscOS/BuildSys
+cvs rtag -F -a -D '2012-07-21 08:09:17' BuildSys-5_71c   apache/RiscOS/BuildSys
+cvs rtag -F -a -D '2012-11-27 15:46:40' BuildSys-6_04b   apache/RiscOS/BuildSys
+cvs rtag -F -a -D '2014-11-25 09:26:24' BuildSys-6_61a   apache/RiscOS/BuildSys
+cvs rtag -F -a -D '2009-05-31 18:27:03' Alarm-2_77b      apache/RiscOS/Sources/Apps/Alarm
+cvs rtag -F -a -D '2009-06-07 17:11:18' Chars-1_21b      apache/RiscOS/Sources/Apps/Chars
+cvs rtag -F -a -D '2009-05-29 02:12:59' Draw-1_14b       apache/RiscOS/Sources/Apps/Draw
+cvs rtag -F -a -D '2009-05-31 18:28:34' Draw-1_14c       apache/RiscOS/Sources/Apps/Draw
+cvs rtag -F -a -D '2009-05-29 04:15:37' Edit-1_64b       apache/RiscOS/Sources/Apps/Edit
+cvs rtag -F -a -D '2009-05-31 18:30:02' Edit-1_64c       apache/RiscOS/Sources/Apps/Edit
+cvs rtag -F -a -D '2003-11-12 18:50:30' Help-2_34b       apache/RiscOS/Sources/Apps/Help
+cvs rtag -F -a -D '2009-06-07 17:11:43' Help2-3_15b      apache/RiscOS/Sources/Apps/Help2
+cvs rtag -F -a -D '2009-05-31 18:32:14' MakeModes-0_28b  apache/RiscOS/Sources/Apps/MakeModes
+cvs rtag -F -a -D '2009-05-29 02:10:24' Paint-2_00b      apache/RiscOS/Sources/Apps/Paint
+cvs rtag -F -a -D '2009-05-31 19:08:49' Paint-2_00c      apache/RiscOS/Sources/Apps/Paint
+cvs rtag -F -a -D '2007-11-13 01:39:56' SrcEdit-1_24b    apache/RiscOS/Sources/Apps/SrcEdit
+cvs rtag -F -a -D '2003-02-04 14:31:58' Filer-2_07b      apache/RiscOS/Sources/Desktop/Filer
+cvs rtag -F -a -D '2009-06-11 20:56:25' Filer-2_17b      apache/RiscOS/Sources/Desktop/Filer
+cvs rtag -F -a -D '2012-07-13 09:28:37' FilerAct-0_55b   apache/RiscOS/Sources/Desktop/FilerAct
+cvs rtag -F -a -D '2011-04-19 20:58:13' ResEd-0_51b      apache/RiscOS/Sources/Desktop/ResEd
+cvs rtag -F -a -D '2010-01-18 19:16:42' Switcher-1_28b   apache/RiscOS/Sources/Desktop/Switcher
+cvs rtag -F -a -D '2011-08-04 20:25:02' Switcher-1_32b   apache/RiscOS/Sources/Desktop/Switcher
+cvs rtag -F -a -D '2000-05-31 15:32:20' TaskWindow-0_58b apache/RiscOS/Sources/Desktop/TaskWindow
+cvs rtag -F -a -D '2009-06-11 20:57:17' TaskWindow-0_71b apache/RiscOS/Sources/Desktop/TaskWindow
+cvs rtag -F -a -D '1998-10-01 14:13:58' Wimp-4_01b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1998-12-09 12:57:46' Wimp-4_13b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-01-11 18:05:43' Wimp-4_14b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-02-08 12:13:18' Wimp-4_14c       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-05-12 16:10:16' Wimp-4_20b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-05-26 15:56:07' Wimp-4_20c       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-06-23 10:53:50' Wimp-4_20d       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-09-08 13:18:24' Wimp-4_28b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '1999-11-04 13:49:28' Wimp-4_33b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2000-04-26 10:12:22' Wimp-4_47b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2001-07-13 11:59:13' Wimp-4_68b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2007-10-07 02:46:16' Wimp-5_00b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2009-06-11 20:58:37' Wimp-5_05b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2009-06-15 23:34:22' Wimp-5_05c       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2012-06-24 17:54:23' Wimp-5_15b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2013-04-27 10:18:30' Wimp-5_23b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2013-05-03 19:54:52' Wimp-5_23c       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2014-07-02 23:08:49' Wimp-5_42b       apache/RiscOS/Sources/Desktop/Wimp
+cvs rtag -F -a -D '2002-09-18 15:04:28' ADFS-3_33b       apache/RiscOS/Sources/FileSys/ADFS/ADFS
+cvs rtag -F -a -D '2003-01-28 15:15:01' ADFS-3_34b       apache/RiscOS/Sources/FileSys/ADFS/ADFS
+cvs rtag -F -a -D '2009-06-11 20:59:40' ADFS-3_35b       apache/RiscOS/Sources/FileSys/ADFS/ADFS
+cvs rtag -F -a -D '2009-06-15 22:58:55' ADFS-3_35c       apache/RiscOS/Sources/FileSys/ADFS/ADFS
+cvs rtag -F -a -D '2012-04-14 11:11:01' CDFS-2_51b       apache/RiscOS/Sources/FileSys/CDFS/CDFS
+cvs rtag -F -a -D '2012-04-22 11:05:24' CDFS-2_53b       apache/RiscOS/Sources/FileSys/CDFS/CDFS
+cvs rtag -F -a -D '2009-06-11 21:00:29' FileCore-3_33b   apache/RiscOS/Sources/FileSys/FileCore
+cvs rtag -F -a -D '2012-10-28 08:53:26' FileCore-3_53b   apache/RiscOS/Sources/FileSys/FileCore
+cvs rtag -F -a -D '2009-06-11 21:01:14' FileSwitch-2_66b apache/RiscOS/Sources/FileSys/FileSwitch
+cvs rtag -F -a -D '2012-12-02 10:45:55' FileSwitch-2_79b apache/RiscOS/Sources/FileSys/FileSwitch
+cvs rtag -F -a -D '2012-12-09 17:46:18' FileSwitch-2_79c apache/RiscOS/Sources/FileSys/FileSwitch
+cvs rtag -F -a -D '2009-06-11 21:02:25' DOSFS-0_86b      apache/RiscOS/Sources/FileSys/ImageFS/DOSFS
+cvs rtag -F -a -D '2009-06-11 21:03:22' NetFS-5_93b      apache/RiscOS/Sources/FileSys/NetFS/NetFS
+cvs rtag -F -a -D '2016-09-03 21:03:20' NetFS-5_97b      apache/RiscOS/Sources/FileSys/NetFS/NetFS
+cvs rtag -F -a -D '2009-06-11 21:03:54' NetPrint-5_57b   apache/RiscOS/Sources/FileSys/NetPrint
+cvs rtag -F -a -D '2009-06-11 21:04:28' RAMFS-2_20b      apache/RiscOS/Sources/FileSys/RAMFS/RAMFS
+cvs rtag -F -a -D '2009-06-11 21:05:06' ResourceFS-0_24b apache/RiscOS/Sources/FileSys/ResourceFS/ResourceFS
+cvs rtag -F -a -D '2012-03-21 02:00:34' SCSIFS-1_24b     apache/RiscOS/Sources/FileSys/SCSIFS/SCSIFS
+cvs rtag -F -a -D '2013-01-12 10:41:59' IOMD-0_20b       apache/RiscOS/Sources/HAL/IOMD
+cvs rtag -F -a -D '2009-06-11 21:05:45' OMAP3-0_10b      apache/RiscOS/Sources/HAL/OMAP3
+cvs rtag -F -a -D '2009-06-15 23:45:30' OMAP3-0_10c      apache/RiscOS/Sources/HAL/OMAP3
+cvs rtag -F -a -D '2002-10-17 09:18:18' Tungsten-0_04b   apache/RiscOS/Sources/HAL/Tungsten
+cvs rtag -F -a -D '2009-06-11 21:06:11' Tungsten-0_27b   apache/RiscOS/Sources/HAL/Tungsten
+cvs rtag -F -a -D '2001-03-26 10:21:52' ARM-0_17b        apache/RiscOS/Sources/HWSupport/ARM
+cvs rtag -F -a -D '2009-06-11 21:06:45' ARM-0_20b        apache/RiscOS/Sources/HWSupport/ARM
+cvs rtag -F -a -D '2009-06-11 21:07:20' Buffers-0_37b    apache/RiscOS/Sources/HWSupport/Buffers
+cvs rtag -F -a -D '2009-06-11 21:08:39' DeviceFS-0_67b   apache/RiscOS/Sources/HWSupport/DeviceFS
+cvs rtag -F -a -D '2003-01-30 16:11:46' DMA-0_16b        apache/RiscOS/Sources/HWSupport/DMA
+cvs rtag -F -a -D '2003-02-04 20:08:00' DMA-0_16c        apache/RiscOS/Sources/HWSupport/DMA
+cvs rtag -F -a -D '2009-06-11 21:07:59' DMA-0_17b        apache/RiscOS/Sources/HWSupport/DMA
+cvs rtag -F -a -D '2015-08-16 18:31:16' DMA-0_22b        apache/RiscOS/Sources/HWSupport/DMA
+cvs rtag -F -a -D '2001-06-21 15:04:08' Mouse-0_10b      apache/RiscOS/Sources/HWSupport/Mouse
+cvs rtag -F -a -D '2000-08-02 09:58:31' NVRAM-0_44b      apache/RiscOS/Sources/HWSupport/NVRAM
+cvs rtag -F -a -D '2000-08-10 16:40:54' NVRAM-0_45b      apache/RiscOS/Sources/HWSupport/NVRAM
+cvs rtag -F -a -D '2000-11-27 11:47:39' NVRAM-0_53b      apache/RiscOS/Sources/HWSupport/NVRAM
+cvs rtag -F -a -D '1998-11-13 17:02:06' Parallel-0_53b   apache/RiscOS/Sources/HWSupport/Parallel
+cvs rtag -F -a -D '1998-12-04 13:16:06' Parallel-0_53c   apache/RiscOS/Sources/HWSupport/Parallel
+cvs rtag -F -a -D '2009-06-11 21:19:20' Parallel-0_73b   apache/RiscOS/Sources/HWSupport/Parallel
+cvs rtag -F -a -D '2009-06-11 21:18:10' PCI-0_08b        apache/RiscOS/Sources/HWSupport/PCI
+cvs rtag -F -a -D '2009-06-11 21:19:49' Podule-1_60b     apache/RiscOS/Sources/HWSupport/Podule
+cvs rtag -F -a -D '2009-06-11 21:20:52' Portable-0_66b   apache/RiscOS/Sources/HWSupport/Portable
+cvs rtag -F -a -D '2009-06-11 21:18:47' PS2Driver-0_38b  apache/RiscOS/Sources/HWSupport/PS2Driver
+cvs rtag -F -a -D '2009-10-25 02:03:04' SCSISwitch-2_06b apache/RiscOS/Sources/HWSupport/SCSI/SCSISwitch
+cvs rtag -F -a -D '2009-06-11 21:21:41' Serial-0_40b     apache/RiscOS/Sources/HWSupport/Serial
+cvs rtag -F -a -D '1999-07-14 08:52:44' SCInter-0_20b    apache/RiscOS/Sources/HWSupport/SmartCard/SCInter
+cvs rtag -F -a -D '2009-06-11 21:22:15' Sound0-1_63b     apache/RiscOS/Sources/HWSupport/Sound/Sound0
+cvs rtag -F -a -D '2009-06-11 21:23:01' Sound0Trid-1_64b apache/RiscOS/Sources/HWSupport/Sound/Sound0Trid
+cvs rtag -F -a -D '2009-06-16 00:09:11' Sound0Trid-1_64c apache/RiscOS/Sources/HWSupport/Sound/Sound0Trid
+cvs rtag -F -a -D '2009-06-11 21:23:26' Sound1-1_34b     apache/RiscOS/Sources/HWSupport/Sound/Sound1
+cvs rtag -F -a -D '2009-06-11 21:23:48' Sound2-1_27b     apache/RiscOS/Sources/HWSupport/Sound/Sound2
+cvs rtag -F -a -D '2009-06-11 21:24:11' SystemDevs-1_30b apache/RiscOS/Sources/HWSupport/SystemDevs
+cvs rtag -F -a -D '2009-06-13 23:17:50' IntKey-0_90b     apache/RiscOS/Sources/Internat/IntKey
+cvs rtag -F -a -D '2012-11-04 23:04:53' IntKey-0_94b     apache/RiscOS/Sources/Internat/IntKey
+cvs rtag -F -a -D '2000-06-07 16:54:29' Messages-0_93b   apache/RiscOS/Sources/Internat/Messages
+cvs rtag -F -a -D '2009-06-07 17:12:27' Messages-1_06b   apache/RiscOS/Sources/Internat/Messages
+cvs rtag -F -a -D '2009-06-11 21:24:51' Messages-1_06c   apache/RiscOS/Sources/Internat/Messages
+cvs rtag -F -a -D '2000-06-01 13:58:49' MsgTrans-0_38b   apache/RiscOS/Sources/Internat/MsgTrans
+cvs rtag -F -a -D '1998-09-16 09:34:04' DebugLib-0_11b   apache/RiscOS/Sources/Lib/DebugLib
+cvs rtag -F -a -D '1998-11-03 11:27:20' DebugLib-0_18b   apache/RiscOS/Sources/Lib/DebugLib
+cvs rtag -F -a -D '2001-02-02 10:25:44' DebugLib-0_58b   apache/RiscOS/Sources/Lib/DebugLib
+cvs rtag -F -a -D '1998-09-10 14:10:20' Common-0_01b     apache/RiscOS/Sources/Lib/Email/Common
+cvs rtag -F -a -D '1998-08-27 12:02:34' Common-0_01      apache/RiscOS/Sources/Lib/Email/Common
+cvs rtag -F -a -D '1998-10-01 09:54:12' Common-0_02b     apache/RiscOS/Sources/Lib/Email/Common
+cvs rtag -F -a -D '1999-01-12 09:07:50' NBLib-0_24b      apache/RiscOS/Sources/Lib/NBLib
+cvs rtag -F -a -D '1999-03-11 18:25:39' NBLib-0_26b      apache/RiscOS/Sources/Lib/NBLib
+cvs rtag -F -a -D '1999-03-22 11:36:20' NBLib-0_26c      apache/RiscOS/Sources/Lib/NBLib
+cvs rtag -F -a -D '1999-01-22 16:00:08' PDebug-0_02b     apache/RiscOS/Sources/Lib/PDebug
+cvs rtag -F -a -D '2000-06-20 10:52:48' RISC_OSLib-5_08b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2000-10-17 16:08:28' RISC_OSLib-5_19b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2003-01-16 12:44:30' RISC_OSLib-5_44b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2003-10-09 17:40:46' RISC_OSLib-5_46b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2003-11-03 18:54:00' RISC_OSLib-5_47b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2005-03-14 12:16:39' RISC_OSLib-5_52b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2008-10-04 21:22:36' RISC_OSLib-5_53b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2009-05-31 17:33:17' RISC_OSLib-5_53c apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2009-06-07 14:26:26' RISC_OSLib-5_53d apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2009-06-14 01:21:55' RISC_OSLib-5_53e apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2011-10-28 14:24:08' RISC_OSLib-5_63b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2012-02-04 21:30:32' RISC_OSLib-5_66b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2014-06-15 19:34:16' RISC_OSLib-5_82b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2014-07-08 08:21:26' RISC_OSLib-5_82c apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2014-07-31 08:25:01' RISC_OSLib-5_82d apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2016-02-07 16:36:08' RISC_OSLib-5_86b apache/RiscOS/Sources/Lib/RISC_OSLib
+cvs rtag -F -a -D '2009-06-13 23:40:33' Unicode-0_56b    apache/RiscOS/Sources/Lib/Unicode
+cvs rtag -F -a -D '2009-06-07 17:14:59' AUNMsgs-0_17b    apache/RiscOS/Sources/Networking/AUN/AUNMsgs
+cvs rtag -F -a -D '2002-10-20 12:00:22' BootNet-0_93b    apache/RiscOS/Sources/Networking/AUN/BootNet
+cvs rtag -F -a -D '2004-01-07 13:39:44' LanManFS-2_27b   apache/RiscOS/Sources/Networking/Omni/Protocols/LanManFS
+cvs rtag -F -a -D '2004-01-07 14:11:26' LanManFS-2_27c   apache/RiscOS/Sources/Networking/Omni/Protocols/LanManFS
+cvs rtag -F -a -D '2003-11-12 19:21:30' Manager-1_68b    apache/RiscOS/Sources/Printing/Manager
+cvs rtag -F -a -D '2001-07-20 09:15:46' PDModules-4_45b  apache/RiscOS/Sources/Printing/Modules/PDModules
+cvs rtag -F -a -D '2000-10-19 14:48:16' PDumperSpt-1_25b apache/RiscOS/Sources/Printing/Modules/PDumperSpt
+cvs rtag -F -a -D '2013-04-06 07:00:57' RemPrnSpt-1_11b  apache/RiscOS/Sources/Printing/Modules/RemPrnSpt
+cvs rtag -F -a -D '2012-03-08 20:49:59' BASIC-1_50b      apache/RiscOS/Sources/Programmer/BASIC
+cvs rtag -F -a -D '2013-04-26 23:32:29' BASIC-1_53b      apache/RiscOS/Sources/Programmer/BASIC
+cvs rtag -F -a -D '2014-06-01 13:43:57' BASIC-1_58b      apache/RiscOS/Sources/Programmer/BASIC
+cvs rtag -F -a -D '2014-06-02 20:15:58' BASIC-1_58c      apache/RiscOS/Sources/Programmer/BASIC
+cvs rtag -F -a -D '2001-03-21 15:44:53' Debugger-1_68b   apache/RiscOS/Sources/Programmer/Debugger
+cvs rtag -F -a -D '2001-05-01 14:15:01' Debugger-1_72b   apache/RiscOS/Sources/Programmer/Debugger
+cvs rtag -F -a -D '2009-06-16 00:01:27' Debugger-1_78b   apache/RiscOS/Sources/Programmer/Debugger
+cvs rtag -F -a -D '2008-03-21 00:04:52' HdrSrc-1_59b     apache/RiscOS/Sources/Programmer/HdrSrc
+cvs rtag -F -a -D '2012-05-27 19:58:34' HdrSrc-2_07b     apache/RiscOS/Sources/Programmer/HdrSrc
+cvs rtag -F -a -D '2009-05-17 02:36:39' Squash-0_27b     apache/RiscOS/Sources/Programmer/Squash
+cvs rtag -F -a -D '2012-07-19 11:35:00' Boot-0_90b       apache/RiscOS/Sources/SystemRes/Boot
+cvs rtag -F -a -D '2012-08-28 20:19:52' System-0_88b     apache/RiscOS/Sources/SystemRes/System
+cvs rtag -F -a -D '1999-02-24 12:02:12' Unicode-0_13b    apache/RiscOS/Sources/SystemRes/Unicode
+cvs rtag -F -a -D '2009-06-11 21:49:04' FileInfo-0_18b   apache/RiscOS/Sources/Toolbox/FileInfo
+cvs rtag -F -a -D '1998-10-21 14:28:27' Gadgets-0_11b    apache/RiscOS/Sources/Toolbox/Gadgets
+cvs rtag -F -a -D '2002-05-24 09:40:30' Libs-0_16b       apache/RiscOS/Sources/Toolbox/Libs
+cvs rtag -F -a -D '2009-06-11 21:50:20' Libs-0_19b       apache/RiscOS/Sources/Toolbox/Libs
+cvs rtag -F -a -D '2009-07-07 22:05:01' TinyStubs-0_13b  apache/RiscOS/Sources/Toolbox/TinyStubs
+cvs rtag -F -a -D '2009-06-11 21:53:24' Patch-0_02b      apache/RiscOS/Sources/Utilities/Patches/Patch
+cvs rtag -F -a -D '2009-06-11 21:54:02' Colours-1_76b    apache/RiscOS/Sources/Video/Render/Colours
+cvs rtag -F -a -D '2009-06-13 22:51:26' Colours-1_76c    apache/RiscOS/Sources/Video/Render/Colours
+cvs rtag -F -a -D '2009-06-11 21:54:31' Draw-1_18b       apache/RiscOS/Sources/Video/Render/Draw
+cvs rtag -F -a -D '2009-06-16 00:26:28' Draw-1_18c       apache/RiscOS/Sources/Video/Render/Draw
+cvs rtag -F -a -D '2009-07-07 22:03:14' DrawFile-1_54b   apache/RiscOS/Sources/Video/Render/DrawFile
+cvs rtag -F -a -D '2009-06-11 22:03:42' Manager-3_62b    apache/RiscOS/Sources/Video/Render/Fonts/Manager
+cvs rtag -F -a -D '1999-10-07 10:47:19' ROMFonts-0_40b   apache/RiscOS/Sources/Video/Render/Fonts/ROMFonts
+cvs rtag -F -a -D '2009-06-11 22:11:04' ROMFonts-0_74b   apache/RiscOS/Sources/Video/Render/Fonts/ROMFonts
+cvs rtag -F -a -D '2012-02-02 22:12:33' ScreenFX-0_08b   apache/RiscOS/Sources/Video/Render/ScreenFX
+cvs rtag -F -a -D '2009-06-11 22:11:33' SpriteUtil-1_12b apache/RiscOS/Sources/Video/Render/SpriteUtil
+cvs rtag -F -a -D '2009-06-13 23:30:42' Super-0_13b      apache/RiscOS/Sources/Video/Render/Super
+cvs rtag -F -a -D '2008-10-17 00:28:47' Picker-0_49b     apache/RiscOS/Sources/Video/UserI/Picker
+cvs rtag -F -a -D '2018-04-12 00:36:14' Picker-0_56b     apache/RiscOS/Sources/Video/UserI/Picker
+cvs rtag -F -a -D '2001-03-01 09:58:11' ScrModes-0_27b   apache/RiscOS/Sources/Video/UserI/ScrModes
+cvs rtag -F -a -D '2015-02-24 00:19:01' ScrModes-0_47b   apache/RiscOS/Sources/Video/UserI/ScrModes
+cvs rtag -F -a -D '2000-06-21 09:50:17' FileCRC-2_23b    apache/RiscOS/Tools/Sources/FileCRC # Could be FileCRC-2_24?
+cvs rtag -F -a -D '1999-11-11 10:03:02' squeeze-5_02b    apache/RiscOS/Tools/Sources/squeeze
 cvs rtag -F -a -D '2016-03-26 21:30:23' BCM2835-0_53b    mixed/RiscOS/Sources/HAL/BCM2835
 cvs rtag -F -a -D '2018-04-12 01:02:30' FPASC-4_36b      mixed/RiscOS/Sources/HWSupport/FPASC
 cvs rtag -F -a -D '2009-07-02 20:16:41' MUSBDriver-0_01a mixed/RiscOS/Sources/HWSupport/USB/Controllers/MUSBDriver
