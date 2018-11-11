@@ -1,6 +1,10 @@
- # RISC OS CVS to GIT converter
+ # RISC OS CVS to GIT converter (1st generation)
+
+ Warning this a rather broken.
 
  The program should on any Unix and requires Perl, Git and CVS. It converts a local copy of the the [RISC OS Open CVS repository](https://www.riscosopen.org/content/downloads/risc-os-tarballs) to [Git](https://git-scm.com/).
+
+ There is also a script `sandboxed_updater` to automatically update the CVS repository from RISC OS Open and convert it. This uses Bubblewrap to sandbox the download and conversion process.
 
  It probably won't work on RISC OS unmodified, however patches and pull requests to fix this are welcome.
 
@@ -24,11 +28,12 @@
 
  ## Problems
 
- * Some versions are untagged in CVS and therefore missing, the provided script `add_missing_cvs_tags` will add the required tags to CVS.
+ * Some versions are untagged in CVS and therefore missing, the provided script `add_missing_cvs_tags` will add the required tags to CVS, which a comlicated and error prone task to update.
  * `castle/RiscOS/Utilities/Release/builder` is omitted because the CVS repository is corrupt.
  * `castle/RiscOS/Utilities/Release/crc32` is omitted because there is no `VersionNum` file.
  * Git commit hashes are not stable between versions of this converter.
  * It is slow, especially `--unified` mode.
+ * It omits the pre-srccommit history.
 
  ## Todo
 
