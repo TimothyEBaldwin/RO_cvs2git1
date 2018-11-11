@@ -2,7 +2,7 @@
 set -e
 set -x
 
-bwrap+=(env -i bwrap --unshare-all --cap-drop ALL --ro-bind . /cvs2git --tmpfs /tmp --dev /dev --proc /proc)
+bwrap+=(env -i bwrap --new-session --unshare-all --cap-drop ALL --ro-bind . /cvs2git --tmpfs /tmp --dev /dev --proc /proc)
 
 for i in /bin /lib* /usr/bin /usr/lib* /usr/share /etc/alternatives ; do
   if [[ -L $i ]]; then
